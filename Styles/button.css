@@ -1,0 +1,44 @@
+button {
+  cursor: pointer;
+  background-color: white;
+  transition: ease-in 0.3s;
+}
+.ambition-button {
+  margin: 1em;
+  padding: 1em;
+}
+.ambition-button:hover {
+  background-color: #faa71c;
+}
+.flex-w button {
+  max-width: 40vw;
+}
+
+li button {
+  text-align: left;
+}
+
+.menu-buttons {
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+}
+.menu-buttons button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: larger;
+  transition: ease-in all 0.2s;
+}
+.menu-buttons button:hover {
+  transform: scale(1.1);
+}
+.menu-content button {
+  background-color: transparent;
+  padding: 0.5em;
+  border: none;
+  cursor: pointer;
+}

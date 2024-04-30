@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lambeth Wards Map</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+      svg {
+        width: 100%;
+        height: 100vh;
+      }
+
+      .tooltip {
+        position: absolute;
+        text-align: center;
+        padding: 8px;
+        background: #333;
+        color: white;
+        border-radius: 5px;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      .tooltip.active {
+        opacity: 0.9;
+      }
+
+      .ward {
+        fill: steelblue;
+        stroke: white;
+        stroke-width: 0.5;
+        transition: fill 0.3s ease-in-out;
+      }
+
+      .ward:hover {
+        fill: orange;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tooltip"></div>
+    <script>
+      // Set up SVG element
+      const svg = d3.select("body").append("svg");
+
+      // Load GeoJSON data
+      d3.json("/Scripts/Ward Map/lambeth-ward-map.geojson").then(function (
+        geojson
+      ) {
+        // Define projection and path generator
+        const projection = d3.geoMercator().fitSize([800, 600], geojson); // Adjust width and height as needed
+        const path = d3.geoPath().projection(projection);
+
+        // Append paths for each feature
+        svg
+          .selectAll("path")
+          .data(geojson.features)
+          .enter()
+          .append("path")
+          .attr("d", path)
+          .attr("class", "ward")
+          .on("mouseover", function (event, d) {
+            // Show tooltip with ward name
+            const tooltip = d3.select(".tooltip");
+            tooltip
+              .html(d.properties.WARD_NAME)
+              .classed("active", true)
+              .style("left", event.pageX + "px")
+              .style("top", event.pageY - 28 + "px");
+          })
+          .on("mouseout", function () {
+            // Hide tooltip on mouseout
+            d3.select(".tooltip").classed("active", false);
+          });
+      });
+    </script>
+  </body>
+</html>

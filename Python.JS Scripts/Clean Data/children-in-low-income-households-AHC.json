@@ -1,0 +1,28 @@
+[
+  {
+    "AreaName": "Lambeth",
+    "Time period": "2020/21",
+    "Value": 38.7870967388
+  },
+  {
+    "AreaName": "England",
+    "Time period": "2020/21",
+    "Value": 30.6250024754
+  },
+  {
+    "AreaName": "London",
+    "Time period": "2020/21",
+    "Value": 37.2390786134
+  },
+  {
+    "AreaName": "Lambeth",
+    "Time period": "2021/22",
+    "Value": 35.5120539665
+  },
+  {
+    "AreaName": "England",
+    "Time period": "2021/22",
+    "Value": 30.7775489251
+  },
+  { "AreaName": "London", "Time period": "2021/22", "Value": 32.852283359 }
+]

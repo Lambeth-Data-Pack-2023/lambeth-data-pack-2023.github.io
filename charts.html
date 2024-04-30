@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Category Template</title>
+    <link rel="stylesheet" href="/Styles/colours.css" />
+    <link rel="stylesheet" href="/Styles/images.css" />
+    <link rel="stylesheet" href="/Styles/typography.css" />
+    <link rel="stylesheet" href="/Styles/menu.css" />
+    <link rel="stylesheet" href="/Styles/layout.css" />
+    <link rel="stylesheet" href="/Styles/grid.css" />
+    <link rel="stylesheet" href="/Styles/button.css" />
+    <link rel="stylesheet" href="/Styles/header.css" />
+    <link rel="icon" type="image/png" href="/Images/Lambeth-logo-favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <style>
+      /* Add this CSS to your stylesheet */
+      .line {
+        transition: stroke-width 0.3s ease; /* Smooth transition for stroke-width change */
+      }
+      #lineGraph {
+        height: 100%;
+      }
+      svg {
+        height: 100%;
+        width: 100%;
+      }
+      .tooltip {
+        position: fixed;
+        bottom: 9vh;
+        left: 30vw;
+        font-family: Verdana;
+        color: #212c61;
+      }
+      .domain {
+        stroke-width: 3px;
+        color: #212c61;
+      }
+      .tick {
+        font-weight: 400;
+      }
+      .legend text {
+        font-family: Verdana;
+        color: #212c61;
+      }
+      .grid-item-chart:hover {
+        background-color: white;
+      }
+      g text {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Page Header -->
+    <header>
+      <!-- The displayHeader() function outputs the header -->
+    </header>
+
+    <main class="flex">
+      <div class="container-left">
+        <div class="menu-container">
+          <div class="menu-buttons">
+            <button onclick="showPreviousMenu()">
+              <i class="fa fa-arrow-left"></i>
+            </button>
+            <button onclick="showNextMenu()">
+              <i class="fa fa-arrow-right"></i>
+            </button>
+          </div>
+          <div id="menuItems"></div>
+          <!-- Menu contents will be dynamically generated here -->
+        </div>
+      </div>
+      <div class="container" style="border: none">
+        <div>
+          <!-- Dynamically display breadcrumbs -->
+          <div id="breadcrumbs">
+            <a href="/index.html">Home</a> /
+            <span id="ambitionBreadcrumb"></span>
+            <span id="categoryBreadcrumb"></span>
+          </div>
+          <!-- Dynamically display current page's chart name -->
+          <h2 id="chartName">Childhood Vaccinations</h2>
+        </div>
+
+        <div id="root"></div>
+      </div>
+    </main>
+
+    <script src="/Scripts/header.js"></script>
+    <script src="/Scripts/chart-page-details.js"></script>
+
+    <script type="text/babel" src="/Scripts/Charts/map-chart.js"></script>
+    <script
+      type="text/babel"
+      src="/Scripts/Charts/grouped-bar-chart.js"
+    ></script>
+
+    <script type="text/babel">
+      function GroupedBarChart({ jsonData }) {
+        // Effect hook to draw bar chart using D3.js
+        React.useEffect(() => {
+          if (jsonData) {
+            const margin = { top: 20, right: 20, bottom: 30, left: 50 };
+            const width = 425;
+            const height = 375;
+
+            const svg = d3
+              .select("#groupedBarGraph")
+              .append("svg")
+              .attr("width", width + margin.left + margin.right)
+              .attr("height", height + margin.top + margin.bottom)
+              .append("g")
+              .attr("transform", `translate(${margin.left},${margin.top})`);
+
+            // Extract x-axis values dynamically
+            const xPropertyName = Object.keys(jsonData[0])[0]; // Assuming the first property name is the x-axis property
+            const xValues = jsonData.map((d) => d[xPropertyName]);
+            console.log("X-axis values:", xValues);
+
+            // Define the y-axis keys (percentage values)
+            const yKeys = ["Lambeth (%)", "England (%)", "London (%)"];
+
+            // Extract data for each x-axis value
+            const data = xValues.map((d) => ({
+              x: d,
+              values: yKeys.map((y) => ({
+                region: y.split(" ")[0], // Extract region name (Lambeth, London, England)
+                percentage: +jsonData.find(
+                  (entry) => entry[xPropertyName] === d
+                )[y],
+              })),
+            }));
+
+            const x = d3
+              .scaleBand()
+              .domain(xValues)
+              .range([0, width])
+              .padding(0.1);
+
+            const y = d3
+              .scaleLinear()
+              .domain([
+                0,
+                d3.max(data, (d) => d3.max(d.values, (v) => v.percentage)),
+              ])
+              .nice()
+              .range([height, 0]);
+
+            const color = d3
+              .scaleOrdinal()
+              .domain(yKeys.map((y) => y.split(" ")[0]))
+              .range(d3.schemeCategory10);
+
+            svg
+              .selectAll(".bar-group")
+              .data(data)
+              .enter()
+              .append("g")
+              .attr("class", "bar-group")
+              .attr("transform", (d) => `translate(${x(d.x)},0)`)
+              .selectAll(".bar")
+              .data((d) => d.values)
+              .enter()
+              .append("rect")
+              .attr("class", "bar")
+              .attr("x", (d, i) => (x.bandwidth() / 3) * i)
+              .attr("width", x.bandwidth() / 3)
+              .attr("y", (d) => y(d.percentage))
+              .attr("height", (d) => height - y(d.percentage))
+              .attr("fill", (d) => color(d.region));
+
+            // Add x-axis
+            svg
+              .append("g")
+              .attr("transform", `translate(0,${height})`)
+              .call(d3.axisBottom(x));
+
+            // Add y-axis
+            svg.append("g").call(d3.axisLeft(y));
+          }
+        }, [jsonData]);
+
+        return (
+          <div id="groupedBarGraph">{/* Bar graph will be drawn here */}</div>
+        );
+      }
+      function LineChart({ jsonData, xLabel, yLabel }) {
+        React.useEffect(() => {
+          if (jsonData) {
+            const margin = { top: 20, right: 20, bottom: 30, left: 50 };
+            const width = 425;
+            const height = 325;
+
+            // Append SVG container to the #lineGraph div
+            const svgContainer = d3
+              .select("#lineGraph")
+              .append("div")
+              .style("position", "relative");
+
+            // Append SVG to svgContainer
+            const svg = svgContainer
+              .append("svg")
+              .attr("width", width + margin.left + margin.right)
+              .attr("height", height + margin.top + margin.bottom)
+              .append("g")
+              .attr("transform", `translate(${margin.left},${margin.top})`);
+
+            // Log to check if the labels are correctly set
+            console.log("Setting X Label:", xLabel);
+            console.log("Setting Y Label:", yLabel);
+
+            // Extract unique time periods
+            const uniqueTimePeriods = Array.from(
+              new Set(jsonData.map((d) => d["Time period"]))
+            );
+
+            const x = d3
+              .scaleBand()
+              .domain(uniqueTimePeriods)
+              .range([0, width])
+              .padding(0.1);
+
+            // Find the minimum and maximum values of the data
+            const minValue = d3.min(jsonData, (d) => +d.Value);
+            const maxValue = d3.max(jsonData, (d) => +d.Value);
+
+            // Calculate a suitable y-axis range based on the data range
+            const yDomainMin = minValue - 0.1 * (maxValue - minValue); // Add a margin of 10% below the minimum value
+            const yDomainMax = maxValue + 0.1 * (maxValue - minValue); // Add a margin of 10% above the maximum value
+
+            const y = d3
+              .scaleLinear()
+              .domain([yDomainMin, yDomainMax])
+              .nice()
+              .range([height, 0]);
+
+            const areaNames = Array.from(
+              new Set(jsonData.map((d) => d["AreaName"]))
+            ); // Get unique area names
+
+            // Define color scale for lines
+            const color = d3
+              .scaleOrdinal()
+              .domain(areaNames)
+              .range(d3.schemeCategory10);
+
+            // Draw lines for each area name and add circles for data points
+            areaNames.forEach((areaName, i) => {
+              const areaData = jsonData.filter(
+                (d) => d["AreaName"] === areaName
+              );
+              const line = d3
+                .line()
+                .x((d) => x(d["Time period"]) + x.bandwidth() / 2)
+                .y((d) => y(+d.Value));
+
+              svg
+                .append("path")
+                .datum(areaData)
+                .attr("class", "line")
+                .attr("fill", "none")
+                .attr("stroke", color(areaName))
+                .attr("stroke-width", 3) // Initial thickness
+                .attr("d", line)
+                .on("mouseenter", function () {
+                  d3.select(this).style("cursor", "crosshair");
+                  d3.select(this).attr("stroke-width", 5); // Make the line thicker on hover
+                })
+                .on("mouseleave", function () {
+                  d3.select(this).style("cursor", "default");
+                  d3.select(this).attr("stroke-width", 3); // Restore the initial thickness on mouseout
+                });
+
+              // Add circles for data points
+              svg
+                .selectAll(".circle-" + areaName) // Ensure unique class name for circles in each area
+                .data(areaData)
+                .enter()
+                .append("circle")
+                .attr("class", "circle circle-" + areaName) // Unique class name
+                .attr("cx", (d) => x(d["Time period"]) + x.bandwidth() / 2)
+                .attr("cy", (d) => y(+d.Value))
+                .attr("r", 6) // Adjust the radius of the circle (bigger than before)
+                .attr("fill", color(areaName))
+                .on("mouseenter", function () {
+                  d3.select(this)
+                    .style("cursor", "pointer")
+                    .attr("stroke", "black") // Add black border on hover
+                    .attr("stroke-width", 2); // Adjust border width
+                })
+                .on("mouseleave", function () {
+                  d3.select(this)
+                    .style("cursor", "default")
+                    .attr("stroke", "none"); // Remove border on mouseout
+                })
+                .on("mouseover", function (event, d) {
+                  const circle = d3.select(this);
+                  const circleX = parseFloat(circle.attr("cx"));
+                  const circleY = parseFloat(circle.attr("cy"));
+                  const tooltipWidth = parseFloat(tooltip.style("width"));
+                  const tooltipHeight = parseFloat(tooltip.style("height"));
+
+                  // Calculate the left and top positions for the tooltip
+                  const left = circleX - tooltipWidth / 2;
+                  const top = circleY - tooltipHeight - 10;
+
+                  // Ensure the tooltip stays within the bounds of the SVG
+                  const svgWidth = parseFloat(svg.attr("width"));
+                  const svgHeight = parseFloat(svg.attr("height"));
+
+                  // Adjust left position to stay within SVG bounds
+                  const maxLeft = svgWidth - tooltipWidth;
+                  const adjustedLeft = Math.min(maxLeft, Math.max(0, left));
+
+                  // Adjust top position to stay within SVG bounds
+                  const maxTop = svgHeight - tooltipHeight;
+                  const adjustedTop = Math.min(maxTop, Math.max(0, top));
+
+                  tooltip.transition().duration(200).style("opacity", 0.9);
+                  tooltip
+                    .html(`Area: ${d.AreaName}<br/>Value: ${d.Value}`)
+                    .style("left", adjustedLeft + "px")
+                    .style("top", adjustedTop + "px");
+                })
+                .on("mouseout", function (d) {
+                  tooltip.transition().duration(500).style("opacity", 0);
+                });
+            });
+
+            // Add legend
+            const legend = svg
+              .selectAll(".legend")
+              .data(areaNames)
+              .enter()
+              .append("g")
+              .attr("class", "legend")
+              .attr("transform", (d, i) => `translate(0,${i * 20})`);
+
+            legend
+              .append("rect")
+              .attr("x", width - 18)
+              .attr("width", 18)
+              .attr("height", 18)
+              .style("fill", color);
+
+            legend
+              .append("text")
+              .attr("x", width - 24)
+              .attr("y", 9)
+              .attr("dy", ".35em")
+              .style("text-anchor", "end")
+              .text((d) => d);
+
+            // Add x-axis label
+            svg
+              .append("text")
+              .attr("x", width / 2)
+              .attr("y", height + margin.top + 20) // Adjust this value for positioning
+              .style("text-anchor", "middle")
+              .attr("font-family", "Arial") // Adjust font family
+              .attr("font-size", "14px") // Adjust font size
+              .text(xLabel);
+
+            // Add x-axis
+            svg
+              .append("g")
+              .attr("transform", `translate(0,${height})`)
+              .call(d3.axisBottom(x))
+              .selectAll("text")
+              .attr("font-family", "Arial") // Adjust font family
+              .attr("font-size", "12px") // Adjust font size
+              .attr("transform", "rotate(-45)") // Rotate x-axis labels if needed
+              .style("text-anchor", "end");
+
+            // Add y-axis label
+            svg
+              .append("text")
+              .attr("transform", "rotate(-90)")
+              .attr("y", 0 - margin.left)
+              .attr("x", 0 - height / 2)
+              .attr("dy", "1em")
+              .style("text-anchor", "middle")
+              .attr("font-family", "Arial") // Adjust font family
+              .attr("font-size", "14px") // Adjust font size
+              .text(yLabel);
+
+            // Add y-axis
+            svg
+              .append("g")
+              .call(d3.axisLeft(y))
+              .selectAll("text")
+              .attr("font-family", "Verdana") // Adjust font family
+              .attr("font-size", "12px")
+              .attr("color", "#212c61"); // Adjust font size
+
+            // Edit x-axis line
+            svg.select(".domain"); // Select the line element representing the x-axis
+
+            // Edit y-axis line
+            svg.select(".domain"); // Select the line element representing the y-axis
+
+            // Append tooltip to svgContainer
+            const tooltip = svgContainer
+              .append("div")
+              .attr("class", "tooltip")
+              .style("opacity", 0);
+          }
+        }, [jsonData, xLabel, yLabel]);
+
+        return <div id="lineGraph">{/* Line graph will be drawn here */}</div>;
+      }
+
+      function CrimeChart({ jsonData }) {
+        React.useEffect(() => {
+          if (jsonData) {
+            // Log unique area names
+            const uniqueAreaNames = Array.from(
+              new Set(jsonData.map((d) => d["AreaName"]))
+            );
+            console.log("Unique Area Names:", uniqueAreaNames);
+
+            const margin = { top: 20, right: 20, bottom: 30, left: 50 };
+            const width = 600;
+            const height = 300;
+
+            const svg = d3
+              .select("#crimeGraph")
+              .append("svg")
+              .attr("width", width + margin.left + margin.right)
+              .attr("height", height + margin.top + margin.bottom)
+              .append("g")
+              .attr("transform", `translate(${margin.left},${margin.top})`);
+
+            // Custom sorting function for time periods in "YYYY-MM" format
+            function customSort(a, b) {
+              const [yearA, monthA] = a.split("-").map(Number);
+              const [yearB, monthB] = b.split("-").map(Number);
+
+              if (yearA !== yearB) {
+                return yearA - yearB;
+              } else {
+                return monthA - monthB;
+              }
+            }
+
+            // Extract unique time periods and sort them using the custom function
+            const uniqueTimePeriods = Array.from(
+              new Set(jsonData.map((d) => d["Time period"]))
+            ).sort(customSort);
+
+            console.log("Sorted Time Periods:", uniqueTimePeriods);
+
+            // Define x scale
+            const x = d3
+              .scaleBand()
+              .domain(uniqueTimePeriods)
+              .range([0, width])
+              .padding(0.1);
+
+            // Filter data for London and Lambeth
+            const filteredData = jsonData.filter(
+              (d) => d["AreaName"] === "London" || d["AreaName"] === "Lambeth"
+            );
+
+            // Log offence values for London and Lambeth
+            const londonOffences = filteredData
+              .filter((d) => d["AreaName"] === "London")
+              .map((d) => d["Offences per 1,000 people"]);
+            const lambethOffences = filteredData
+              .filter((d) => d["AreaName"] === "Lambeth")
+              .map((d) => d["Offences per 1,000 people"]);
+            console.log("London Offences:", londonOffences);
+            console.log("Lambeth Offences:", lambethOffences);
+
+            // Find the minimum and maximum values of the filtered data
+            const minValue = d3.min(
+              filteredData,
+              (d) => +d["Offences per 1,000 people"]
+            );
+            const maxValue = d3.max(
+              filteredData,
+              (d) => +d["Offences per 1,000 people"]
+            );
+
+            // Calculate a suitable y-axis range based on the data range
+            const yDomainMin = minValue - 0.1 * (maxValue - minValue); // Add a margin of 10% below the minimum value
+            const yDomainMax = maxValue + 0.1 * (maxValue - minValue); // Add a margin of 10% above the maximum value
+
+            const y = d3
+              .scaleLinear()
+              .domain([yDomainMin, yDomainMax])
+              .nice()
+              .range([height, 0]);
+
+            // Define color scale for lines
+            const color = d3
+              .scaleOrdinal()
+              .domain(["London", "Lambeth"])
+              .range(d3.schemeCategory10);
+
+            // Draw lines for each area name and add circles for data points
+            ["London", "Lambeth"].forEach((areaName, i) => {
+              const areaData = filteredData.filter(
+                (d) => d["AreaName"] === areaName
+              );
+              const line = d3
+                .line()
+                .x((d) => x(d["Time period"]) + x.bandwidth() / 2)
+                .y((d) => y(+d["Offences per 1,000 people"]));
+
+              svg
+                .append("path")
+                .datum(areaData)
+                .attr("class", "line")
+                .attr("fill", "none")
+                .attr("stroke", color(areaName))
+                .attr("stroke-width", 3) // Initial thickness
+                .attr("d", line);
+
+              // Add circles for data points
+              svg
+                .selectAll(".circle-" + areaName) // Ensure unique class name for circles in each area
+                .data(areaData)
+                .enter()
+                .append("circle")
+                .attr("class", "circle circle-" + areaName) // Unique class name
+                .attr("cx", (d) => x(d["Time period"]) + x.bandwidth() / 2)
+                .attr("cy", (d) => y(+d["Offences per 1,000 people"]))
+                .attr("r", 6) // Adjust the radius of the circle (bigger than before)
+                .attr("fill", color(areaName));
+            });
+
+            // Add x-axis
+            svg
+              .append("g")
+              .attr("transform", `translate(0,${height})`)
+              .call(d3.axisBottom(x))
+              .selectAll("text")
+              .style("text-anchor", "end")
+              .attr("dx", "-.8em")
+              .attr("dy", ".15em")
+              .attr("transform", "rotate(-65)");
+
+            // Add y-axis
+            svg.append("g").call(d3.axisLeft(y));
+
+            // Add x-axis label
+            svg
+              .append("text")
+              .attr("x", width / 2)
+              .attr("y", height + margin.top + 20) // Adjust this value for positioning
+              .style("text-anchor", "middle")
+              .text("Time Period");
+
+            // Add y-axis label
+            svg
+              .append("text")
+              .attr("transform", "rotate(-90)")
+              .attr("y", 0 - margin.left)
+              .attr("x", 0 - height / 2)
+              .attr("dy", "1em")
+              .style("text-anchor", "middle")
+              .text("Offences per 1,000 people");
+
+            // Add tooltip div
+            const tooltip = d3
+              .select("#crimeGraph")
+              .append("div")
+              .attr("class", "tooltip")
+              .style("opacity", 0);
+          }
+        }, [jsonData]);
+
+        return (
+          <div id="crimeGraph">
+            <button>Ward Map</button>
+          </div>
+        );
+      }
+
+      function GridExample() {
+        // State to hold JSON data
+        const [jsonData, setJsonData] = React.useState(null);
+        const [pageCommentary, setPageCommentary] = React.useState("");
+        const [tableCommentary, setTableCommentary] = React.useState("");
+        const [chartType, setChartType] = React.useState(null);
+        const [xLabel, setXLabel] = React.useState("");
+        const [yLabel, setYLabel] = React.useState("");
+
+        // Function to parse chart name from URL
+        const parseChartNameFromURL = () => {
+          const urlParams = new URLSearchParams(window.location.search);
+          return urlParams.get("chart");
+        };
+
+        // Fetch JSON data
+        React.useEffect(() => {
+          const basePath = "/Python.JS Scripts/Clean Data/";
+          const chartName = parseChartNameFromURL();
+          const csvFilePath = "/Content/Chart-Visual-Database.csv";
+
+          // Fetch and parse CSV data using Papa Parse
+          Papa.parse(csvFilePath, {
+            download: true,
+            header: true,
+            complete: (results) => {
+              const chartRow = results.data.find(
+                (row) => row["Visual-Chart-Name"] === chartName
+              );
+              if (chartRow) {
+                const filePath = chartRow["File-Path"];
+                const jsonDataFilePath = basePath + filePath;
+
+                // Set Page Commentary and Table Commentary
+                setPageCommentary(chartRow["Page Commentary"]);
+                setTableCommentary(chartRow["Table Commentary"]);
+                setChartType(chartRow["Chart-Type"]);
+                setXLabel(chartRow["X-Label"]); // Set X Label
+                setYLabel(chartRow["Y-Label"]); // Set Y Label
+
+                console.log("X-Label:", chartRow["X-Label"]);
+                console.log("Y-Label:", chartRow["Y-Label"]);
+                console.log("Chart Type:", chartRow["Chart-Type"]);
+
+                // Fetch JSON data
+                fetch(jsonDataFilePath)
+                  .then((response) => {
+                    if (!response.ok) {
+                      throw new Error("Network response was not ok");
+                    }
+                    return response.json();
+                  })
+                  .then((data) => {
+                    console.log("JSON data fetched successfully:", data);
+                    setJsonData(data);
+                  })
+                  .catch((error) => {
+                    console.error("Error fetching JSON data:", error);
+                  });
+              } else {
+                console.error("Chart not found in CSV:", chartName);
+              }
+            },
+            error: (error) => {
+              console.error("Error parsing CSV:", error);
+            },
+          });
+        }, []);
+
+        // Determine which chart component to render
+        const getChartComponent = (chartType) => {
+          switch (chartType) {
+            case "line":
+              return (
+                <LineChart
+                  jsonData={jsonData}
+                  xLabel={xLabel}
+                  yLabel={yLabel}
+                />
+              );
+            case "grouped-bar":
+              return <GroupedBarChart jsonData={jsonData} />;
+            case "grouped-bar-map":
+              return <MapChart jsonData={jsonData} />;
+            case "crime-line":
+              return <CrimeChart jsonData={jsonData} />;
+            case "survey-bar":
+              return <SurveyChart jsonData={jsonData} />;
+            case "pyramid":
+              return <PopulationChart jsonData={jsonData} />;
+            default:
+              return null;
+          }
+        };
+
+        // Render content
+        return (
+          <div className="grid-container">
+            <div
+              className="grid-item grid-item-chart"
+              style={{ gridColumn: "span 2", gridRow: "span 5" }}
+            >
+              {/* Render the appropriate chart component */}
+              {getChartComponent(chartType, jsonData, xLabel, yLabel)}
+            </div>
+            <div
+              className="grid-item"
+              style={{ gridColumn: "span 1", gridRow: "span 3" }}
+            >
+              <h2>Chart Info</h2>
+              <p>{tableCommentary}</p>
+            </div>
+            <div
+              className="grid-item"
+              style={{ gridColumn: "span 1", gridRow: "span 2" }}
+            >
+              <h2>Chart Commentary</h2>
+              <p>{pageCommentary}</p>
+            </div>
+          </div>
+        );
+      }
+
+      // Render the GridExample component in the root div
+      ReactDOM.render(<GridExample />, document.getElementById("root"));
+    </script>
+
+    <script src="/Scripts/chart-menu.js"></script>
+    <script src="/Scripts/chart-data.js"></script>
+  </body>
+</html>

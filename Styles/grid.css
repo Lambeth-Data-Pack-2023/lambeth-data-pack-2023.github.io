@@ -1,0 +1,24 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+  height: 100%;
+}
+#root {
+  height: 80%;
+}
+.grid-item {
+  background-color: white;
+  border: 1px solid #212c61;
+  padding: 20px;
+  transition: all ease-in 0.3s;
+  overflow-y: scroll;
+}
+.grid-item:hover {
+  background-color: #faa91cad;
+}
+.grid-item img {
+  max-height: 80%;
+  max-width: 80%;
+}

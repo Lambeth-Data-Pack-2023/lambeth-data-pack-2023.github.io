@@ -1,0 +1,146 @@
+[
+  {
+    "AreaName": "England",
+    "MeasureOfWellbeing": "Anxiety",
+    "Time period": "2022-23",
+    "Average Value": 3.24
+  },
+  {
+    "AreaName": "England",
+    "MeasureOfWellbeing": "Happiness",
+    "Time period": "2022-23",
+    "Average Value": 7.38
+  },
+  {
+    "AreaName": "England",
+    "MeasureOfWellbeing": "Life satisfaction",
+    "Time period": "2022-23",
+    "Average Value": 7.44
+  },
+  {
+    "AreaName": "England",
+    "MeasureOfWellbeing": "Worthwhile",
+    "Time period": "2022-23",
+    "Average Value": 7.73
+  },
+  {
+    "AreaName": "Lambeth",
+    "MeasureOfWellbeing": "Anxiety",
+    "Time period": "2022-23",
+    "Average Value": 3.45
+  },
+  {
+    "AreaName": "Lambeth",
+    "MeasureOfWellbeing": "Happiness",
+    "Time period": "2022-23",
+    "Average Value": 7.5
+  },
+  {
+    "AreaName": "Lambeth",
+    "MeasureOfWellbeing": "Life satisfaction",
+    "Time period": "2022-23",
+    "Average Value": 7.63
+  },
+  {
+    "AreaName": "Lambeth",
+    "MeasureOfWellbeing": "Worthwhile",
+    "Time period": "2022-23",
+    "Average Value": 7.75
+  },
+  {
+    "AreaName": "London",
+    "MeasureOfWellbeing": "Anxiety",
+    "Time period": "2022-23",
+    "Average Value": 3.34
+  },
+  {
+    "AreaName": "London",
+    "MeasureOfWellbeing": "Happiness",
+    "Time period": "2022-23",
+    "Average Value": 7.32
+  },
+  {
+    "AreaName": "London",
+    "MeasureOfWellbeing": "Life satisfaction",
+    "Time period": "2022-23",
+    "Average Value": 7.35
+  },
+  {
+    "AreaName": "London",
+    "MeasureOfWellbeing": "Worthwhile",
+    "Time period": "2022-23",
+    "Average Value": 7.6
+  },
+  {
+    "AreaName": "England",
+    "MeasureOfWellbeing": "Anxiety",
+    "Time period": "2021-22",
+    "Average Value": 3.13
+  },
+  {
+    "AreaName": "England",
+    "MeasureOfWellbeing": "Happiness",
+    "Time period": "2021-22",
+    "Average Value": 7.45
+  },
+  {
+    "AreaName": "England",
+    "MeasureOfWellbeing": "Life satisfaction",
+    "Time period": "2021-22",
+    "Average Value": 7.55
+  },
+  {
+    "AreaName": "England",
+    "MeasureOfWellbeing": "Worthwhile",
+    "Time period": "2021-22",
+    "Average Value": 7.78
+  },
+  {
+    "AreaName": "Lambeth",
+    "MeasureOfWellbeing": "Anxiety",
+    "Time period": "2021-22",
+    "Average Value": 3.92
+  },
+  {
+    "AreaName": "Lambeth",
+    "MeasureOfWellbeing": "Happiness",
+    "Time period": "2021-22",
+    "Average Value": 6.99
+  },
+  {
+    "AreaName": "Lambeth",
+    "MeasureOfWellbeing": "Life satisfaction",
+    "Time period": "2021-22",
+    "Average Value": 7.41
+  },
+  {
+    "AreaName": "Lambeth",
+    "MeasureOfWellbeing": "Worthwhile",
+    "Time period": "2021-22",
+    "Average Value": 7.6
+  },
+  {
+    "AreaName": "London",
+    "MeasureOfWellbeing": "Anxiety",
+    "Time period": "2021-22",
+    "Average Value": 3.28
+  },
+  {
+    "AreaName": "London",
+    "MeasureOfWellbeing": "Happiness",
+    "Time period": "2021-22",
+    "Average Value": 7.37
+  },
+  {
+    "AreaName": "London",
+    "MeasureOfWellbeing": "Life satisfaction",
+    "Time period": "2021-22",
+    "Average Value": 7.46
+  },
+  {
+    "AreaName": "London",
+    "MeasureOfWellbeing": "Worthwhile",
+    "Time period": "2021-22",
+    "Average Value": 7.68
+  }
+]

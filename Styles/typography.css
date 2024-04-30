@@ -1,0 +1,42 @@
+h1 {
+  text-align: center;
+  font-weight: lighter;
+  font-family: Verdana;
+  color: white;
+}
+h2 {
+  text-align: center;
+  font-weight: 100;
+  font-family: Verdana;
+  color: #212c61;
+}
+h3 {
+  text-align: left;
+  font-weight: bolder;
+  font-family: Verdana;
+  color: #212c61;
+}
+h4 {
+  font-family: Verdana;
+  color: #212c61;
+}
+h5 {
+  font-family: Verdana;
+  color: #212c61;
+}
+h6 {
+  font-family: Verdana;
+  color: #212c61;
+}
+p {
+  color: #212c61;
+  text-align: left;
+}
+a {
+  text-decoration: none;
+  color: #212c61;
+  transition: all ease-in 0.2s;
+}
+a:hover {
+  color: #eca01d;
+}

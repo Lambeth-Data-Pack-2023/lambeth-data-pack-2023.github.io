@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome, Safari, and other WebKit-based browsers */
+}
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #212c61;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header button {
+  font-size: large;
+  height: 10vh;
+  margin-right: 20px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding: 4px;
+  cursor: pointer;
+  transition: ease-in all 0.2s;
+}
+header button:hover {
+  color: #faa71c;
+  background-color: transparent;
+}
+main {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 90vh;
+}
+header h1 {
+  margin: 0;
+}
+.container-left {
+  width: 33vw;
+  max-height: 100%;
+  border: 1px solid #212c61;
+  margin: 10px 5px 10px 10px;
+  padding: 10px;
+  overflow-y: scroll;
+}
+.container {
+  width: 100%;
+  max-height: 100%;
+  border: 1px solid #212c61;
+  margin: 10px 10px 10px 5px;
+  padding: 10px;
+}
+.flex {
+  display: flex;
+}
+.flex-w {
+  display: flex;
+  flex-wrap: wrap;
+}
+.centred {
+  width: 100%;
+  justify-content: center;
+}

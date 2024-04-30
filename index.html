@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lambeth | Data Packs 2024</title>
+    <link rel="stylesheet" href="/Styles/colours.css" />
+    <link rel="stylesheet" href="/Styles/images.css" />
+    <link rel="stylesheet" href="/Styles/typography.css" />
+    <link rel="stylesheet" href="/Styles/layout.css" />
+    <link rel="stylesheet" href="/Styles/button.css" />
+    <link rel="stylesheet" href="/Styles/header.css" />
+    <link rel="icon" type="image/png" href="/Images/Lambeth-logo-favicon.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <style>
+      main {
+        overflow-y: scroll;
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Page Header -->
+    <header>
+      <!-- The displayHeader() function outputs the header -->
+    </header>
+
+    <!-- Main Section of homepage -->
+    <main>
+      <!-- Main section's title-->
+      <h2>Welcome to Lambeth's Open Data Platform</h2>
+
+      <!-- Main section's content -->
+      <h3>New Open Data Platform</h3>
+      <p>
+        We are excited to introduce our new Open Data Platform, designed to
+        support businesses, charities and the wider community in our local area.
+        With this platform, users can access a wealth of up-to-date data and
+        information, providing valuable insights and enabling informed
+        decision-making. Whether you're a local business owner, community group
+        leader, or concerned residents, our Open Data Platform is the perfect
+        tool for unlocking the potential of our community.
+      </p>
+      <h3>Updated Data Packs for 2024</h3>
+      <p>
+        Introducing the Data Packs - a thorough and insightful compilation
+        shedding light on the current state of affairs within our local area.
+        These packs offer a comprehensive analysis of key issues, prevailing
+        trends, and potential opportunities shaping the future of our community.
+        The data is currently undergoing final development to ensure accuracy
+        and relevance.
+      </p>
+      <!-- Buttons that link to each Ambition's individual page -->
+      <div class="flex-w centred">
+        <button class="ambition-button" id="ambition1">
+          <div class="flex">
+            <div>
+              <h3 class="lambeth-blue">
+                1. Making Lambeth neighbourhoods fit for the future
+              </h3>
+              <p>
+                By 2030, Lambeth will be a clean, vibrant and climate resilient
+                borough where people can lead healthier, happier lives.
+              </p>
+            </div>
+          </div>
+        </button>
+        <button class="ambition-button" id="ambition2">
+          <div class="flex">
+            <div>
+              <h3 class="lambeth-blue">
+                2. Making Lambeth one of the safest boroughs in London
+              </h3>
+              <p>
+                By 2030, Lambeth will be one of the safest boroughs in London,
+                where everyone feels safe and secure – in all places.
+              </p>
+            </div>
+          </div>
+        </button>
+        <button class="ambition-button" id="ambition3">
+          <div class="flex">
+            <div>
+              <h3 class="lambeth-blue">
+                3. Making Lambeth a place we can all call home
+              </h3>
+              <p>
+                By 2030, Lambeth will be a lifelong borough, with the best
+                conditions to grow up and age well, where everyone can
+                contribute to an inclusive economy, and have a place to call
+                home.
+              </p>
+            </div>
+          </div>
+        </button>
+      </div>
+    </main>
+
+    <!-- The displayHeader() function is linked from it's file -->
+    <script src="/Scripts/header.js"></script>
+    <!-- Function to add links to the Ambition buttons -->
+    <script>
+      // Iterate over elements to dynamically generate button links
+      for (let i = 1; i <= 3; i++) {
+        const element = document.getElementById(`ambition${i}`);
+        element.addEventListener("click", function () {
+          window.location.href = `/ambitions.html?ambition=${i}`;
+        });
+      }
+    </script>
+  </body>
+</html>
