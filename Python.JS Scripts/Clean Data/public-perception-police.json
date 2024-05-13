@@ -1,0 +1,62 @@
+[
+  {
+    "Time period": "June 2021",
+    "Opinion": "Police do a good job in the local area",
+    "Value": 54.0,
+    "AreaName": "London"
+  },
+  {
+    "Time period": "September 2021",
+    "Opinion": "Police do a good job in the local area",
+    "Value": 52.0,
+    "AreaName": "London"
+  },
+  {
+    "Time period": "December 2021",
+    "Opinion": "Police do a good job in the local area",
+    "Value": 51.0,
+    "AreaName": "London"
+  },
+  {
+    "Time period": "March 2022",
+    "Opinion": "Police do a good job in the local area",
+    "Value": 49.0,
+    "AreaName": "London"
+  },
+  {
+    "Time period": "June 2022",
+    "Opinion": "Police do a good job in the local area",
+    "Value": 49.0,
+    "AreaName": "London"
+  },
+  {
+    "Time period": "June 2021",
+    "Opinion": "Police do a good job in the local area",
+    "Value": 49.0,
+    "AreaName": "Lambeth"
+  },
+  {
+    "Time period": "September 2021",
+    "Opinion": "Police do a good job in the local area",
+    "Value": 48.0,
+    "AreaName": "Lambeth"
+  },
+  {
+    "Time period": "December 2021",
+    "Opinion": "Police do a good job in the local area",
+    "Value": 45.0,
+    "AreaName": "Lambeth"
+  },
+  {
+    "Time period": "March 2022",
+    "Opinion": "Police do a good job in the local area",
+    "Value": 40.0,
+    "AreaName": "Lambeth"
+  },
+  {
+    "Time period": "June 2022",
+    "Opinion": "Police do a good job in the local area",
+    "Value": 43.0,
+    "AreaName": "Lambeth"
+  }
+]

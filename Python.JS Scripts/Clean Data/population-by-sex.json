@@ -1,0 +1,38 @@
+[
+  { "AreaName": "Lambeth", "Female": 163713, "Male": 153941 },
+  { "AreaName": "Brixton Acre Lane", "Female": 7517, "Male": 7735 },
+  { "AreaName": "Brixton North", "Female": 8443, "Male": 7881 },
+  { "AreaName": "Brixton Rush Common", "Female": 7895, "Male": 7035 },
+  { "AreaName": "Brixton Windrush", "Female": 4920, "Male": 4562 },
+  { "AreaName": "Clapham Common & Abbeville", "Female": 5192, "Male": 4823 },
+  { "AreaName": "Clapham East", "Female": 5198, "Male": 4647 },
+  { "AreaName": "Clapham Park", "Female": 6603, "Male": 6108 },
+  { "AreaName": "Clapham Town", "Female": 8127, "Male": 7777 },
+  { "AreaName": "Gipsy Hill", "Female": 5473, "Male": 4784 },
+  {
+    "AreaName": "Herne Hill & Loughborough Junction",
+    "Female": 8431,
+    "Male": 7725
+  },
+  { "AreaName": "Kennington", "Female": 7378, "Male": 7225 },
+  { "AreaName": "Knight's Hill", "Female": 8968, "Male": 7939 },
+  { "AreaName": "Myatt's Fields", "Female": 5625, "Male": 5307 },
+  { "AreaName": "Oval", "Female": 6079, "Male": 6362 },
+  { "AreaName": "St Martin's", "Female": 5775, "Male": 5069 },
+  { "AreaName": "Stockwell East", "Female": 5440, "Male": 5306 },
+  { "AreaName": "Stockwell West & Larkhall", "Female": 8310, "Male": 8022 },
+  { "AreaName": "Streatham Common & Vale", "Female": 9076, "Male": 8583 },
+  { "AreaName": "Streatham Hill East", "Female": 5120, "Male": 4757 },
+  {
+    "AreaName": "Streatham Hill West & Thornton",
+    "Female": 5685,
+    "Male": 5206
+  },
+  { "AreaName": "Streatham St Leonard's", "Female": 8122, "Male": 7692 },
+  { "AreaName": "Streatham Wells", "Female": 5066, "Male": 4691 },
+  { "AreaName": "Vauxhall", "Female": 4733, "Male": 5000 },
+  { "AreaName": "Waterloo & South Bank", "Female": 4512, "Male": 4346 },
+  { "AreaName": "West Dulwich", "Female": 6028, "Male": 5356 },
+  { "AreaName": "England", "Female": 28833712, "Male": 27656336 },
+  { "AreaName": "London", "Female": 4531622, "Male": 4268106 }
+]
