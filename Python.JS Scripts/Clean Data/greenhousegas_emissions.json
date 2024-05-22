@@ -1,0 +1,38 @@
+[
+  {
+    "AreaName": "Lambeth",
+    "Time period": 2020,
+    "Total GHG emissions (ktCO2e)": 870.0,
+    "Value": 2.68
+  },
+  {
+    "AreaName": "Lambeth",
+    "Time period": 2021,
+    "Total GHG emissions (ktCO2e)": 926.0,
+    "Value": 2.92
+  },
+  {
+    "AreaName": "London",
+    "Time period": 2020,
+    "Total GHG emissions (ktCO2e)": 27476.0,
+    "Value": 3.11
+  },
+  {
+    "AreaName": "London",
+    "Time period": 2021,
+    "Total GHG emissions (ktCO2e)": 29948.0,
+    "Value": 3.4
+  },
+  {
+    "AreaName": "England",
+    "Time period": 2020,
+    "Total GHG emissions (ktCO2e)": 291927.0,
+    "Value": 5.16
+  },
+  {
+    "AreaName": "England",
+    "Time period": 2021,
+    "Total GHG emissions (ktCO2e)": 309040.0,
+    "Value": 5.47
+  }
+]

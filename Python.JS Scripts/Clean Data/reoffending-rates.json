@@ -1,0 +1,44 @@
+[
+  {
+    "AreaName": "England and Wales",
+    "Time period": "2021",
+    "Number of offenders": 288877,
+    "Number of reoffenders": 69281,
+    "Value": 24.0
+  },
+  {
+    "AreaName": "Lambeth",
+    "Time period": "2021",
+    "Number of offenders": 2006,
+    "Number of reoffenders": 517,
+    "Value": 25.8
+  },
+  {
+    "AreaName": "London",
+    "Time period": "2021",
+    "Number of offenders": 43156,
+    "Number of reoffenders": 10242,
+    "Value": 23.7
+  },
+  {
+    "AreaName": "England and Wales",
+    "Time period": "2022",
+    "Number of offenders": 317283,
+    "Number of reoffenders": 79004,
+    "Value": 24.9
+  },
+  {
+    "AreaName": "Lambeth",
+    "Time period": "2022",
+    "Number of offenders": 2217,
+    "Number of reoffenders": 511,
+    "Value": 23.0
+  },
+  {
+    "AreaName": "London",
+    "Time period": "2022",
+    "Number of offenders": 45381,
+    "Number of reoffenders": 10285,
+    "Value": 22.7
+  }
+]

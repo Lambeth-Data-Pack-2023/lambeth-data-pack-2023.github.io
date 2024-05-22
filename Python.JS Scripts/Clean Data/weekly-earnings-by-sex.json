@@ -1,0 +1,158 @@
+[
+  { "AreaName": "Lambeth", "Time period": 2022, "Sex": "Male", "Value": 767.2 },
+  { "AreaName": "England", "Time period": 2022, "Sex": "Male", "Value": 631.6 },
+  { "AreaName": "London", "Time period": 2022, "Sex": "Male", "Value": 718.7 },
+  { "AreaName": "Lambeth", "Time period": 2023, "Sex": "Male", "Value": null },
+  { "AreaName": "England", "Time period": 2023, "Sex": "Male", "Value": null },
+  { "AreaName": "London", "Time period": 2023, "Sex": "Male", "Value": null },
+  {
+    "AreaName": "Lambeth",
+    "Time period": 2022,
+    "Sex": "Female",
+    "Value": 658.4
+  },
+  {
+    "AreaName": "England",
+    "Time period": 2022,
+    "Sex": "Female",
+    "Value": 450.1
+  },
+  {
+    "AreaName": "London",
+    "Time period": 2022,
+    "Sex": "Female",
+    "Value": 574.9
+  },
+  {
+    "AreaName": "Lambeth",
+    "Time period": 2023,
+    "Sex": "Female",
+    "Value": null
+  },
+  {
+    "AreaName": "England",
+    "Time period": 2023,
+    "Sex": "Female",
+    "Value": null
+  },
+  { "AreaName": "London", "Time period": 2023, "Sex": "Female", "Value": null },
+  { "AreaName": "Lambeth", "Time period": 2022, "Sex": "Total", "Value": 703 },
+  {
+    "AreaName": "England",
+    "Time period": 2022,
+    "Sex": "Total",
+    "Value": 536.6
+  },
+  { "AreaName": "London", "Time period": 2022, "Sex": "Total", "Value": 648.1 },
+  { "AreaName": "Lambeth", "Time period": 2023, "Sex": "Total", "Value": null },
+  { "AreaName": "England", "Time period": 2023, "Sex": "Total", "Value": null },
+  { "AreaName": "London", "Time period": 2023, "Sex": "Total", "Value": null },
+  {
+    "AreaName": "Lambeth",
+    "Time period": 2022,
+    "Sex": "Male Full Time Workers",
+    "Value": null
+  },
+  {
+    "AreaName": "England",
+    "Time period": 2022,
+    "Sex": "Male Full Time Workers",
+    "Value": null
+  },
+  {
+    "AreaName": "London",
+    "Time period": 2022,
+    "Sex": "Male Full Time Workers",
+    "Value": null
+  },
+  {
+    "AreaName": "Lambeth",
+    "Time period": 2023,
+    "Sex": "Male Full Time Workers",
+    "Value": 1166.1
+  },
+  {
+    "AreaName": "England",
+    "Time period": 2023,
+    "Sex": "Male Full Time Workers",
+    "Value": 869.7
+  },
+  {
+    "AreaName": "London",
+    "Time period": 2023,
+    "Sex": "Male Full Time Workers",
+    "Value": 1065.6
+  },
+  {
+    "AreaName": "Lambeth",
+    "Time period": 2022,
+    "Sex": "Female Full Time Workers",
+    "Value": null
+  },
+  {
+    "AreaName": "England",
+    "Time period": 2022,
+    "Sex": "Female Full Time Workers",
+    "Value": null
+  },
+  {
+    "AreaName": "London",
+    "Time period": 2022,
+    "Sex": "Female Full Time Workers",
+    "Value": null
+  },
+  {
+    "AreaName": "Lambeth",
+    "Time period": 2023,
+    "Sex": "Female Full Time Workers",
+    "Value": 924
+  },
+  {
+    "AreaName": "England",
+    "Time period": 2023,
+    "Sex": "Female Full Time Workers",
+    "Value": 729
+  },
+  {
+    "AreaName": "London",
+    "Time period": 2023,
+    "Sex": "Female Full Time Workers",
+    "Value": 886.5
+  },
+  {
+    "AreaName": "Lambeth",
+    "Time period": 2022,
+    "Sex": "Full Time Workers",
+    "Value": null
+  },
+  {
+    "AreaName": "England",
+    "Time period": 2022,
+    "Sex": "Full Time Workers",
+    "Value": null
+  },
+  {
+    "AreaName": "London",
+    "Time period": 2022,
+    "Sex": "Full Time Workers",
+    "Value": null
+  },
+  {
+    "AreaName": "Lambeth",
+    "Time period": 2023,
+    "Sex": "Full Time Workers",
+    "Value": 1064.2
+  },
+  {
+    "AreaName": "England",
+    "Time period": 2023,
+    "Sex": "Full Time Workers",
+    "Value": 812.4
+  },
+  {
+    "AreaName": "London",
+    "Time period": 2023,
+    "Sex": "Full Time Workers",
+    "Value": 985.6
+  }
+]

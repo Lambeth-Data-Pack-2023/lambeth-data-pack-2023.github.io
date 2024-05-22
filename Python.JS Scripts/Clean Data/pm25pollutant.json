@@ -1,0 +1,20 @@
+[
+  {
+    "AreaName": "Lambeth",
+    "Time period": "2019",
+    "Concentration": 11.2,
+    "Exceeding (%)": 100.0
+  },
+  {
+    "AreaName": "Inner London",
+    "Time period": "2019",
+    "Concentration": 11.3,
+    "Exceeding (%)": 100.0
+  },
+  {
+    "AreaName": "Outer London",
+    "Time period": "2019",
+    "Concentration": 10.3,
+    "Exceeding (%)": 81.08
+  }
+]

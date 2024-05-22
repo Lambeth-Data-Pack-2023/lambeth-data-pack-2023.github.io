@@ -1,42 +1,42 @@
 [
   {
-    "Geography": "England",
+    "AreaName": "England",
     "MeasureOfWellbeing": "Anxiety",
     "2022-23": 3.24
   },
   {
-    "Geography": "England",
+    "AreaName": "England",
     "MeasureOfWellbeing": "Happiness",
     "2022-23": 7.38
   },
   {
-    "Geography": "England",
+    "AreaName": "England",
     "MeasureOfWellbeing": "Life satisfaction",
     "2022-23": 7.44
   },
   {
-    "Geography": "England",
+    "AreaName": "England",
     "MeasureOfWellbeing": "Worthwhile",
     "2022-23": 7.73
   },
-  { "Geography": "Lambeth", "MeasureOfWellbeing": "Anxiety", "2022-23": 3.45 },
-  { "Geography": "Lambeth", "MeasureOfWellbeing": "Happiness", "2022-23": 7.5 },
+  { "AreaName": "Lambeth", "MeasureOfWellbeing": "Anxiety", "2022-23": 3.45 },
+  { "AreaName": "Lambeth", "MeasureOfWellbeing": "Happiness", "2022-23": 7.5 },
   {
-    "Geography": "Lambeth",
+    "AreaName": "Lambeth",
     "MeasureOfWellbeing": "Life satisfaction",
     "2022-23": 7.63
   },
   {
-    "Geography": "Lambeth",
+    "AreaName": "Lambeth",
     "MeasureOfWellbeing": "Worthwhile",
     "2022-23": 7.75
   },
-  { "Geography": "London", "MeasureOfWellbeing": "Anxiety", "2022-23": 3.34 },
-  { "Geography": "London", "MeasureOfWellbeing": "Happiness", "2022-23": 7.32 },
+  { "AreaName": "London", "MeasureOfWellbeing": "Anxiety", "2022-23": 3.34 },
+  { "AreaName": "London", "MeasureOfWellbeing": "Happiness", "2022-23": 7.32 },
   {
-    "Geography": "London",
+    "AreaName": "London",
     "MeasureOfWellbeing": "Life satisfaction",
     "2022-23": 7.35
   },
-  { "Geography": "London", "MeasureOfWellbeing": "Worthwhile", "2022-23": 7.6 }
+  { "AreaName": "London", "MeasureOfWellbeing": "Worthwhile", "2022-23": 7.6 }
 ]

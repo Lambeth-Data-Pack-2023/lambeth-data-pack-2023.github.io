@@ -1,0 +1,44 @@
+[
+  {
+    "AreaName": "Lambeth",
+    "Estimated number of households": 128400,
+    "Total number of solar PV installations in area": 1169,
+    "Value": 9.1,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "London",
+    "Estimated number of households": 3502400,
+    "Total number of solar PV installations in area": 51172,
+    "Value": 14.61,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "England",
+    "Estimated number of households": 23077300,
+    "Total number of solar PV installations in area": 1016386,
+    "Value": 44.04,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "Lambeth",
+    "Estimated number of households": 128400,
+    "Total number of solar PV installations in area": 1069,
+    "Value": 8.33,
+    "Time period": 2021
+  },
+  {
+    "AreaName": "London",
+    "Estimated number of households": 3502400,
+    "Total number of solar PV installations in area": 45467,
+    "Value": 12.98,
+    "Time period": 2021
+  },
+  {
+    "AreaName": "England",
+    "Estimated number of households": 23077300,
+    "Total number of solar PV installations in area": 910261,
+    "Value": 39.44,
+    "Time period": 2021
+  }
+]
