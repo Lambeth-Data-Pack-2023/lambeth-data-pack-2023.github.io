@@ -1,0 +1,20 @@
+[
+  {
+    "Total square km of tree canopy": 4327299.0,
+    "Total square km": 27252898.0,
+    "Percentage of tree canopy cover": 15.88,
+    "AreaName": "Lambeth"
+  },
+  {
+    "Total square km of tree canopy": 55232828.0,
+    "Total square km": 306930338.0,
+    "Percentage of tree canopy cover": 18.0,
+    "AreaName": "Inner London"
+  },
+  {
+    "Total square km of tree canopy": 335866707.0,
+    "Total square km": 1594701058.0,
+    "Percentage of tree canopy cover": 21.06,
+    "AreaName": "London"
+  }
+]

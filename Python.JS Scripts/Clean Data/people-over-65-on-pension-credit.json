@@ -1,0 +1,982 @@
+[
+  {
+    "AreaName": "Lambeth",
+    "Time period": "Aug-19",
+    "Value": 7883,
+    "Aged over 65 (2020)": 27265,
+    "Percent": 28.9
+  },
+  {
+    "AreaName": "Lambeth",
+    "Time period": "Aug-20",
+    "Value": 7534,
+    "Aged over 65 (2020)": 27265,
+    "Percent": 27.6
+  },
+  {
+    "AreaName": "Lambeth",
+    "Time period": "Aug-21",
+    "Value": 7329,
+    "Aged over 65 (2020)": 27265,
+    "Percent": 26.9
+  },
+  {
+    "AreaName": "Lambeth",
+    "Time period": "Aug-22",
+    "Value": 7254,
+    "Aged over 65 (2020)": 27265,
+    "Percent": 26.6
+  },
+  {
+    "AreaName": "Lambeth",
+    "Time period": "Aug-23",
+    "Value": 7501,
+    "Aged over 65 (2020)": 27265,
+    "Percent": 27.5
+  },
+  {
+    "AreaName": "Brixton Acre Lane",
+    "Time period": "Aug-19",
+    "Value": 378,
+    "Aged over 65 (2020)": 1141,
+    "Percent": 33.1
+  },
+  {
+    "AreaName": "Brixton Acre Lane",
+    "Time period": "Aug-20",
+    "Value": 358,
+    "Aged over 65 (2020)": 1141,
+    "Percent": 31.4
+  },
+  {
+    "AreaName": "Brixton Acre Lane",
+    "Time period": "Aug-21",
+    "Value": 351,
+    "Aged over 65 (2020)": 1141,
+    "Percent": 30.8
+  },
+  {
+    "AreaName": "Brixton Acre Lane",
+    "Time period": "Aug-22",
+    "Value": 340,
+    "Aged over 65 (2020)": 1141,
+    "Percent": 29.8
+  },
+  {
+    "AreaName": "Brixton Acre Lane",
+    "Time period": "Aug-23",
+    "Value": 362,
+    "Aged over 65 (2020)": 1141,
+    "Percent": 31.7
+  },
+  {
+    "AreaName": "Brixton North",
+    "Time period": "Aug-19",
+    "Value": 571,
+    "Aged over 65 (2020)": 1225,
+    "Percent": 46.6
+  },
+  {
+    "AreaName": "Brixton North",
+    "Time period": "Aug-20",
+    "Value": 549,
+    "Aged over 65 (2020)": 1225,
+    "Percent": 44.8
+  },
+  {
+    "AreaName": "Brixton North",
+    "Time period": "Aug-21",
+    "Value": 538,
+    "Aged over 65 (2020)": 1225,
+    "Percent": 43.9
+  },
+  {
+    "AreaName": "Brixton North",
+    "Time period": "Aug-22",
+    "Value": 543,
+    "Aged over 65 (2020)": 1225,
+    "Percent": 44.3
+  },
+  {
+    "AreaName": "Brixton North",
+    "Time period": "Aug-23",
+    "Value": 562,
+    "Aged over 65 (2020)": 1225,
+    "Percent": 45.9
+  },
+  {
+    "AreaName": "Brixton Rush Common",
+    "Time period": "Aug-19",
+    "Value": 353,
+    "Aged over 65 (2020)": 1107,
+    "Percent": 31.9
+  },
+  {
+    "AreaName": "Brixton Rush Common",
+    "Time period": "Aug-20",
+    "Value": 328,
+    "Aged over 65 (2020)": 1107,
+    "Percent": 29.6
+  },
+  {
+    "AreaName": "Brixton Rush Common",
+    "Time period": "Aug-21",
+    "Value": 312,
+    "Aged over 65 (2020)": 1107,
+    "Percent": 28.2
+  },
+  {
+    "AreaName": "Brixton Rush Common",
+    "Time period": "Aug-22",
+    "Value": 316,
+    "Aged over 65 (2020)": 1107,
+    "Percent": 28.5
+  },
+  {
+    "AreaName": "Brixton Rush Common",
+    "Time period": "Aug-23",
+    "Value": 323,
+    "Aged over 65 (2020)": 1107,
+    "Percent": 29.2
+  },
+  {
+    "AreaName": "Brixton Windrush",
+    "Time period": "Aug-19",
+    "Value": 284,
+    "Aged over 65 (2020)": 624,
+    "Percent": 45.5
+  },
+  {
+    "AreaName": "Brixton Windrush",
+    "Time period": "Aug-20",
+    "Value": 257,
+    "Aged over 65 (2020)": 624,
+    "Percent": 41.2
+  },
+  {
+    "AreaName": "Brixton Windrush",
+    "Time period": "Aug-21",
+    "Value": 261,
+    "Aged over 65 (2020)": 624,
+    "Percent": 41.8
+  },
+  {
+    "AreaName": "Brixton Windrush",
+    "Time period": "Aug-22",
+    "Value": 251,
+    "Aged over 65 (2020)": 624,
+    "Percent": 40.2
+  },
+  {
+    "AreaName": "Brixton Windrush",
+    "Time period": "Aug-23",
+    "Value": 275,
+    "Aged over 65 (2020)": 624,
+    "Percent": 44.1
+  },
+  {
+    "AreaName": "Clapham Common & Abbeville",
+    "Time period": "Aug-19",
+    "Value": 150,
+    "Aged over 65 (2020)": 774,
+    "Percent": 19.4
+  },
+  {
+    "AreaName": "Clapham Common & Abbeville",
+    "Time period": "Aug-20",
+    "Value": 143,
+    "Aged over 65 (2020)": 774,
+    "Percent": 18.5
+  },
+  {
+    "AreaName": "Clapham Common & Abbeville",
+    "Time period": "Aug-21",
+    "Value": 139,
+    "Aged over 65 (2020)": 774,
+    "Percent": 18.0
+  },
+  {
+    "AreaName": "Clapham Common & Abbeville",
+    "Time period": "Aug-22",
+    "Value": 140,
+    "Aged over 65 (2020)": 774,
+    "Percent": 18.1
+  },
+  {
+    "AreaName": "Clapham Common & Abbeville",
+    "Time period": "Aug-23",
+    "Value": 138,
+    "Aged over 65 (2020)": 774,
+    "Percent": 17.8
+  },
+  {
+    "AreaName": "Clapham East",
+    "Time period": "Aug-19",
+    "Value": 249,
+    "Aged over 65 (2020)": 699,
+    "Percent": 35.6
+  },
+  {
+    "AreaName": "Clapham East",
+    "Time period": "Aug-20",
+    "Value": 226,
+    "Aged over 65 (2020)": 699,
+    "Percent": 32.3
+  },
+  {
+    "AreaName": "Clapham East",
+    "Time period": "Aug-21",
+    "Value": 213,
+    "Aged over 65 (2020)": 699,
+    "Percent": 30.5
+  },
+  {
+    "AreaName": "Clapham East",
+    "Time period": "Aug-22",
+    "Value": 212,
+    "Aged over 65 (2020)": 699,
+    "Percent": 30.3
+  },
+  {
+    "AreaName": "Clapham East",
+    "Time period": "Aug-23",
+    "Value": 219,
+    "Aged over 65 (2020)": 699,
+    "Percent": 31.3
+  },
+  {
+    "AreaName": "Clapham Park",
+    "Time period": "Aug-19",
+    "Value": 317,
+    "Aged over 65 (2020)": 917,
+    "Percent": 34.6
+  },
+  {
+    "AreaName": "Clapham Park",
+    "Time period": "Aug-20",
+    "Value": 303,
+    "Aged over 65 (2020)": 917,
+    "Percent": 33.0
+  },
+  {
+    "AreaName": "Clapham Park",
+    "Time period": "Aug-21",
+    "Value": 289,
+    "Aged over 65 (2020)": 917,
+    "Percent": 31.5
+  },
+  {
+    "AreaName": "Clapham Park",
+    "Time period": "Aug-22",
+    "Value": 282,
+    "Aged over 65 (2020)": 917,
+    "Percent": 30.8
+  },
+  {
+    "AreaName": "Clapham Park",
+    "Time period": "Aug-23",
+    "Value": 303,
+    "Aged over 65 (2020)": 917,
+    "Percent": 33.0
+  },
+  {
+    "AreaName": "Clapham Town",
+    "Time period": "Aug-19",
+    "Value": 326,
+    "Aged over 65 (2020)": 1336,
+    "Percent": 24.4
+  },
+  {
+    "AreaName": "Clapham Town",
+    "Time period": "Aug-20",
+    "Value": 322,
+    "Aged over 65 (2020)": 1336,
+    "Percent": 24.1
+  },
+  {
+    "AreaName": "Clapham Town",
+    "Time period": "Aug-21",
+    "Value": 316,
+    "Aged over 65 (2020)": 1336,
+    "Percent": 23.7
+  },
+  {
+    "AreaName": "Clapham Town",
+    "Time period": "Aug-22",
+    "Value": 310,
+    "Aged over 65 (2020)": 1336,
+    "Percent": 23.2
+  },
+  {
+    "AreaName": "Clapham Town",
+    "Time period": "Aug-23",
+    "Value": 309,
+    "Aged over 65 (2020)": 1336,
+    "Percent": 23.1
+  },
+  {
+    "AreaName": "Gipsy Hill",
+    "Time period": "Aug-19",
+    "Value": 313,
+    "Aged over 65 (2020)": 955,
+    "Percent": 32.8
+  },
+  {
+    "AreaName": "Gipsy Hill",
+    "Time period": "Aug-20",
+    "Value": 309,
+    "Aged over 65 (2020)": 955,
+    "Percent": 32.4
+  },
+  {
+    "AreaName": "Gipsy Hill",
+    "Time period": "Aug-21",
+    "Value": 290,
+    "Aged over 65 (2020)": 955,
+    "Percent": 30.4
+  },
+  {
+    "AreaName": "Gipsy Hill",
+    "Time period": "Aug-22",
+    "Value": 277,
+    "Aged over 65 (2020)": 955,
+    "Percent": 29.0
+  },
+  {
+    "AreaName": "Gipsy Hill",
+    "Time period": "Aug-23",
+    "Value": 304,
+    "Aged over 65 (2020)": 955,
+    "Percent": 31.8
+  },
+  {
+    "AreaName": "Herne Hill & Loughborough Junction",
+    "Time period": "Aug-19",
+    "Value": 377,
+    "Aged over 65 (2020)": 1298,
+    "Percent": 29.0
+  },
+  {
+    "AreaName": "Herne Hill & Loughborough Junction",
+    "Time period": "Aug-20",
+    "Value": 361,
+    "Aged over 65 (2020)": 1298,
+    "Percent": 27.8
+  },
+  {
+    "AreaName": "Herne Hill & Loughborough Junction",
+    "Time period": "Aug-21",
+    "Value": 347,
+    "Aged over 65 (2020)": 1298,
+    "Percent": 26.7
+  },
+  {
+    "AreaName": "Herne Hill & Loughborough Junction",
+    "Time period": "Aug-22",
+    "Value": 357,
+    "Aged over 65 (2020)": 1298,
+    "Percent": 27.5
+  },
+  {
+    "AreaName": "Herne Hill & Loughborough Junction",
+    "Time period": "Aug-23",
+    "Value": 367,
+    "Aged over 65 (2020)": 1298,
+    "Percent": 28.3
+  },
+  {
+    "AreaName": "Kennington",
+    "Time period": "Aug-19",
+    "Value": 475,
+    "Aged over 65 (2020)": 1497,
+    "Percent": 31.7
+  },
+  {
+    "AreaName": "Kennington",
+    "Time period": "Aug-20",
+    "Value": 447,
+    "Aged over 65 (2020)": 1497,
+    "Percent": 29.9
+  },
+  {
+    "AreaName": "Kennington",
+    "Time period": "Aug-21",
+    "Value": 439,
+    "Aged over 65 (2020)": 1497,
+    "Percent": 29.3
+  },
+  {
+    "AreaName": "Kennington",
+    "Time period": "Aug-22",
+    "Value": 437,
+    "Aged over 65 (2020)": 1497,
+    "Percent": 29.2
+  },
+  {
+    "AreaName": "Kennington",
+    "Time period": "Aug-23",
+    "Value": 452,
+    "Aged over 65 (2020)": 1497,
+    "Percent": 30.2
+  },
+  {
+    "AreaName": "Knight's Hill",
+    "Time period": "Aug-19",
+    "Value": 424,
+    "Aged over 65 (2020)": 1682,
+    "Percent": 25.2
+  },
+  {
+    "AreaName": "Knight's Hill",
+    "Time period": "Aug-20",
+    "Value": 401,
+    "Aged over 65 (2020)": 1682,
+    "Percent": 23.8
+  },
+  {
+    "AreaName": "Knight's Hill",
+    "Time period": "Aug-21",
+    "Value": 382,
+    "Aged over 65 (2020)": 1682,
+    "Percent": 22.7
+  },
+  {
+    "AreaName": "Knight's Hill",
+    "Time period": "Aug-22",
+    "Value": 372,
+    "Aged over 65 (2020)": 1682,
+    "Percent": 22.1
+  },
+  {
+    "AreaName": "Knight's Hill",
+    "Time period": "Aug-23",
+    "Value": 370,
+    "Aged over 65 (2020)": 1682,
+    "Percent": 22.0
+  },
+  {
+    "AreaName": "Myatt's Fields",
+    "Time period": "Aug-19",
+    "Value": 365,
+    "Aged over 65 (2020)": 965,
+    "Percent": 37.8
+  },
+  {
+    "AreaName": "Myatt's Fields",
+    "Time period": "Aug-20",
+    "Value": 351,
+    "Aged over 65 (2020)": 965,
+    "Percent": 36.4
+  },
+  {
+    "AreaName": "Myatt's Fields",
+    "Time period": "Aug-21",
+    "Value": 336,
+    "Aged over 65 (2020)": 965,
+    "Percent": 34.8
+  },
+  {
+    "AreaName": "Myatt's Fields",
+    "Time period": "Aug-22",
+    "Value": 343,
+    "Aged over 65 (2020)": 965,
+    "Percent": 35.5
+  },
+  {
+    "AreaName": "Myatt's Fields",
+    "Time period": "Aug-23",
+    "Value": 371,
+    "Aged over 65 (2020)": 965,
+    "Percent": 38.4
+  },
+  {
+    "AreaName": "Oval",
+    "Time period": "Aug-19",
+    "Value": 379,
+    "Aged over 65 (2020)": 1235,
+    "Percent": 30.7
+  },
+  {
+    "AreaName": "Oval",
+    "Time period": "Aug-20",
+    "Value": 352,
+    "Aged over 65 (2020)": 1235,
+    "Percent": 28.5
+  },
+  {
+    "AreaName": "Oval",
+    "Time period": "Aug-21",
+    "Value": 361,
+    "Aged over 65 (2020)": 1235,
+    "Percent": 29.2
+  },
+  {
+    "AreaName": "Oval",
+    "Time period": "Aug-22",
+    "Value": 345,
+    "Aged over 65 (2020)": 1235,
+    "Percent": 27.9
+  },
+  {
+    "AreaName": "Oval",
+    "Time period": "Aug-23",
+    "Value": 357,
+    "Aged over 65 (2020)": 1235,
+    "Percent": 28.9
+  },
+  {
+    "AreaName": "St Martin's",
+    "Time period": "Aug-19",
+    "Value": 236,
+    "Aged over 65 (2020)": 720,
+    "Percent": 32.8
+  },
+  {
+    "AreaName": "St Martin's",
+    "Time period": "Aug-20",
+    "Value": 234,
+    "Aged over 65 (2020)": 720,
+    "Percent": 32.5
+  },
+  {
+    "AreaName": "St Martin's",
+    "Time period": "Aug-21",
+    "Value": 229,
+    "Aged over 65 (2020)": 720,
+    "Percent": 31.8
+  },
+  {
+    "AreaName": "St Martin's",
+    "Time period": "Aug-22",
+    "Value": 221,
+    "Aged over 65 (2020)": 720,
+    "Percent": 30.7
+  },
+  {
+    "AreaName": "St Martin's",
+    "Time period": "Aug-23",
+    "Value": 240,
+    "Aged over 65 (2020)": 720,
+    "Percent": 33.3
+  },
+  {
+    "AreaName": "Stockwell East",
+    "Time period": "Aug-19",
+    "Value": 292,
+    "Aged over 65 (2020)": 846,
+    "Percent": 34.5
+  },
+  {
+    "AreaName": "Stockwell East",
+    "Time period": "Aug-20",
+    "Value": 280,
+    "Aged over 65 (2020)": 846,
+    "Percent": 33.1
+  },
+  {
+    "AreaName": "Stockwell East",
+    "Time period": "Aug-21",
+    "Value": 273,
+    "Aged over 65 (2020)": 846,
+    "Percent": 32.3
+  },
+  {
+    "AreaName": "Stockwell East",
+    "Time period": "Aug-22",
+    "Value": 267,
+    "Aged over 65 (2020)": 846,
+    "Percent": 31.6
+  },
+  {
+    "AreaName": "Stockwell East",
+    "Time period": "Aug-23",
+    "Value": 280,
+    "Aged over 65 (2020)": 846,
+    "Percent": 33.1
+  },
+  {
+    "AreaName": "Stockwell West & Larkhall",
+    "Time period": "Aug-19",
+    "Value": 445,
+    "Aged over 65 (2020)": 1191,
+    "Percent": 37.4
+  },
+  {
+    "AreaName": "Stockwell West & Larkhall",
+    "Time period": "Aug-20",
+    "Value": 426,
+    "Aged over 65 (2020)": 1191,
+    "Percent": 35.8
+  },
+  {
+    "AreaName": "Stockwell West & Larkhall",
+    "Time period": "Aug-21",
+    "Value": 420,
+    "Aged over 65 (2020)": 1191,
+    "Percent": 35.3
+  },
+  {
+    "AreaName": "Stockwell West & Larkhall",
+    "Time period": "Aug-22",
+    "Value": 399,
+    "Aged over 65 (2020)": 1191,
+    "Percent": 33.5
+  },
+  {
+    "AreaName": "Stockwell West & Larkhall",
+    "Time period": "Aug-23",
+    "Value": 416,
+    "Aged over 65 (2020)": 1191,
+    "Percent": 34.9
+  },
+  {
+    "AreaName": "Streatham Common & Vale",
+    "Time period": "Aug-19",
+    "Value": 424,
+    "Aged over 65 (2020)": 2092,
+    "Percent": 20.3
+  },
+  {
+    "AreaName": "Streatham Common & Vale",
+    "Time period": "Aug-20",
+    "Value": 418,
+    "Aged over 65 (2020)": 2092,
+    "Percent": 20.0
+  },
+  {
+    "AreaName": "Streatham Common & Vale",
+    "Time period": "Aug-21",
+    "Value": 405,
+    "Aged over 65 (2020)": 2092,
+    "Percent": 19.4
+  },
+  {
+    "AreaName": "Streatham Common & Vale",
+    "Time period": "Aug-22",
+    "Value": 412,
+    "Aged over 65 (2020)": 2092,
+    "Percent": 19.7
+  },
+  {
+    "AreaName": "Streatham Common & Vale",
+    "Time period": "Aug-23",
+    "Value": 407,
+    "Aged over 65 (2020)": 2092,
+    "Percent": 19.5
+  },
+  {
+    "AreaName": "Streatham Hill East",
+    "Time period": "Aug-19",
+    "Value": 259,
+    "Aged over 65 (2020)": 888,
+    "Percent": 29.2
+  },
+  {
+    "AreaName": "Streatham Hill East",
+    "Time period": "Aug-20",
+    "Value": 252,
+    "Aged over 65 (2020)": 888,
+    "Percent": 28.4
+  },
+  {
+    "AreaName": "Streatham Hill East",
+    "Time period": "Aug-21",
+    "Value": 246,
+    "Aged over 65 (2020)": 888,
+    "Percent": 27.7
+  },
+  {
+    "AreaName": "Streatham Hill East",
+    "Time period": "Aug-22",
+    "Value": 244,
+    "Aged over 65 (2020)": 888,
+    "Percent": 27.5
+  },
+  {
+    "AreaName": "Streatham Hill East",
+    "Time period": "Aug-23",
+    "Value": 232,
+    "Aged over 65 (2020)": 888,
+    "Percent": 26.1
+  },
+  {
+    "AreaName": "Streatham Hill West & Thornton",
+    "Time period": "Aug-19",
+    "Value": 151,
+    "Aged over 65 (2020)": 866,
+    "Percent": 17.4
+  },
+  {
+    "AreaName": "Streatham Hill West & Thornton",
+    "Time period": "Aug-20",
+    "Value": 142,
+    "Aged over 65 (2020)": 866,
+    "Percent": 16.4
+  },
+  {
+    "AreaName": "Streatham Hill West & Thornton",
+    "Time period": "Aug-21",
+    "Value": 149,
+    "Aged over 65 (2020)": 866,
+    "Percent": 17.2
+  },
+  {
+    "AreaName": "Streatham Hill West & Thornton",
+    "Time period": "Aug-22",
+    "Value": 134,
+    "Aged over 65 (2020)": 866,
+    "Percent": 15.5
+  },
+  {
+    "AreaName": "Streatham Hill West & Thornton",
+    "Time period": "Aug-23",
+    "Value": 137,
+    "Aged over 65 (2020)": 866,
+    "Percent": 15.8
+  },
+  {
+    "AreaName": "Streatham St Leonard's",
+    "Time period": "Aug-19",
+    "Value": 291,
+    "Aged over 65 (2020)": 1358,
+    "Percent": 21.4
+  },
+  {
+    "AreaName": "Streatham St Leonard's",
+    "Time period": "Aug-20",
+    "Value": 294,
+    "Aged over 65 (2020)": 1358,
+    "Percent": 21.6
+  },
+  {
+    "AreaName": "Streatham St Leonard's",
+    "Time period": "Aug-21",
+    "Value": 284,
+    "Aged over 65 (2020)": 1358,
+    "Percent": 20.9
+  },
+  {
+    "AreaName": "Streatham St Leonard's",
+    "Time period": "Aug-22",
+    "Value": 278,
+    "Aged over 65 (2020)": 1358,
+    "Percent": 20.5
+  },
+  {
+    "AreaName": "Streatham St Leonard's",
+    "Time period": "Aug-23",
+    "Value": 291,
+    "Aged over 65 (2020)": 1358,
+    "Percent": 21.4
+  },
+  {
+    "AreaName": "Streatham Wells",
+    "Time period": "Aug-19",
+    "Value": 224,
+    "Aged over 65 (2020)": 980,
+    "Percent": 22.9
+  },
+  {
+    "AreaName": "Streatham Wells",
+    "Time period": "Aug-20",
+    "Value": 215,
+    "Aged over 65 (2020)": 980,
+    "Percent": 21.9
+  },
+  {
+    "AreaName": "Streatham Wells",
+    "Time period": "Aug-21",
+    "Value": 202,
+    "Aged over 65 (2020)": 980,
+    "Percent": 20.6
+  },
+  {
+    "AreaName": "Streatham Wells",
+    "Time period": "Aug-22",
+    "Value": 196,
+    "Aged over 65 (2020)": 980,
+    "Percent": 20.0
+  },
+  {
+    "AreaName": "Streatham Wells",
+    "Time period": "Aug-23",
+    "Value": 203,
+    "Aged over 65 (2020)": 980,
+    "Percent": 20.7
+  },
+  {
+    "AreaName": "Vauxhall",
+    "Time period": "Aug-19",
+    "Value": 182,
+    "Aged over 65 (2020)": 640,
+    "Percent": 28.4
+  },
+  {
+    "AreaName": "Vauxhall",
+    "Time period": "Aug-20",
+    "Value": 169,
+    "Aged over 65 (2020)": 640,
+    "Percent": 26.4
+  },
+  {
+    "AreaName": "Vauxhall",
+    "Time period": "Aug-21",
+    "Value": 169,
+    "Aged over 65 (2020)": 640,
+    "Percent": 26.4
+  },
+  {
+    "AreaName": "Vauxhall",
+    "Time period": "Aug-22",
+    "Value": 167,
+    "Aged over 65 (2020)": 640,
+    "Percent": 26.1
+  },
+  {
+    "AreaName": "Vauxhall",
+    "Time period": "Aug-23",
+    "Value": 178,
+    "Aged over 65 (2020)": 640,
+    "Percent": 27.8
+  },
+  {
+    "AreaName": "Waterloo & South Bank",
+    "Time period": "Aug-19",
+    "Value": 190,
+    "Aged over 65 (2020)": 867,
+    "Percent": 21.9
+  },
+  {
+    "AreaName": "Waterloo & South Bank",
+    "Time period": "Aug-20",
+    "Value": 181,
+    "Aged over 65 (2020)": 867,
+    "Percent": 20.9
+  },
+  {
+    "AreaName": "Waterloo & South Bank",
+    "Time period": "Aug-21",
+    "Value": 171,
+    "Aged over 65 (2020)": 867,
+    "Percent": 19.7
+  },
+  {
+    "AreaName": "Waterloo & South Bank",
+    "Time period": "Aug-22",
+    "Value": 180,
+    "Aged over 65 (2020)": 867,
+    "Percent": 20.8
+  },
+  {
+    "AreaName": "Waterloo & South Bank",
+    "Time period": "Aug-23",
+    "Value": 183,
+    "Aged over 65 (2020)": 867,
+    "Percent": 21.1
+  },
+  {
+    "AreaName": "West Dulwich",
+    "Time period": "Aug-19",
+    "Value": 228,
+    "Aged over 65 (2020)": 1375,
+    "Percent": 16.6
+  },
+  {
+    "AreaName": "West Dulwich",
+    "Time period": "Aug-20",
+    "Value": 215,
+    "Aged over 65 (2020)": 1375,
+    "Percent": 15.6
+  },
+  {
+    "AreaName": "West Dulwich",
+    "Time period": "Aug-21",
+    "Value": 212,
+    "Aged over 65 (2020)": 1375,
+    "Percent": 15.4
+  },
+  {
+    "AreaName": "West Dulwich",
+    "Time period": "Aug-22",
+    "Value": 224,
+    "Aged over 65 (2020)": 1375,
+    "Percent": 16.3
+  },
+  {
+    "AreaName": "West Dulwich",
+    "Time period": "Aug-23",
+    "Value": 223,
+    "Aged over 65 (2020)": 1375,
+    "Percent": 16.2
+  },
+  {
+    "AreaName": "London",
+    "Time period": "Aug-19",
+    "Value": 201163,
+    "Aged over 65 (2020)": 1043416,
+    "Percent": 19.3
+  },
+  {
+    "AreaName": "London",
+    "Time period": "Aug-20",
+    "Value": 193257,
+    "Aged over 65 (2020)": 1043416,
+    "Percent": 18.5
+  },
+  {
+    "AreaName": "London",
+    "Time period": "Aug-21",
+    "Value": 187707,
+    "Aged over 65 (2020)": 1043416,
+    "Percent": 18.0
+  },
+  {
+    "AreaName": "London",
+    "Time period": "Aug-22",
+    "Value": 186225,
+    "Aged over 65 (2020)": 1043416,
+    "Percent": 17.8
+  },
+  {
+    "AreaName": "London",
+    "Time period": "Aug-23",
+    "Value": 190300,
+    "Aged over 65 (2020)": 1043416,
+    "Percent": 18.2
+  },
+  {
+    "AreaName": "England",
+    "Time period": "Aug-19",
+    "Value": 1329979,
+    "Aged over 65 (2020)": 10401300,
+    "Percent": 12.8
+  },
+  {
+    "AreaName": "England",
+    "Time period": "Aug-20",
+    "Value": 1261761,
+    "Aged over 65 (2020)": 10401300,
+    "Percent": 12.1
+  },
+  {
+    "AreaName": "England",
+    "Time period": "Aug-21",
+    "Value": 1202132,
+    "Aged over 65 (2020)": 10401300,
+    "Percent": 11.6
+  },
+  {
+    "AreaName": "England",
+    "Time period": "Aug-22",
+    "Value": 1165926,
+    "Aged over 65 (2020)": 10401300,
+    "Percent": 11.2
+  },
+  {
+    "AreaName": "England",
+    "Time period": "Aug-23",
+    "Value": 1165874,
+    "Aged over 65 (2020)": 10401300,
+    "Percent": 11.2
+  }
+]
