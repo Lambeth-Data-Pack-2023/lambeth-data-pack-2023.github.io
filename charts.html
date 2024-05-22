@@ -73,6 +73,15 @@
         fill: orange;
         cursor: pointer;
       }
+      .selectContainer {
+        justify-content: space-between;
+      }
+      select {
+        max-width: 15vw;
+      }
+      option {
+        width: 20vw;
+      }
     </style>
   </head>
   <body>
@@ -169,6 +178,7 @@
           console.log("Third Variable Values:", uniqueThirdValues);
         }
       }
+
       function LineChart({ jsonData, xKey, yKey, thirdKey, yLabel, mapType }) {
         const mainLocations = ["London", "Lambeth", "England"];
 
@@ -183,7 +193,7 @@
               mapType,
             });
 
-            const margin = { top: 20, right: 20, bottom: 30, left: 50 };
+            const margin = { top: 50, right: 20, bottom: 30, left: 75 };
             const width = 600 - margin.left - margin.right;
             const height = 400 - margin.top - margin.bottom;
 
@@ -219,6 +229,9 @@
             // Group data by thirdKey (location)
             const groupedData = d3.group(filteredData, (d) => d[thirdKey]);
 
+            // Get the unique locations that have data
+            const availableLocations = Array.from(groupedData.keys());
+
             // Scale functions
             const x = d3
               .scaleBand()
@@ -231,6 +244,11 @@
               .domain([0, d3.max(filteredData, (d) => d[yKey])])
               .nice()
               .range([height, 0]);
+
+            // Define color scale
+            const color = d3
+              .scaleOrdinal(d3.schemeCategory10)
+              .domain(availableLocations);
 
             // Add the x-axis
             svg
@@ -256,21 +274,92 @@
               .attr("font-size", "14px") // Adjust font size
               .text(yLabel);
 
-            // Add lines for each group
-            const line = d3
-              .line()
-              .x((d) => x(d[xKey]) + x.bandwidth() / 2)
-              .y((d) => y(d[yKey]));
-
+            // Add lines and circles for each group
             groupedData.forEach((groupData, location) => {
-              svg
+              const group = svg.append("g");
+
+              // Add path (line) to the group
+              const path = group
                 .append("path")
                 .datum(groupData)
                 .attr("fill", "none")
-                .attr("stroke", "steelblue")
-                .attr("stroke-width", 2)
-                .attr("d", line);
+                .attr("stroke", color(location))
+                .attr("stroke-width", 4) // Increased line width
+                .attr(
+                  "d",
+                  d3
+                    .line()
+                    .x((d) => x(d[xKey]) + x.bandwidth() / 2)
+                    .y((d) => y(d[yKey]))
+                )
+                .style("cursor", "crosshair") // Change cursor to crosshair
+                .on("mouseover", function () {
+                  d3.select(this).raise(); // Bring line to front
+                  group.selectAll("circle").raise(); // Bring all circles in the group to front
+                });
+
+              // Add circles to the group
+              const circles = group
+                .selectAll(`circle-${location}`)
+                .data(groupData)
+                .enter()
+                .append("circle")
+                .attr("cx", (d) => x(d[xKey]) + x.bandwidth() / 2)
+                .attr("cy", (d) => y(d[yKey]))
+                .attr("r", 0) // Initially set circle size to 0
+                .attr("fill", color(location))
+                .attr("stroke", "black") // Add black border
+                .attr("stroke-width", 1) // Set initial border width
+                .style("cursor", "pointer") // Change cursor to pointer
+                .on("mouseover", function () {
+                  d3.select(this).raise(); // Bring circle to front
+                  d3.select(this).attr("stroke-width", 2); // Increase border width on hover
+                })
+                .on("mouseleave", function () {
+                  d3.select(this).attr("stroke-width", 1); // Return border width to normal on leave
+                });
+
+              // Animate the drawing of the line
+              path
+                .transition()
+                .duration(1500) // Animation duration
+                .ease(d3.easeLinear)
+                .attrTween("stroke-dasharray", function () {
+                  const length = this.getTotalLength();
+                  return d3.interpolate(`0,${length}`, `${length},${length}`);
+                });
+
+              // Animate the appearance of circles
+              circles
+                .transition()
+                .duration(2500) // Animation duration
+                .delay((d, i) => i * 100) // Add delay to show circles point by point
+                .attr("r", 6); // Increased circle size
             });
+
+            // Add legend
+            const legend = svg
+              .selectAll(".legend")
+              .data(availableLocations)
+              .enter()
+              .append("g")
+              .attr("class", "legend")
+              .attr("transform", (d, i) => `translate(0,${i * 20})`);
+
+            legend
+              .append("rect")
+              .attr("x", width - 18)
+              .attr("width", 18)
+              .attr("height", 18)
+              .style("fill", color);
+
+            legend
+              .append("text")
+              .attr("x", width - 24)
+              .attr("y", 9)
+              .attr("dy", ".35em")
+              .style("text-anchor", "end")
+              .text((d) => d);
           }
         }, [jsonData, xKey, yKey, thirdKey, yLabel, mapType]);
 
@@ -288,8 +377,27 @@
               yLabel,
               mapType,
             });
+            const margin = { top: 20, right: 20, bottom: 100, left: 50 };
+            const width = 600 - margin.left - margin.right;
+            const height = 400 - margin.top - margin.bottom;
+
+            // Remove previous SVG
+            d3.select(`#barGraph svg`).remove();
+
             // Create SVG container
-            const svg = createSVG("barGraph");
+            const svg = d3
+              .select(`#barGraph`)
+              .append("svg")
+              .attr("preserveAspectRatio", "xMinYMin meet")
+              .attr(
+                "viewBox",
+                `0 0 ${width + margin.left + margin.right} ${
+                  height + margin.top + margin.bottom
+                }`
+              )
+              .classed("svg-content", true)
+              .append("g")
+              .attr("transform", `translate(${margin.left},${margin.top})`);
 
             // Parse the data
             jsonData.forEach((d) => {
@@ -334,7 +442,7 @@
               .attr("font-size", "14px") // Adjust font size
               .text(yLabel);
 
-            // Add bars
+            // Add bars with animation
             svg
               .selectAll(".bar")
               .data(jsonData)
@@ -343,9 +451,21 @@
               .attr("class", "bar")
               .attr("x", (d) => x(d[xKey]))
               .attr("width", x.bandwidth())
-              .attr("y", (d) => y(d[yKey]))
-              .attr("height", (d) => height - y(d[yKey]))
-              .attr("fill", "steelblue");
+              .attr("y", height) // Start bars from the bottom
+              .attr("height", 0) // Set initial height to 0
+              .attr("fill", "steelblue")
+              .on("mouseover", function () {
+                d3.select(this).attr("fill", "orange"); // Change color on hover
+              })
+              .on("mouseleave", function () {
+                d3.select(this).attr("fill", "steelblue"); // Restore color on leave
+              })
+              .transition() // Add transition
+              .duration(1000) // Animation duration
+              .delay((d, i) => i * 100) // Add delay for each bar
+              .attr("y", (d) => y(d[yKey])) // Move bars to their actual position
+              .attr("height", (d) => height - y(d[yKey])) // Increase height of bars
+              .style("cursor", "pointer"); // Change cursor to pointer
           }
         }, [jsonData, xKey, yKey, thirdKey, yLabel, mapType]);
 
@@ -361,46 +481,134 @@
         mapType,
       }) {
         React.useEffect(() => {
-          if (jsonData) {
-            // Log X Axis Values
-            let xValues = [];
-            if (xKey === "Unique Keys") {
-              xValues = Object.keys(jsonData[0]).filter((key) =>
-                key.endsWith("(%)")
+          if (jsonData && jsonData.length > 0) {
+            // Extract unique keys ending in "(%)"
+            const uniqueKeys = Object.keys(jsonData[0]).filter((key) =>
+              key.endsWith("(%)")
+            );
+
+            // Remove "(%)" suffix from keys for display
+            const formattedKeys = uniqueKeys.map((key) =>
+              key.replace(" (%)", "")
+            );
+
+            // Filter relevant area names
+            const relevantAreaNames = ["London", "Lambeth", "England"];
+            const filteredAreaData = jsonData.filter((data) =>
+              relevantAreaNames.includes(data[thirdKey])
+            );
+
+            // Log the values dynamically
+            uniqueKeys.forEach((key) => {
+              const categoryData = relevantAreaNames.map(
+                (name) =>
+                  `${name}: ${
+                    filteredAreaData.find((data) => data[thirdKey] === name)[
+                      key
+                    ]
+                  }`
               );
-            } else {
-              xValues = jsonData.map((item) => item[xKey]);
-            }
-            console.log("X Axis Values:", xValues);
-
-            // Log Locations
-            let locations = [];
-            if (thirdKey === "AreaName") {
-              // Get unique area names
-              locations = [...new Set(jsonData.map((item) => item.AreaName))];
-            } else if (thirdKey === "Unique Keys") {
-              // Get location names from keys ending in "(%)"
-              locations = Object.keys(jsonData[0])
-                .filter((key) => key.endsWith("(%)"))
-                .map((key) => key.split(" ")[0]);
-            }
-            console.log("Locations:", locations);
-
-            // Log Values for each Location
-            locations.forEach((location) => {
-              const values = jsonData
-                .filter(
-                  (item) =>
-                    item[thirdKey] ===
-                    (thirdKey === "Unique Keys" ? `${location} (%)` : location)
-                )
-                .map((item) => item[`${location} (%)`]); // Access percentage values
-              console.log(`${location}:`, values);
+              console.log(`${key} [${categoryData.join(", ")}]`);
             });
 
-            console.log("Y Key:", yKey);
-            console.log("Third Key Variable:", thirdKey);
+            const margin = { top: 20, right: 20, bottom: 100, left: 50 };
+            const width = 600 - margin.left - margin.right;
+            const height = 400 - margin.top - margin.bottom;
+
+            // Remove previous SVG
+            d3.select(`#groupedBarGraph svg`).remove();
+
+            // Create SVG container
+            const svg = d3
+              .select(`#groupedBarGraph`)
+              .append("svg")
+              .attr("preserveAspectRatio", "xMinYMin meet")
+              .attr(
+                "viewBox",
+                `0 0 ${width + margin.left + margin.right} ${
+                  height + margin.top + margin.bottom
+                }`
+              )
+              .classed("svg-content", true)
+              .append("g")
+              .attr("transform", `translate(${margin.left},${margin.top})`);
+
+            // Create scales
+            const xScale = d3
+              .scaleBand()
+              .domain(formattedKeys)
+              .range([0, width])
+              .padding(0.1);
+
+            const yScale = d3
+              .scaleLinear()
+              .domain([
+                0,
+                d3.max(
+                  uniqueKeys.map((key) =>
+                    d3.max(filteredAreaData, (d) => d[key])
+                  )
+                ),
+              ])
+              .range([height, 0]);
+
+            const color = d3
+              .scaleOrdinal()
+              .domain(relevantAreaNames)
+              .range(d3.schemeCategory10);
+
+            // Create bars
+            svg
+              .selectAll(".bar-group")
+              .data(uniqueKeys)
+              .enter()
+              .append("g")
+              .attr("class", "bar-group")
+              .attr(
+                "transform",
+                (d, i) => `translate(${xScale(formattedKeys[i])},0)`
+              )
+              .selectAll(".bar")
+              .data((d) =>
+                filteredAreaData.map((area) => ({
+                  key: d,
+                  name: area[thirdKey],
+                  value: area[d],
+                }))
+              )
+              .enter()
+              .append("rect")
+              .attr("class", "bar")
+              .attr(
+                "x",
+                (d) =>
+                  (xScale.bandwidth() / relevantAreaNames.length) *
+                  relevantAreaNames.indexOf(d.name)
+              )
+              .attr("width", xScale.bandwidth() / relevantAreaNames.length)
+              .attr("y", (d) => yScale(d.value))
+              .attr("height", (d) => height - yScale(d.value))
+              .attr("fill", (d) => color(d.name));
+
+            // Create X Axis
+            svg
+              .append("g")
+              .attr("transform", `translate(0, ${height})`)
+              .call(d3.axisBottom(xScale))
+              .selectAll("text")
+              .style("text-anchor", "end")
+              .attr("dx", "-0.8em")
+              .attr("dy", "0.15em")
+              .attr("transform", "rotate(-45)");
+
+            // Create Y Axis
+            svg.append("g").call(d3.axisLeft(yScale));
           }
+          console.log("xKey:", xKey);
+          console.log("yKey:", yKey);
+          console.log("thirdKey:", thirdKey);
+          console.log("yLabel:", yLabel);
+          console.log("mapType:", mapType);
         }, [jsonData, xKey, yKey, thirdKey, yLabel, mapType]);
 
         return (
@@ -502,6 +710,24 @@
           }
         }, [selectedQuestion, selectedLocation, jsonData]);
 
+        // Function to split text into lines based on a character limit
+        const splitTextIntoLines = (text, maxChars) => {
+          const words = text.split(" ");
+          const lines = [];
+          let currentLine = "";
+
+          words.forEach((word) => {
+            if ((currentLine + word).length <= maxChars) {
+              currentLine += `${word} `;
+            } else {
+              lines.push(currentLine.trim());
+              currentLine = `${word} `;
+            }
+          });
+          lines.push(currentLine.trim());
+          return lines;
+        };
+
         // Draw Bar Chart
         const drawBarChart = () => {
           const data = selectedResponseValues.map((value, index) => ({
@@ -510,7 +736,7 @@
           }));
 
           const containerId = "surveyGraph";
-          const margin = { top: 20, right: 20, bottom: 150, left: 50 };
+          const margin = { top: 80, right: 20, bottom: 150, left: 50 }; // Increase top margin for title
           const width = 600 - margin.left - margin.right;
           const height = 400 - margin.top - margin.bottom;
 
@@ -544,6 +770,22 @@
             .nice()
             .range([height, 0]);
 
+          // Add chart title with text wrapping
+          const titleLines = splitTextIntoLines(selectedQuestion, 75); // Adjust character limit as needed
+
+          svg
+            .selectAll(".title")
+            .data(titleLines)
+            .enter()
+            .append("text")
+            .attr("class", "title")
+            .attr("x", width / 2)
+            .attr("y", (d, i) => -60 + i * 20) // Adjust vertical position and line spacing
+            .attr("text-anchor", "middle")
+            .attr("font-family", "Arial")
+            .attr("font-size", "16px")
+            .text((d) => d);
+
           svg
             .append("g")
             .attr("transform", `translate(0,${height})`)
@@ -554,16 +796,30 @@
 
           svg.append("g").call(d3.axisLeft(y));
 
+          // Add bars with animation
           svg
-            .selectAll("mybar")
+            .selectAll(".bar")
             .data(data)
             .enter()
             .append("rect")
+            .attr("class", "bar")
             .attr("x", (d) => x(d.x))
-            .attr("y", (d) => y(d.y))
             .attr("width", x.bandwidth())
-            .attr("height", (d) => height - y(d.y))
-            .attr("fill", "steelblue");
+            .attr("y", height) // Start bars from the bottom
+            .attr("height", 0) // Set initial height to 0
+            .attr("fill", "steelblue")
+            .style("cursor", "pointer") // Set cursor to pointer
+            .on("mouseover", function () {
+              d3.select(this).attr("fill", "orange"); // Change color on hover
+            })
+            .on("mouseleave", function () {
+              d3.select(this).attr("fill", "steelblue"); // Restore color on leave
+            })
+            .transition() // Add transition
+            .duration(1000) // Animation duration
+            .delay((d, i) => i * 100) // Add delay for each bar
+            .attr("y", (d) => y(d.y)) // Move bars to their actual position
+            .attr("height", (d) => height - y(d.y)); // Increase height of bars
         };
 
         // Call draw function when data is available
@@ -578,33 +834,33 @@
 
         return (
           <div>
-            <div>
-              <label htmlFor="questionSelect">Select a Question:</label>
-              <select
-                id="questionSelect"
-                value={selectedQuestion}
-                onChange={(e) => setSelectedQuestion(e.target.value)}
-              >
-                {questions.map((question, index) => (
-                  <option key={index} value={question}>
-                    {question}
-                  </option>
-                ))}
-              </select>
-            </div>
-            <div>
-              <label htmlFor="locationSelect">Select a Location:</label>
-              <select
-                id="locationSelect"
-                value={selectedLocation}
-                onChange={(e) => setSelectedLocation(e.target.value)}
-              >
-                {locations.map((location, index) => (
-                  <option key={index} value={location}>
-                    {location}
-                  </option>
-                ))}
-              </select>
+            <div className="selectContainer flex">
+              <div>
+                <select
+                  id="questionSelect"
+                  value={selectedQuestion}
+                  onChange={(e) => setSelectedQuestion(e.target.value)}
+                >
+                  {questions.map((question, index) => (
+                    <option key={index} value={question}>
+                      {question}
+                    </option>
+                  ))}
+                </select>
+              </div>
+              <div>
+                <select
+                  id="locationSelect"
+                  value={selectedLocation}
+                  onChange={(e) => setSelectedLocation(e.target.value)}
+                >
+                  {locations.map((location, index) => (
+                    <option key={index} value={location}>
+                      {location}
+                    </option>
+                  ))}
+                </select>
+              </div>
             </div>
             <div id="surveyGraph">{/* Bar chart will be drawn here */}</div>
           </div>
@@ -657,6 +913,7 @@
                 setThirdKey(chartRow["Third-Var-Key"]);
                 setMapType(chartRow["Map-Type"]);
 
+                console.log("JSON File Path: ", jsonDataFilePath);
                 console.log("Chart Type:", chartRow["Chart-Type"]);
 
                 // Fetch JSON data
