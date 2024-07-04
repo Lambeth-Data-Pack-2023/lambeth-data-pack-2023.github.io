@@ -1,0 +1,6 @@
+[
+  { "AreaName": "London", "Time Period": "2021", "Value": 119.9 },
+  { "AreaName": "Lambeth", "Time Period": "2021", "Value": 78.2 },
+  { "AreaName": "London", "Time Period": "2022", "Value": 107.1 },
+  { "AreaName": "Lambeth", "Time Period": "2022", "Value": 68.8 }
+]

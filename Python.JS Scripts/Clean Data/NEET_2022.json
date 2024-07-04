@@ -1,0 +1,20 @@
+[
+  {
+    "Time period": 2022,
+    "AreaName": "England",
+    "Age": "16-17",
+    "NEETNKprop": 4.7
+  },
+  {
+    "Time period": 2022,
+    "AreaName": "London",
+    "Age": "16-17",
+    "NEETNKprop": 3.4
+  },
+  {
+    "Time period": 2022,
+    "AreaName": "Lambeth",
+    "Age": "16-17",
+    "NEETNKprop": 4.088107877
+  }
+]

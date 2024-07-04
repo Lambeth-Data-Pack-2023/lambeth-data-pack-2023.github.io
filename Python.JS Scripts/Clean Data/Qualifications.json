@@ -1,0 +1,182 @@
+[
+  {
+    "Qualification": "% with RQF4+ - aged 16-64",
+    "AreaName": "Lambeth",
+    "Value": 70.5,
+    "Time period": 2023
+  },
+  {
+    "Qualification": "% with RQF3+ - aged 16-64",
+    "AreaName": "Lambeth",
+    "Value": 81,
+    "Time period": 2023
+  },
+  {
+    "Qualification": "% with RQF2+ - aged 16-64",
+    "AreaName": "Lambeth",
+    "Value": 90.4,
+    "Time period": 2023
+  },
+  {
+    "Qualification": "% with RQF1+ - aged 16-64",
+    "AreaName": "Lambeth",
+    "Value": 91.1,
+    "Time period": 2023
+  },
+  {
+    "Qualification": "% with other qualifications (RQF) - aged 16-64",
+    "AreaName": "Lambeth",
+    "Value": 6.3,
+    "Time period": 2023
+  },
+  {
+    "Qualification": "% with RQF4+ - aged 16-64",
+    "AreaName": "England",
+    "Value": 46.7,
+    "Time period": 2023
+  },
+  {
+    "Qualification": "% with RQF3+ - aged 16-64",
+    "AreaName": "England",
+    "Value": 67.4,
+    "Time period": 2023
+  },
+  {
+    "Qualification": "% with RQF2+ - aged 16-64",
+    "AreaName": "England",
+    "Value": 86.6,
+    "Time period": 2023
+  },
+  {
+    "Qualification": "% with RQF1+ - aged 16-64",
+    "AreaName": "England",
+    "Value": 89.2,
+    "Time period": 2023
+  },
+  {
+    "Qualification": "% with other qualifications (RQF) - aged 16-64",
+    "AreaName": "England",
+    "Value": 4.7,
+    "Time period": 2023
+  },
+  {
+    "Qualification": "% with RQF4+ - aged 16-64",
+    "AreaName": "London",
+    "Value": 60.7,
+    "Time period": 2023
+  },
+  {
+    "Qualification": "% with RQF3+ - aged 16-64",
+    "AreaName": "London",
+    "Value": 74.9,
+    "Time period": 2023
+  },
+  {
+    "Qualification": "% with RQF2+ - aged 16-64",
+    "AreaName": "London",
+    "Value": 86.4,
+    "Time period": 2023
+  },
+  {
+    "Qualification": "% with RQF1+ - aged 16-64",
+    "AreaName": "London",
+    "Value": 87.6,
+    "Time period": 2023
+  },
+  {
+    "Qualification": "% with other qualifications (RQF) - aged 16-64",
+    "AreaName": "London",
+    "Value": 7.2,
+    "Time period": 2023
+  },
+  {
+    "Qualification": "% with RQF4+ - aged 16-64",
+    "AreaName": "Lambeth",
+    "Value": 70.3,
+    "Time period": 2022
+  },
+  {
+    "Qualification": "% with RQF3+ - aged 16-64",
+    "AreaName": "Lambeth",
+    "Value": 78.8,
+    "Time period": 2022
+  },
+  {
+    "Qualification": "% with RQF2+ - aged 16-64",
+    "AreaName": "Lambeth",
+    "Value": 90.2,
+    "Time period": 2022
+  },
+  {
+    "Qualification": "% with RQF1+ - aged 16-64",
+    "AreaName": "Lambeth",
+    "Value": 92.9,
+    "Time period": 2022
+  },
+  {
+    "Qualification": "% with other qualifications (RQF) - aged 16-64",
+    "AreaName": "Lambeth",
+    "Value": 2.3,
+    "Time period": 2022
+  },
+  {
+    "Qualification": "% with RQF4+ - aged 16-64",
+    "AreaName": "England",
+    "Value": 45.1,
+    "Time period": 2022
+  },
+  {
+    "Qualification": "% with RQF3+ - aged 16-64",
+    "AreaName": "England",
+    "Value": 66.4,
+    "Time period": 2022
+  },
+  {
+    "Qualification": "% with RQF2+ - aged 16-64",
+    "AreaName": "England",
+    "Value": 85.8,
+    "Time period": 2022
+  },
+  {
+    "Qualification": "% with RQF1+ - aged 16-64",
+    "AreaName": "England",
+    "Value": 88.6,
+    "Time period": 2022
+  },
+  {
+    "Qualification": "% with other qualifications (RQF) - aged 16-64",
+    "AreaName": "England",
+    "Value": 4.8,
+    "Time period": 2022
+  },
+  {
+    "Qualification": "% with RQF4+ - aged 16-64",
+    "AreaName": "London",
+    "Value": 58.9,
+    "Time period": 2022
+  },
+  {
+    "Qualification": "% with RQF3+ - aged 16-64",
+    "AreaName": "London",
+    "Value": 73,
+    "Time period": 2022
+  },
+  {
+    "Qualification": "% with RQF2+ - aged 16-64",
+    "AreaName": "London",
+    "Value": 85.3,
+    "Time period": 2022
+  },
+  {
+    "Qualification": "% with RQF1+ - aged 16-64",
+    "AreaName": "London",
+    "Value": 87,
+    "Time period": 2022
+  },
+  {
+    "Qualification": "% with other qualifications (RQF) - aged 16-64",
+    "AreaName": "London",
+    "Value": 7.2,
+    "Time period": 2022
+  }
+]

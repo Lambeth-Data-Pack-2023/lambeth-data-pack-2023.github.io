@@ -1,0 +1,38 @@
+[
+  {
+    "AreaName": "England",
+    "Jobs (thousand)": 0.7,
+    "Percent": 0.7,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "London",
+    "Jobs (thousand)": 1.7,
+    "Percent": 1.7,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "Lambeth",
+    "Jobs (thousand)": 10.5,
+    "Percent": 9.5,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "England",
+    "Jobs (thousand)": 3079,
+    "Percent": 13,
+    "Time period": 2023
+  },
+  {
+    "AreaName": "London",
+    "Jobs (thousand)": 574,
+    "Percent": 13.3,
+    "Time period": 2023
+  },
+  {
+    "AreaName": "Lambeth",
+    "Jobs (thousand)": 19,
+    "Percent": 17.9,
+    "Time period": 2023
+  }
+]
