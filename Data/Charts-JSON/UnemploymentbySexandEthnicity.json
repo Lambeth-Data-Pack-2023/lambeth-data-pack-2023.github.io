@@ -1,0 +1,146 @@
+[
+  {
+    "Category": "All",
+    "AreaName": "Lambeth",
+    "Percent": 2.8,
+    "Time period": 2023
+  },
+  {
+    "Category": "Male",
+    "AreaName": "Lambeth",
+    "Percent": "!",
+    "Time period": 2023
+  },
+  {
+    "Category": "Female",
+    "AreaName": "Lambeth",
+    "Percent": 4.4,
+    "Time period": 2023
+  },
+  {
+    "Category": "Ethnic minority",
+    "AreaName": "Lambeth",
+    "Percent": "!",
+    "Time period": 2023
+  },
+  {
+    "Category": "All",
+    "AreaName": "England",
+    "Percent": 3.8,
+    "Time period": 2023
+  },
+  {
+    "Category": "Male",
+    "AreaName": "England",
+    "Percent": 4,
+    "Time period": 2023
+  },
+  {
+    "Category": "Female",
+    "AreaName": "England",
+    "Percent": 3.5,
+    "Time period": 2023
+  },
+  {
+    "Category": "Ethnic minority",
+    "AreaName": "England",
+    "Percent": 6.4,
+    "Time period": 2023
+  },
+  {
+    "Category": "All",
+    "AreaName": "London",
+    "Percent": 4.8,
+    "Time period": 2023
+  },
+  {
+    "Category": "Male",
+    "AreaName": "London",
+    "Percent": 5,
+    "Time period": 2023
+  },
+  {
+    "Category": "Female",
+    "AreaName": "London",
+    "Percent": 4.6,
+    "Time period": 2023
+  },
+  {
+    "Category": "Ethnic minority",
+    "AreaName": "London",
+    "Percent": 6.2,
+    "Time period": 2023
+  },
+  {
+    "Category": "All",
+    "AreaName": "Lambeth",
+    "Percent": 3.9,
+    "Time period": 2022
+  },
+  {
+    "Category": "Male",
+    "AreaName": "Lambeth",
+    "Percent": 3.2,
+    "Time period": 2022
+  },
+  {
+    "Category": "Female",
+    "AreaName": "Lambeth",
+    "Percent": 4.7,
+    "Time period": 2022
+  },
+  {
+    "Category": "Ethnic minority",
+    "AreaName": "Lambeth",
+    "Percent": 7.9,
+    "Time period": 2022
+  },
+  {
+    "Category": "All",
+    "AreaName": "England",
+    "Percent": 3.7,
+    "Time period": 2022
+  },
+  {
+    "Category": "Male",
+    "AreaName": "England",
+    "Percent": 3.7,
+    "Time period": 2022
+  },
+  {
+    "Category": "Female",
+    "AreaName": "England",
+    "Percent": 3.7,
+    "Time period": 2022
+  },
+  {
+    "Category": "Ethnic minority",
+    "AreaName": "England",
+    "Percent": 6.6,
+    "Time period": 2022
+  },
+  {
+    "Category": "All",
+    "AreaName": "London",
+    "Percent": 4.5,
+    "Time period": 2022
+  },
+  {
+    "Category": "Male",
+    "AreaName": "London",
+    "Percent": 4,
+    "Time period": 2022
+  },
+  {
+    "Category": "Female",
+    "AreaName": "London",
+    "Percent": 5,
+    "Time period": 2022
+  },
+  {
+    "Category": "Ethnic minority",
+    "AreaName": "London",
+    "Percent": 6.2,
+    "Time period": 2022
+  }
+]

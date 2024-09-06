@@ -1,0 +1,30 @@
+[
+  {
+    "AreaName": "Lambeth",
+    "Number of traffic incidents casualties": 1297,
+    "Population": 317654,
+    "Value": 4.1,
+    "Time period": "Jan-Sept 2022"
+  },
+  {
+    "AreaName": "London",
+    "Number of traffic incidents casualties": 27207,
+    "Population": 8799728,
+    "Value": 3.1,
+    "Time period": "Jan-Sept 2022"
+  },
+  {
+    "AreaName": "Lambeth",
+    "Number of traffic incidents casualties": 875,
+    "Population": 317654,
+    "Value": 2.8,
+    "Time period": "Jan-Sept 2023"
+  },
+  {
+    "AreaName": "London",
+    "Number of traffic incidents casualties": 19606,
+    "Population": 8799728,
+    "Value": 2.2,
+    "Time period": "Jan-Sept 2023"
+  }
+]

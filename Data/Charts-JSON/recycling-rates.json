@@ -1,0 +1,32 @@
+[
+  {
+    "Time period": "2020-21",
+    "AreaName": "Lambeth",
+    "Value": 36.4
+  },
+  {
+    "Time period": "2021-22",
+    "AreaName": "Lambeth",
+    "Value": 34.5
+  },
+  {
+    "Time period": "2020-21",
+    "AreaName": "London",
+    "Value": 33
+  },
+  {
+    "Time period": "2020-21",
+    "AreaName": "England",
+    "Value": 42.3
+  },
+  {
+    "Time period": "2021-22",
+    "AreaName": "London",
+    "Value": 32.7
+  },
+  {
+    "Time period": "2021-22",
+    "AreaName": "England",
+    "Value": 42.5
+  }
+]

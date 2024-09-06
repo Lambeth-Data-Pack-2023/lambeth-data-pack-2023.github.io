@@ -1,0 +1,52 @@
+[
+  {
+    "Time period": "June 2021",
+    "Feels well informed about local police activities over the last 12 months": 0.31,
+    "Agree the police listen to the concerns of local people": 0.59,
+    "Agree the police can be relied upon to be there when needed": 0.64,
+    "Agree the police treat everyone fairly regardless of who they are": 0.52,
+    "Agree the police are dealing with the things that matter to this community": 0.6,
+    "Knows how to contact their local ward officer": 0.17,
+    "Police do a good job in the local area": 0.49
+  },
+  {
+    "Time period": "September 2021",
+    "Feels well informed about local police activities over the last 12 months": 0.3,
+    "Agree the police listen to the concerns of local people": 0.53,
+    "Agree the police can be relied upon to be there when needed": 0.62,
+    "Agree the police treat everyone fairly regardless of who they are": 0.47,
+    "Agree the police are dealing with the things that matter to this community": 0.56,
+    "Knows how to contact their local ward officer": 0.21,
+    "Police do a good job in the local area": 0.48
+  },
+  {
+    "Time period": "December 2021",
+    "Feels well informed about local police activities over the last 12 months": 0.32,
+    "Agree the police listen to the concerns of local people": 0.53,
+    "Agree the police can be relied upon to be there when needed": 0.57,
+    "Agree the police treat everyone fairly regardless of who they are": 0.45,
+    "Agree the police are dealing with the things that matter to this community": 0.56,
+    "Knows how to contact their local ward officer": 0.22,
+    "Police do a good job in the local area": 0.45
+  },
+  {
+    "Time period": "March 2022",
+    "Feels well informed about local police activities over the last 12 months": 0.31,
+    "Agree the police listen to the concerns of local people": 0.45,
+    "Agree the police can be relied upon to be there when needed": 0.53,
+    "Agree the police treat everyone fairly regardless of who they are": 0.39,
+    "Agree the police are dealing with the things that matter to this community": 0.46,
+    "Knows how to contact their local ward officer": 0.22,
+    "Police do a good job in the local area": 0.4
+  },
+  {
+    "Time period": "June 2022",
+    "Feels well informed about local police activities over the last 12 months": 0.31,
+    "Agree the police listen to the concerns of local people": 0.45,
+    "Agree the police can be relied upon to be there when needed": 0.53,
+    "Agree the police treat everyone fairly regardless of who they are": 0.38,
+    "Agree the police are dealing with the things that matter to this community": 0.46,
+    "Knows how to contact their local ward officer": 0.21,
+    "Police do a good job in the local area": 0.43
+  }
+]

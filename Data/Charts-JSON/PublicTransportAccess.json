@@ -1,0 +1,17 @@
+[
+  {
+    "AreaName": "Lambeth",
+    "Average borough PTAL score": 22.2,
+    "Time period": 2015
+  },
+  {
+    "AreaName": "Inner London",
+    "Average borough PTAL score": 20.3,
+    "Time period": 2015
+  },
+  {
+    "AreaName": "Outer London",
+    "Average borough PTAL score": 6.4,
+    "Time period": 2015
+  }
+]

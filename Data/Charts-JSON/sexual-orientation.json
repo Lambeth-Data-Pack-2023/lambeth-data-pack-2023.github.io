@@ -1,0 +1,35 @@
+[
+  {
+    "AreaName": "Lambeth",
+    "Gay or Lesbian (number)": 14291,
+    "Gay or Lesbian (%)": 5.3,
+    "Bisexual (number)": 6063,
+    "Bisexual (%)": 2.3,
+    "All other sexual orientations (number)": 1844,
+    "All other sexual orientations (%)": 0.7,
+    "Not answered (number)": 24398,
+    "Not answered (%)": 9.1
+  },
+  {
+    "AreaName": "England",
+    "Gay or Lesbian (number)": 709704,
+    "Gay or Lesbian (%)": 1.5,
+    "Bisexual (number)": 591690,
+    "Bisexual (%)": 1.3,
+    "All other sexual orientations (number)": 158357,
+    "All other sexual orientations (%)": 0.3,
+    "Not answered (number)": 3432728,
+    "Not answered (%)": 7.5
+  },
+  {
+    "AreaName": "London",
+    "Gay or Lesbian (number)": 158760,
+    "Gay or Lesbian (%)": 2.2,
+    "Bisexual (number)": 108140,
+    "Bisexual (%)": 1.5,
+    "All other sexual orientations (number)": 37482,
+    "All other sexual orientations (%)": 0.5,
+    "Not answered (number)": 676408,
+    "Not answered (%)": 9.5
+  }
+]

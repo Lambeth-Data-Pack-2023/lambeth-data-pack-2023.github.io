@@ -1,0 +1,506 @@
+[
+  {
+    "Industry category": "Construction of residential and non-residential buildings",
+    "AreaName": "Lambeth",
+    "Percentage": 2.1,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Retail sale in non-specialised stores",
+    "AreaName": "Lambeth",
+    "Percentage": 2.3,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Retail sale of other goods in specialised stores",
+    "AreaName": "Lambeth",
+    "Percentage": 2.5,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Restaurants and mobile food service",
+    "AreaName": "Lambeth",
+    "Percentage": 5.5,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Motion picture, video and television programme",
+    "AreaName": "Lambeth",
+    "Percentage": 3.9,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Computer programming, consultancy and related",
+    "AreaName": "Lambeth",
+    "Percentage": 5.5,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Renting and operating of own or leased real estate",
+    "AreaName": "Lambeth",
+    "Percentage": 2.0,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Real estate on a fee or contract basis",
+    "AreaName": "Lambeth",
+    "Percentage": 2.2,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Management consultancy",
+    "AreaName": "Lambeth",
+    "Percentage": 7.7,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Architectural and engineering and related technical consultancy",
+    "AreaName": "Lambeth",
+    "Percentage": 2.5,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Specialised design",
+    "AreaName": "Lambeth",
+    "Percentage": 2.2,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Business support service n.e.c.",
+    "AreaName": "Lambeth",
+    "Percentage": 4.3,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Creative, arts and entertainment",
+    "AreaName": "Lambeth",
+    "Percentage": 3.6,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Other personal service",
+    "AreaName": "Lambeth",
+    "Percentage": 2.9,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Construction of residential and non-residential buildings",
+    "AreaName": "England",
+    "Percentage": 2.6,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Retail sale in non-specialised stores",
+    "AreaName": "England",
+    "Percentage": 1.9,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Retail sale of other goods in specialised stores",
+    "AreaName": "England",
+    "Percentage": 3.0,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Restaurants and mobile food service",
+    "AreaName": "England",
+    "Percentage": 3.6,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Motion picture, video and television programme",
+    "AreaName": "England",
+    "Percentage": 1.0,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Computer programming, consultancy and related",
+    "AreaName": "England",
+    "Percentage": 4.3,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Renting and operating of own or leased real estate",
+    "AreaName": "England",
+    "Percentage": 2.1,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Real estate on a fee or contract basis",
+    "AreaName": "England",
+    "Percentage": 1.7,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Management consultancy",
+    "AreaName": "England",
+    "Percentage": 4.9,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Architectural and engineering and related technical consultancy",
+    "AreaName": "England",
+    "Percentage": 2.5,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Specialised design",
+    "AreaName": "England",
+    "Percentage": 0.8,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Business support service n.e.c.",
+    "AreaName": "England",
+    "Percentage": 3.2,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Creative, arts and entertainment",
+    "AreaName": "England",
+    "Percentage": 1.1,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Other personal service",
+    "AreaName": "England",
+    "Percentage": 2.7,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Construction of residential and non-residential buildings",
+    "AreaName": "London",
+    "Percentage": 3.1,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Retail sale in non-specialised stores",
+    "AreaName": "London",
+    "Percentage": 1.9,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Retail sale of other goods in specialised stores",
+    "AreaName": "London",
+    "Percentage": 2.8,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Restaurants and mobile food service",
+    "AreaName": "London",
+    "Percentage": 3.8,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Motion picture, video and television programme",
+    "AreaName": "London",
+    "Percentage": 2.2,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Computer programming, consultancy and related",
+    "AreaName": "London",
+    "Percentage": 6.4,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Renting and operating of own or leased real estate",
+    "AreaName": "London",
+    "Percentage": 2.3,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Real estate on a fee or contract basis",
+    "AreaName": "London",
+    "Percentage": 2.5,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Management consultancy",
+    "AreaName": "London",
+    "Percentage": 6.9,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Architectural and engineering and related technical consultancy",
+    "AreaName": "London",
+    "Percentage": 2.2,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Specialised design",
+    "AreaName": "London",
+    "Percentage": 1.3,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Business support service n.e.c.",
+    "AreaName": "London",
+    "Percentage": 4.1,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Creative, arts and entertainment",
+    "AreaName": "London",
+    "Percentage": 2.3,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Other personal service",
+    "AreaName": "London",
+    "Percentage": 2.6,
+    "Time period": 2023
+  },
+  {
+    "Industry category": "Construction of residential and non-residential buildings",
+    "AreaName": "Lambeth",
+    "Percentage": 2.3,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Retail sale in non-specialised stores",
+    "AreaName": "Lambeth",
+    "Percentage": 2.4,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Retail sale of other goods in specialised stores",
+    "AreaName": "Lambeth",
+    "Percentage": 2.4,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Restaurants and mobile food service",
+    "AreaName": "Lambeth",
+    "Percentage": 5.4,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Motion picture, video and television programme",
+    "AreaName": "Lambeth",
+    "Percentage": 3.8,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Computer programming, consultancy and related",
+    "AreaName": "Lambeth",
+    "Percentage": 6.1,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Renting and operating of own or leased real estate",
+    "AreaName": "Lambeth",
+    "Percentage": 2.0,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Real estate on a fee or contract basis",
+    "AreaName": "Lambeth",
+    "Percentage": 2.1,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Management consultancy",
+    "AreaName": "Lambeth",
+    "Percentage": 7.9,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Architectural and engineering and related technical consultancy",
+    "AreaName": "Lambeth",
+    "Percentage": 2.6,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Specialised design",
+    "AreaName": "Lambeth",
+    "Percentage": 2.1,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Business support service n.e.c.",
+    "AreaName": "Lambeth",
+    "Percentage": 4.6,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Creative, arts and entertainment",
+    "AreaName": "Lambeth",
+    "Percentage": 3.5,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Other personal service",
+    "AreaName": "Lambeth",
+    "Percentage": 2.7,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Construction of residential and non-residential buildings",
+    "AreaName": "England",
+    "Percentage": 2.6,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Retail sale in non-specialised stores",
+    "AreaName": "England",
+    "Percentage": 2.0,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Retail sale of other goods in specialised stores",
+    "AreaName": "England",
+    "Percentage": 3.0,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Restaurants and mobile food service",
+    "AreaName": "England",
+    "Percentage": 3.6,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Motion picture, video and television programme",
+    "AreaName": "England",
+    "Percentage": 0.9,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Computer programming, consultancy and related",
+    "AreaName": "England",
+    "Percentage": 4.5,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Renting and operating of own or leased real estate",
+    "AreaName": "England",
+    "Percentage": 2.1,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Real estate on a fee or contract basis",
+    "AreaName": "England",
+    "Percentage": 1.7,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Management consultancy",
+    "AreaName": "England",
+    "Percentage": 5.1,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Architectural and engineering and related technical consultancy",
+    "AreaName": "England",
+    "Percentage": 2.6,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Specialised design",
+    "AreaName": "England",
+    "Percentage": 0.8,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Business support service n.e.c.",
+    "AreaName": "England",
+    "Percentage": 3.3,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Creative, arts and entertainment",
+    "AreaName": "England",
+    "Percentage": 1.0,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Other personal service",
+    "AreaName": "England",
+    "Percentage": 2.6,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Construction of residential and non-residential buildings",
+    "AreaName": "London",
+    "Percentage": 3.1,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Retail sale in non-specialised stores",
+    "AreaName": "London",
+    "Percentage": 1.9,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Retail sale of other goods in specialised stores",
+    "AreaName": "London",
+    "Percentage": 2.8,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Restaurants and mobile food service",
+    "AreaName": "London",
+    "Percentage": 3.8,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Motion picture, video and television programme",
+    "AreaName": "London",
+    "Percentage": 2.2,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Computer programming, consultancy and related",
+    "AreaName": "London",
+    "Percentage": 6.7,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Renting and operating of own or leased real estate",
+    "AreaName": "London",
+    "Percentage": 2.2,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Real estate on a fee or contract basis",
+    "AreaName": "London",
+    "Percentage": 2.4,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Management consultancy",
+    "AreaName": "London",
+    "Percentage": 7.2,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Architectural and engineering and related technical consultancy",
+    "AreaName": "London",
+    "Percentage": 2.2,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Specialised design",
+    "AreaName": "London",
+    "Percentage": 1.4,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Business support service n.e.c.",
+    "AreaName": "London",
+    "Percentage": 4.3,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Creative, arts and entertainment",
+    "AreaName": "London",
+    "Percentage": 2.2,
+    "Time period": 2022
+  },
+  {
+    "Industry category": "Other personal service",
+    "AreaName": "London",
+    "Percentage": 2.4,
+    "Time period": 2022
+  }
+]

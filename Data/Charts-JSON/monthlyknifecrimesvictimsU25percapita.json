@@ -1,0 +1,989 @@
+[
+  {
+    "AreaName": "Lambeth",
+    "Population": 317654,
+    "Time period": "2023-04",
+    "Count": 6,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "Lambeth",
+    "Population": 317654,
+    "Time period": "2023-05",
+    "Count": 4,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "Lambeth",
+    "Population": 317654,
+    "Time period": "2023-06",
+    "Count": 11,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "Lambeth",
+    "Population": 317654,
+    "Time period": "2023-07",
+    "Count": 1,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "Lambeth",
+    "Population": 317654,
+    "Time period": "2023-08",
+    "Count": 4,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "Lambeth",
+    "Population": 317654,
+    "Time period": "2023-09",
+    "Count": 8,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "Lambeth",
+    "Population": 317654,
+    "Time period": "2023-10",
+    "Count": 8,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "Lambeth",
+    "Population": 317654,
+    "Time period": "2023-11",
+    "Count": 3,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "Lambeth",
+    "Population": 317654,
+    "Time period": "2023-12",
+    "Count": 1,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "Lambeth",
+    "Population": 317654,
+    "Time period": "2024-01",
+    "Count": 5,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "Brixton Acre Lane",
+    "Population": 15252,
+    "Time period": "2023-04",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Brixton Acre Lane",
+    "Population": 15252,
+    "Time period": "2023-06",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Brixton Acre Lane",
+    "Population": 15252,
+    "Time period": "2023-10",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Brixton North",
+    "Population": 16324,
+    "Time period": "2023-05",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Brixton North",
+    "Population": 16324,
+    "Time period": "2023-09",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Brixton North",
+    "Population": 16324,
+    "Time period": "2023-10",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Brixton North",
+    "Population": 16324,
+    "Time period": "2023-12",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Brixton Rush Common",
+    "Population": 14930,
+    "Time period": "2023-09",
+    "Count": 2,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Brixton Windrush",
+    "Population": 9482,
+    "Time period": "2023-08",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Clapham East",
+    "Population": 9845,
+    "Time period": "2023-06",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Clapham Town",
+    "Population": 15904,
+    "Time period": "2023-05",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Clapham Town",
+    "Population": 15904,
+    "Time period": "2024-01",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Gipsy Hill",
+    "Population": 10257,
+    "Time period": "2023-10",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Herne Hill & Loughborough Junction",
+    "Population": 16156,
+    "Time period": "2023-04",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Herne Hill & Loughborough Junction",
+    "Population": 16156,
+    "Time period": "2023-06",
+    "Count": 3,
+    "Offences per 1,000 people": 0.2
+  },
+  {
+    "AreaName": "Herne Hill & Loughborough Junction",
+    "Population": 16156,
+    "Time period": "2023-11",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Herne Hill & Loughborough Junction",
+    "Population": 16156,
+    "Time period": "2024-01",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Knight's Hill",
+    "Population": 16907,
+    "Time period": "2023-05",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Myatt's Fields",
+    "Population": 10932,
+    "Time period": "2023-10",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Oval",
+    "Population": 12441,
+    "Time period": "2023-08",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Oval",
+    "Population": 12441,
+    "Time period": "2023-09",
+    "Count": 2,
+    "Offences per 1,000 people": 0.2
+  },
+  {
+    "AreaName": "Oval",
+    "Population": 12441,
+    "Time period": "2024-01",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "St Martin's",
+    "Population": 10844,
+    "Time period": "2023-04",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Stockwell East",
+    "Population": 10746,
+    "Time period": "2023-04",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Stockwell East",
+    "Population": 10746,
+    "Time period": "2023-06",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Stockwell East",
+    "Population": 10746,
+    "Time period": "2023-08",
+    "Count": 2,
+    "Offences per 1,000 people": 0.2
+  },
+  {
+    "AreaName": "Stockwell East",
+    "Population": 10746,
+    "Time period": "2023-11",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Stockwell West & Larkhall",
+    "Population": 16332,
+    "Time period": "2023-07",
+    "Count": 2,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Stockwell West & Larkhall",
+    "Population": 16332,
+    "Time period": "2024-01",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Streatham Hill East",
+    "Population": 9877,
+    "Time period": "2024-01",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Streatham Wells",
+    "Population": 9757,
+    "Time period": "2023-09",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Vauxhall",
+    "Population": 9733,
+    "Time period": "2023-04",
+    "Count": 2,
+    "Offences per 1,000 people": 0.2
+  },
+  {
+    "AreaName": "Vauxhall",
+    "Population": 9733,
+    "Time period": "2023-06",
+    "Count": 2,
+    "Offences per 1,000 people": 0.2
+  },
+  {
+    "AreaName": "Vauxhall",
+    "Population": 9733,
+    "Time period": "2023-10",
+    "Count": 2,
+    "Offences per 1,000 people": 0.2
+  },
+  {
+    "AreaName": "Waterloo & South Bank",
+    "Population": 8858,
+    "Time period": "2023-06",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Waterloo & South Bank",
+    "Population": 8858,
+    "Time period": "2023-10",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Waterloo & South Bank",
+    "Population": 8858,
+    "Time period": "2023-11",
+    "Count": 2,
+    "Offences per 1,000 people": 0.2
+  },
+  {
+    "AreaName": "West Dulwich",
+    "Population": 11384,
+    "Time period": "2023-09",
+    "Count": 2,
+    "Offences per 1,000 people": 0.2
+  },
+  {
+    "AreaName": "London",
+    "Population": 8799728,
+    "Time period": "2023-04",
+    "Count": 115,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "London",
+    "Population": 8799728,
+    "Time period": "2023-05",
+    "Count": 113,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "London",
+    "Population": 8799728,
+    "Time period": "2023-06",
+    "Count": 103,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "London",
+    "Population": 8799728,
+    "Time period": "2023-07",
+    "Count": 127,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "London",
+    "Population": 8799728,
+    "Time period": "2023-08",
+    "Count": 122,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "London",
+    "Population": 8799728,
+    "Time period": "2023-09",
+    "Count": 118,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "London",
+    "Population": 8799728,
+    "Time period": "2023-10",
+    "Count": 92,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "London",
+    "Population": 8799728,
+    "Time period": "2023-11",
+    "Count": 122,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "London",
+    "Population": 8799728,
+    "Time period": "2023-12",
+    "Count": 91,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "London",
+    "Population": 8799728,
+    "Time period": "2024-01",
+    "Count": 97,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "Lambeth",
+    "Population": 317654,
+    "Time period": "2022-04",
+    "Count": 8,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "Lambeth",
+    "Population": 317654,
+    "Time period": "2022-05",
+    "Count": 12,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "Lambeth",
+    "Population": 317654,
+    "Time period": "2022-06",
+    "Count": 10,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "Lambeth",
+    "Population": 317654,
+    "Time period": "2022-07",
+    "Count": 10,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "Lambeth",
+    "Population": 317654,
+    "Time period": "2022-08",
+    "Count": 1,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "Lambeth",
+    "Population": 317654,
+    "Time period": "2022-09",
+    "Count": 6,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "Lambeth",
+    "Population": 317654,
+    "Time period": "2022-10",
+    "Count": 9,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "Lambeth",
+    "Population": 317654,
+    "Time period": "2022-11",
+    "Count": 6,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "Lambeth",
+    "Population": 317654,
+    "Time period": "2022-12",
+    "Count": 11,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "Lambeth",
+    "Population": 317654,
+    "Time period": "2023-01",
+    "Count": 3,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "Lambeth",
+    "Population": 317654,
+    "Time period": "2023-02",
+    "Count": 6,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "Lambeth",
+    "Population": 317654,
+    "Time period": "2023-03",
+    "Count": 7,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "Brixton Acre Lane",
+    "Population": 15252,
+    "Time period": "2022-11",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Brixton North",
+    "Population": 16324,
+    "Time period": "2022-07",
+    "Count": 3,
+    "Offences per 1,000 people": 0.2
+  },
+  {
+    "AreaName": "Brixton North",
+    "Population": 16324,
+    "Time period": "2023-02",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Brixton Rush Common",
+    "Population": 14930,
+    "Time period": "2022-04",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Clapham Common & Abbeville",
+    "Population": 10015,
+    "Time period": "2022-05",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Clapham Common & Abbeville",
+    "Population": 10015,
+    "Time period": "2022-09",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Clapham East",
+    "Population": 9845,
+    "Time period": "2022-04",
+    "Count": 2,
+    "Offences per 1,000 people": 0.2
+  },
+  {
+    "AreaName": "Clapham East",
+    "Population": 9845,
+    "Time period": "2022-05",
+    "Count": 2,
+    "Offences per 1,000 people": 0.2
+  },
+  {
+    "AreaName": "Clapham East",
+    "Population": 9845,
+    "Time period": "2023-01",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Clapham Park",
+    "Population": 12711,
+    "Time period": "2022-11",
+    "Count": 2,
+    "Offences per 1,000 people": 0.2
+  },
+  {
+    "AreaName": "Clapham Park",
+    "Population": 12711,
+    "Time period": "2023-01",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Clapham Town",
+    "Population": 15904,
+    "Time period": "2022-04",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Clapham Town",
+    "Population": 15904,
+    "Time period": "2022-06",
+    "Count": 5,
+    "Offences per 1,000 people": 0.3
+  },
+  {
+    "AreaName": "Clapham Town",
+    "Population": 15904,
+    "Time period": "2022-07",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Clapham Town",
+    "Population": 15904,
+    "Time period": "2022-09",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Clapham Town",
+    "Population": 15904,
+    "Time period": "2022-10",
+    "Count": 4,
+    "Offences per 1,000 people": 0.3
+  },
+  {
+    "AreaName": "Clapham Town",
+    "Population": 15904,
+    "Time period": "2022-12",
+    "Count": 2,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Herne Hill & Loughborough Junction",
+    "Population": 16156,
+    "Time period": "2022-04",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Herne Hill & Loughborough Junction",
+    "Population": 16156,
+    "Time period": "2022-07",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Herne Hill & Loughborough Junction",
+    "Population": 16156,
+    "Time period": "2022-11",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Herne Hill & Loughborough Junction",
+    "Population": 16156,
+    "Time period": "2023-01",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Herne Hill & Loughborough Junction",
+    "Population": 16156,
+    "Time period": "2023-02",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Herne Hill & Loughborough Junction",
+    "Population": 16156,
+    "Time period": "2023-03",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Kennington",
+    "Population": 14603,
+    "Time period": "2022-05",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Kennington",
+    "Population": 14603,
+    "Time period": "2022-06",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Kennington",
+    "Population": 14603,
+    "Time period": "2022-07",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Kennington",
+    "Population": 14603,
+    "Time period": "2022-10",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Kennington",
+    "Population": 14603,
+    "Time period": "2022-12",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Kennington",
+    "Population": 14603,
+    "Time period": "2023-03",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Knight's Hill",
+    "Population": 16907,
+    "Time period": "2022-05",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Knight's Hill",
+    "Population": 16907,
+    "Time period": "2022-06",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Knight's Hill",
+    "Population": 16907,
+    "Time period": "2022-12",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Myatt's Fields",
+    "Population": 10932,
+    "Time period": "2023-01",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Oval",
+    "Population": 12441,
+    "Time period": "2022-10",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Oval",
+    "Population": 12441,
+    "Time period": "2023-02",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "St Martin's",
+    "Population": 10844,
+    "Time period": "2022-05",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "St Martin's",
+    "Population": 10844,
+    "Time period": "2022-11",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "St Martin's",
+    "Population": 10844,
+    "Time period": "2022-12",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Stockwell East",
+    "Population": 10746,
+    "Time period": "2023-03",
+    "Count": 2,
+    "Offences per 1,000 people": 0.2
+  },
+  {
+    "AreaName": "Stockwell West & Larkhall",
+    "Population": 16332,
+    "Time period": "2022-05",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Stockwell West & Larkhall",
+    "Population": 16332,
+    "Time period": "2022-06",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Stockwell West & Larkhall",
+    "Population": 16332,
+    "Time period": "2022-09",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Stockwell West & Larkhall",
+    "Population": 16332,
+    "Time period": "2023-02",
+    "Count": 2,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Streatham Common & Vale",
+    "Population": 17659,
+    "Time period": "2022-04",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Streatham Common & Vale",
+    "Population": 17659,
+    "Time period": "2022-10",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Streatham Hill East",
+    "Population": 9877,
+    "Time period": "2022-04",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Streatham Hill East",
+    "Population": 9877,
+    "Time period": "2022-12",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Streatham Hill West & Thornton",
+    "Population": 10891,
+    "Time period": "2022-07",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Streatham St Leonard's",
+    "Population": 15814,
+    "Time period": "2022-05",
+    "Count": 2,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Streatham Wells",
+    "Population": 9757,
+    "Time period": "2022-09",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Streatham Wells",
+    "Population": 9757,
+    "Time period": "2022-12",
+    "Count": 3,
+    "Offences per 1,000 people": 0.3
+  },
+  {
+    "AreaName": "Vauxhall",
+    "Population": 9733,
+    "Time period": "2022-04",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Vauxhall",
+    "Population": 9733,
+    "Time period": "2022-06",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Vauxhall",
+    "Population": 9733,
+    "Time period": "2023-02",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Waterloo & South Bank",
+    "Population": 8858,
+    "Time period": "2022-05",
+    "Count": 2,
+    "Offences per 1,000 people": 0.2
+  },
+  {
+    "AreaName": "Waterloo & South Bank",
+    "Population": 8858,
+    "Time period": "2022-07",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Waterloo & South Bank",
+    "Population": 8858,
+    "Time period": "2022-10",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Waterloo & South Bank",
+    "Population": 8858,
+    "Time period": "2022-11",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "Waterloo & South Bank",
+    "Population": 8858,
+    "Time period": "2023-03",
+    "Count": 1,
+    "Offences per 1,000 people": 0.1
+  },
+  {
+    "AreaName": "London",
+    "Population": 8799728,
+    "Time period": "2022-04",
+    "Count": 89,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "London",
+    "Population": 8799728,
+    "Time period": "2022-05",
+    "Count": 106,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "London",
+    "Population": 8799728,
+    "Time period": "2022-06",
+    "Count": 113,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "London",
+    "Population": 8799728,
+    "Time period": "2022-07",
+    "Count": 111,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "London",
+    "Population": 8799728,
+    "Time period": "2022-08",
+    "Count": 98,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "London",
+    "Population": 8799728,
+    "Time period": "2022-09",
+    "Count": 106,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "London",
+    "Population": 8799728,
+    "Time period": "2022-10",
+    "Count": 126,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "London",
+    "Population": 8799728,
+    "Time period": "2022-11",
+    "Count": 129,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "London",
+    "Population": 8799728,
+    "Time period": "2022-12",
+    "Count": 89,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "London",
+    "Population": 8799728,
+    "Time period": "2023-01",
+    "Count": 117,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "London",
+    "Population": 8799728,
+    "Time period": "2023-02",
+    "Count": 111,
+    "Offences per 1,000 people": 0.0
+  },
+  {
+    "AreaName": "London",
+    "Population": 8799728,
+    "Time period": "2023-03",
+    "Count": 112,
+    "Offences per 1,000 people": 0.0
+  }
+]

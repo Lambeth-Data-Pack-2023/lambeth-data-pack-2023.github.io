@@ -1,0 +1,29 @@
+[
+  {
+    "Time period": "202223",
+    "AreaName": "England",
+    "Disadvantaged": 35.1,
+    "FSM": 34.9,
+    "Total": 46.4,
+    "Disadvantaged Gap": 11.3,
+    "FSM Gap": 11.5
+  },
+  {
+    "Time period": "202223",
+    "AreaName": "Lambeth",
+    "Disadvantaged": 39.4,
+    "FSM": 39.2,
+    "Total": 44.8,
+    "Disadvantaged Gap": 5.4,
+    "FSM Gap": 5.6
+  },
+  {
+    "Time period": "202223",
+    "AreaName": "London",
+    "Disadvantaged": 42.0,
+    "FSM": 41.8,
+    "Total": 50.6,
+    "Disadvantaged Gap": 8.6,
+    "FSM Gap": 8.8
+  }
+]

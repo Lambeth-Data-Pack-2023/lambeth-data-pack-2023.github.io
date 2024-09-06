@@ -1,0 +1,38 @@
+[
+  {
+    "Time period": "2021/22",
+    "AreaName": "England",
+    "Pupils reaching the expected standard in RWM (%)": "59",
+    "Pupils reaching the higher standard in RWM (%)": "7"
+  },
+  {
+    "Time period": "2022/23",
+    "AreaName": "England",
+    "Pupils reaching the expected standard in RWM (%)": "60",
+    "Pupils reaching the higher standard in RWM (%)": "8"
+  },
+  {
+    "Time period": "2021/22",
+    "AreaName": "London",
+    "Pupils reaching the expected standard in RWM (%)": "66",
+    "Pupils reaching the higher standard in RWM (%)": "11"
+  },
+  {
+    "Time period": "2022/23",
+    "AreaName": "London",
+    "Pupils reaching the expected standard in RWM (%)": "67",
+    "Pupils reaching the higher standard in RWM (%)": "12"
+  },
+  {
+    "Time period": "2021/22",
+    "AreaName": "Lambeth",
+    "Pupils reaching the expected standard in RWM (%)": "62",
+    "Pupils reaching the higher standard in RWM (%)": "10"
+  },
+  {
+    "Time period": "2022/23",
+    "AreaName": "Lambeth",
+    "Pupils reaching the expected standard in RWM (%)": "64",
+    "Pupils reaching the higher standard in RWM (%)": "10"
+  }
+]

@@ -1,0 +1,198 @@
+[
+  {
+    "AreaName": "Lambeth",
+    "Female": 163713,
+    "Female (%)": 51.59,
+    "Male": 153941,
+    "Male (%)": 48.41
+  },
+  {
+    "AreaName": "Brixton Acre Lane",
+    "Female": 7517,
+    "Female (%)": 49.29,
+    "Male": 7735,
+    "Male (%)": 50.71
+  },
+  {
+    "AreaName": "Brixton North",
+    "Female": 8443,
+    "Female (%)": 51.73,
+    "Male": 7881,
+    "Male (%)": 48.27
+  },
+  {
+    "AreaName": "Brixton Rush Common",
+    "Female": 7895,
+    "Female (%)": 52.89,
+    "Male": 7035,
+    "Male (%)": 47.11
+  },
+  {
+    "AreaName": "Brixton Windrush",
+    "Female": 4920,
+    "Female (%)": 51.85,
+    "Male": 4562,
+    "Male (%)": 48.15
+  },
+  {
+    "AreaName": "Clapham Common & Abbeville",
+    "Female": 5192,
+    "Female (%)": 51.85,
+    "Male": 4823,
+    "Male (%)": 48.15
+  },
+  {
+    "AreaName": "Clapham East",
+    "Female": 5198,
+    "Female (%)": 52.82,
+    "Male": 4647,
+    "Male (%)": 47.18
+  },
+  {
+    "AreaName": "Clapham Park",
+    "Female": 6603,
+    "Female (%)": 51.96,
+    "Male": 6108,
+    "Male (%)": 48.04
+  },
+  {
+    "AreaName": "Clapham Town",
+    "Female": 8127,
+    "Female (%)": 51.12,
+    "Male": 7777,
+    "Male (%)": 48.88
+  },
+  {
+    "AreaName": "Gipsy Hill",
+    "Female": 5473,
+    "Female (%)": 53.37,
+    "Male": 4784,
+    "Male (%)": 46.63
+  },
+  {
+    "AreaName": "Herne Hill & Loughborough Junction",
+    "Female": 8431,
+    "Female (%)": 52.19,
+    "Male": 7725,
+    "Male (%)": 47.81
+  },
+  {
+    "AreaName": "Kennington",
+    "Female": 7378,
+    "Female (%)": 50.51,
+    "Male": 7225,
+    "Male (%)": 49.49
+  },
+  {
+    "AreaName": "Knight's Hill",
+    "Female": 8968,
+    "Female (%)": 53.05,
+    "Male": 7939,
+    "Male (%)": 46.95
+  },
+  {
+    "AreaName": "Myatt's Fields",
+    "Female": 5625,
+    "Female (%)": 51.45,
+    "Male": 5307,
+    "Male (%)": 48.55
+  },
+  {
+    "AreaName": "Oval",
+    "Female": 6079,
+    "Female (%)": 48.88,
+    "Male": 6362,
+    "Male (%)": 51.12
+  },
+  {
+    "AreaName": "St Martin's",
+    "Female": 5775,
+    "Female (%)": 53.24,
+    "Male": 5069,
+    "Male (%)": 46.76
+  },
+  {
+    "AreaName": "Stockwell East",
+    "Female": 5440,
+    "Female (%)": 50.58,
+    "Male": 5306,
+    "Male (%)": 49.42
+  },
+  {
+    "AreaName": "Stockwell West & Larkhall",
+    "Female": 8310,
+    "Female (%)": 50.85,
+    "Male": 8022,
+    "Male (%)": 49.15
+  },
+  {
+    "AreaName": "Streatham Common & Vale",
+    "Female": 9076,
+    "Female (%)": 51.37,
+    "Male": 8583,
+    "Male (%)": 48.63
+  },
+  {
+    "AreaName": "Streatham Hill East",
+    "Female": 5120,
+    "Female (%)": 51.82,
+    "Male": 4757,
+    "Male (%)": 48.18
+  },
+  {
+    "AreaName": "Streatham Hill West & Thornton",
+    "Female": 5685,
+    "Female (%)": 52.19,
+    "Male": 5206,
+    "Male (%)": 47.81
+  },
+  {
+    "AreaName": "Streatham St Leonard's",
+    "Female": 8122,
+    "Female (%)": 51.37,
+    "Male": 7692,
+    "Male (%)": 48.63
+  },
+  {
+    "AreaName": "Streatham Wells",
+    "Female": 5066,
+    "Female (%)": 51.92,
+    "Male": 4691,
+    "Male (%)": 48.08
+  },
+  {
+    "AreaName": "Vauxhall",
+    "Female": 4733,
+    "Female (%)": 48.64,
+    "Male": 5000,
+    "Male (%)": 51.36
+  },
+  {
+    "AreaName": "Waterloo & South Bank",
+    "Female": 4512,
+    "Female (%)": 50.95,
+    "Male": 4346,
+    "Male (%)": 49.05
+  },
+  {
+    "AreaName": "West Dulwich",
+    "Female": 6028,
+    "Female (%)": 52.99,
+    "Male": 5356,
+    "Male (%)": 47.01
+  },
+  {
+    "AreaName": "England",
+    "Female": 28833712,
+    "Female (%)": 51.04,
+    "Male": 27656336,
+    "Male (%)": 48.96
+  },
+  {
+    "AreaName": "London",
+    "Female": 4531622,
+    "Female (%)": 51.45,
+    "Male": 4268106,
+    "Male (%)": 48.55
+  }
+]

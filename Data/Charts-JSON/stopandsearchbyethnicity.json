@@ -1,0 +1,98 @@
+[
+  {
+    "AreaName": "Lambeth",
+    "Ethnic minority": "No",
+    "Time period": 2022,
+    "Count": 1355,
+    "Population": 142882,
+    "Number of 'stop and searches' per 1,000 people": 9.5
+  },
+  {
+    "AreaName": "Lambeth",
+    "Ethnic minority": "No",
+    "Time period": 2023,
+    "Count": 959,
+    "Population": 142882,
+    "Number of 'stop and searches' per 1,000 people": 6.7
+  },
+  {
+    "AreaName": "Lambeth",
+    "Ethnic minority": "Not self-defined/unknown",
+    "Time period": 2022,
+    "Count": 2901,
+    "Population": null,
+    "Number of 'stop and searches' per 1,000 people": null
+  },
+  {
+    "AreaName": "Lambeth",
+    "Ethnic minority": "Not self-defined/unknown",
+    "Time period": 2023,
+    "Count": 2636,
+    "Population": null,
+    "Number of 'stop and searches' per 1,000 people": null
+  },
+  {
+    "AreaName": "Lambeth",
+    "Ethnic minority": "Yes",
+    "Time period": 2022,
+    "Count": 3695,
+    "Population": 174781,
+    "Number of 'stop and searches' per 1,000 people": 21.1
+  },
+  {
+    "AreaName": "Lambeth",
+    "Ethnic minority": "Yes",
+    "Time period": 2023,
+    "Count": 3041,
+    "Population": 174781,
+    "Number of 'stop and searches' per 1,000 people": 17.4
+  },
+  {
+    "AreaName": "London",
+    "Ethnic minority": "No",
+    "Time period": 2022,
+    "Count": 57014,
+    "Population": 4068548,
+    "Number of 'stop and searches' per 1,000 people": 14.0
+  },
+  {
+    "AreaName": "London",
+    "Ethnic minority": "No",
+    "Time period": 2023,
+    "Count": 44775,
+    "Population": 4068548,
+    "Number of 'stop and searches' per 1,000 people": 11.0
+  },
+  {
+    "AreaName": "London",
+    "Ethnic minority": "Not self-defined/unknown",
+    "Time period": 2022,
+    "Count": 55764,
+    "Population": null,
+    "Number of 'stop and searches' per 1,000 people": null
+  },
+  {
+    "AreaName": "London",
+    "Ethnic minority": "Not self-defined/unknown",
+    "Time period": 2023,
+    "Count": 48324,
+    "Population": null,
+    "Number of 'stop and searches' per 1,000 people": null
+  },
+  {
+    "AreaName": "London",
+    "Ethnic minority": "Yes",
+    "Time period": 2022,
+    "Count": 75014,
+    "Population": 4731178,
+    "Number of 'stop and searches' per 1,000 people": 15.9
+  },
+  {
+    "AreaName": "London",
+    "Ethnic minority": "Yes",
+    "Time period": 2023,
+    "Count": 59013,
+    "Population": 4731178,
+    "Number of 'stop and searches' per 1,000 people": 12.5
+  }
+]
