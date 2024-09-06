@@ -3,63 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Category Template</title>
-    <link rel="stylesheet" href="/Styles/colours.css" />
-    <link rel="stylesheet" href="/Styles/images.css" />
-    <link rel="stylesheet" href="/Styles/typography.css" />
-    <link rel="stylesheet" href="/Styles/layout.css" />
-    <link rel="stylesheet" href="/Styles/menu.css" />
-    <link rel="stylesheet" href="/Styles/grid.css" />
-    <link rel="stylesheet" href="/Styles/button.css" />
-    <link rel="stylesheet" href="/Styles/header.css" />
-    <link rel="icon" type="image/png" href="/Images/Lambeth-logo-favicon.png" />
+    <title>Category</title>
+    <link
+      rel="shortcut icon"
+      href="Images/Lambeth-logo-favicon.png"
+      type="image/x-icon"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <link rel="stylesheet" href="Styles/menu.css" />
+    <link rel="stylesheet" href="Styles/header.css" />
+    <link rel="stylesheet" href="Styles/structure.css" />
+    <link rel="stylesheet" href="Styles/layout.css" />
+    <link rel="stylesheet" href="Styles/footer.css" />
+    <link rel="stylesheet" href="Styles/buttons.css" />
+    <link rel="stylesheet" href="/Styles/typography.css" />
+
+
+
   </head>
   <body>
-    <header>
-      <!-- The displayHeader() function outputs the header -->
-    </header>
-    <main class="flex">
-      <div class="container-left">
-        <div class="menu-container">
-          <div class="menu-buttons">
-            <button onclick="showPreviousMenu()">
-              <i class="fa fa-arrow-left"></i>
-            </button>
-            <button onclick="showNextMenu()">
-              <i class="fa fa-arrow-right"></i>
-            </button>
-          </div>
-          <div id="menuItems"></div>
-          <!-- Menu contents will be dynamically generated here -->
-        </div>
-      </div>
-      <div class="container" style="border: none">
-        <!-- Page Breadcrumbs -->
-        <div class="breadcrumbs">
-          <a href="/index.html">Home / </a>
-          <!-- Dynamically generate current pages ambition here -->
-          <a id="ambitionLink" href="#">Ambition </a>
-          <!-- Dynamically generate title here -->
-          <h2 id="categoryTitle">Category Intro</h2>
-        </div>
-        <div id="root"></div>
-      </div>
+    <header></header>
+      <main class="flex">
+        <menu id="menu" class="menu"></menu>
+      <section class="mainSection">
+        <section id="category-details"></section>
+      </section>
+      </main>
     </main>
-    <script src="/Scripts/header.js"></script>
-    <!-- Function to Dynamically generate the breadcrumbs-->
-    <script src="/Scripts/category-breadcrumbs.js"></script>
-    <!-- Function to display menu -->
-    <script src="/Scripts/category-menu.js"></script>
-    <script src="/Scripts/category-data.js" type="text/babel"></script>
-    <script src="/Scripts/category-grid.js" type="text/babel"></script>
+    <footer class="flex space-between"></footer>
+
+    <!-- Include Papa Parse -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+
+    <!-- Include your JavaScript files -->
+    <script src="Scripts/header.js"></script>
+    <script type="module" src="Scripts/search.js"></script>
+    <script type="module" src="Scripts/menu.js"></script>
+    <script src="Scripts/footer.js"></script>
+    <script src="Scripts/toggleButton.js"></script>
+     <script type="module" src="Scripts/Categories/index.js"></script>
   </body>
 </html>

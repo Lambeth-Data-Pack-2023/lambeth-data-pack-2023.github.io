@@ -3,1037 +3,115 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Category Template</title>
-    <link rel="stylesheet" href="/Styles/colours.css" />
-    <link rel="stylesheet" href="/Styles/images.css" />
-    <link rel="stylesheet" href="/Styles/typography.css" />
-    <link rel="stylesheet" href="/Styles/menu.css" />
-    <link rel="stylesheet" href="/Styles/layout.css" />
-    <link rel="stylesheet" href="/Styles/grid.css" />
-    <link rel="stylesheet" href="/Styles/button.css" />
-    <link rel="stylesheet" href="/Styles/header.css" />
-    <link rel="icon" type="image/png" href="/Images/Lambeth-logo-favicon.png" />
+    <title>Chart</title>
+    <link
+      rel="shortcut icon"
+      href="Images/Lambeth-logo-favicon.png"
+      type="image/x-icon"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <link rel="stylesheet" href="Styles/menu.css" />
+    <link rel="stylesheet" href="Styles/header.css" />
+    <link rel="stylesheet" href="Styles/structure.css" />
+    <link rel="stylesheet" href="Styles/layout.css" />
+    <link rel="stylesheet" href="Styles/footer.css" />
+    <link rel="stylesheet" href="/Styles/typography.css" />
+    <link rel="stylesheet" href="Styles/buttons.css" />
 
-    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
     <style>
-      /* Add this CSS to your stylesheet */
-      .line {
-        transition: stroke-width 0.3s ease; /* Smooth transition for stroke-width change */
-      }
-      #lineGraph,
-      #mapContainer,
-      #gridChartContainer {
-        height: 100%;
-      }
-
-      svg {
-        height: 100%;
-        width: 100%;
-      }
-      .tooltip {
-        position: fixed;
-        bottom: 9vh;
-        left: 30vw;
-        font-family: Verdana;
-        color: #212c61;
-      }
-      .domain {
-        stroke-width: 3px;
-        color: #212c61;
-      }
-      .tick {
-        font-weight: 400;
-      }
-      .legend text {
-        font-family: Verdana;
-        color: #212c61;
-      }
-      .grid-item-chart:hover {
-        background-color: white;
-      }
-      g text {
+      .container {
+        margin: 10px;
         padding: 10px;
+        border: #212c61 solid 1px;
+        border-radius: 5px;
+        box-shadow: 2px 5px #212c6165;
       }
-      .ward {
-        fill: #212c61;
-        stroke: white;
-        stroke-width: 0.5;
-        transition: fill 0.3s ease-in-out;
+      .chart-container {
+        position: relative;
+      }
+      #ward-map-button {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      #commentary-button {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      .mainSection {
+        overflow-y: hidden;
       }
 
-      .ward:hover {
-        fill: orange;
-        cursor: pointer;
+      h1 {
+        margin: 0;
+        margin-top: 5px;
+        color: #212c61;
       }
-      .selectContainer {
-        justify-content: space-between;
+      .time-period-select {
+        position: fixed;
+        bottom: 7vh;
+        right: 30vw;
+      }
+      .select-container {
+        position: fixed;
+        bottom: 7vh;
+        left: 250px;
       }
       select {
-        max-width: 15vw;
-      }
-      option {
-        width: 20vw;
+        max-width: 25vw;
       }
     </style>
   </head>
   <body>
-    <!-- Page Header -->
-    <header>
-      <!-- The displayHeader() function outputs the header -->
-    </header>
-
+    <header></header>
     <main class="flex">
-      <div class="container-left">
-        <div class="menu-container">
-          <div class="menu-buttons">
-            <button onclick="showPreviousMenu()">
-              <i class="fa fa-arrow-left"></i>
-            </button>
-            <button onclick="showNextMenu()">
-              <i class="fa fa-arrow-right"></i>
-            </button>
-          </div>
-          <div id="menuItems"></div>
-          <!-- Menu contents will be dynamically generated here -->
+      <menu id="menu" class="menu"></menu>
+      <section class="mainSection flex">
+        <div class="chart-container">
+          <h1>Chart Name</h1>
+          <button id="ward-map-button">Ward Map</button>
+          <button
+            id="commentary-button"
+            class="toggleButton"
+            data-target="commentary"
+          >
+            Commentary
+          </button>
         </div>
-      </div>
-      <div class="container" style="border: none">
         <div>
-          <!-- Dynamically display breadcrumbs -->
-          <div id="breadcrumbs">
-            <a href="/index.html">Home</a> /
-            <span id="ambitionBreadcrumb"></span>
-            <span id="categoryBreadcrumb"></span>
+          <div id="commentary" class="commentary-container expanded">
+            <h4>Table Commentary</h4>
+            <div class="container">
+              <div id="table-commentary"></div>
+            </div>
+            <h4>Page Commentary</h4>
+            <div class="container">
+              <div id="page-commentary"></div>
+            </div>
+            <div class="nav-buttons flex">
+              <a id="previous-chart" href=""><button>Previous Chart</button></a>
+              <a id="next-chart" href=""><button>Next Chart</button></a>
+            </div>
           </div>
-          <!-- Dynamically display current page's chart name -->
-          <h2 id="chartName">Childhood Vaccinations</h2>
         </div>
-
-        <div id="root"></div>
-      </div>
+      </section>
     </main>
-
-    <script src="/Scripts/header.js"></script>
-    <script src="/Scripts/chart-page-details.js"></script>
-
-    <script type="text/babel">
-      function createSVG(containerId) {
-        const margin = { top: 20, right: 20, bottom: 30, left: 50 };
-        const width = 600 - margin.left - margin.right;
-        const height = 400 - margin.top - margin.bottom;
-
-        // Remove previous SVG
-        d3.select(`#${containerId} svg`).remove();
-
-        // Create SVG container
-        const svg = d3
-          .select(`#${containerId}`)
-          .append("svg")
-          .attr("preserveAspectRatio", "xMinYMin meet")
-          .attr(
-            "viewBox",
-            `0 0 ${width + margin.left + margin.right} ${
-              height + margin.top + margin.bottom
-            }`
-          )
-          .classed("svg-content", true)
-          .append("g")
-          .attr("transform", `translate(${margin.left},${margin.top})`);
-
-        return svg;
-      }
-      function logAndExtractUniqueValues({
-        jsonData,
-        xKey,
-        yKey,
-        thirdKey,
-        yLabel,
-        mapType,
-      }) {
-        if (jsonData) {
-          console.log("Json Data:", jsonData);
-          console.log("X Key:", xKey);
-          console.log("Y Key:", yKey);
-          console.log("Third Key Variable:", thirdKey);
-          console.log("Y Label:", yLabel);
-          console.log("Map Type:", mapType);
-
-          // Extracting unique values of the xKey from the jsonData
-          const uniqueXValues = [
-            ...new Set(jsonData.map((item) => item[xKey])),
-          ];
-          console.log("X Axis Values:", uniqueXValues);
-          // Extracting unique values of the yKey from the jsonData
-          const uniqueThirdValues = [
-            ...new Set(jsonData.map((item) => item[thirdKey])),
-          ];
-          console.log("Third Variable Values:", uniqueThirdValues);
-        }
-      }
-
-      function LineChart({ jsonData, xKey, yKey, thirdKey, yLabel, mapType }) {
-        const mainLocations = ["London", "Lambeth", "England"];
-
-        React.useEffect(() => {
-          if (jsonData) {
-            logAndExtractUniqueValues({
-              jsonData,
-              xKey,
-              yKey,
-              thirdKey,
-              yLabel,
-              mapType,
-            });
-
-            const margin = { top: 50, right: 20, bottom: 30, left: 75 };
-            const width = 600 - margin.left - margin.right;
-            const height = 400 - margin.top - margin.bottom;
-
-            // Remove previous SVG
-            d3.select(`#lineGraph svg`).remove();
-
-            // Create SVG container
-            const svg = d3
-              .select(`#lineGraph`)
-              .append("svg")
-              .attr("preserveAspectRatio", "xMinYMin meet")
-              .attr(
-                "viewBox",
-                `0 0 ${width + margin.left + margin.right} ${
-                  height + margin.top + margin.bottom
-                }`
-              )
-              .classed("svg-content", true)
-              .append("g")
-              .attr("transform", `translate(${margin.left},${margin.top})`);
-
-            // Parse the data
-            jsonData.forEach((d) => {
-              d[xKey] = d[xKey];
-              d[yKey] = +d[yKey];
-            });
-
-            // Filter data for only main locations
-            const filteredData = jsonData.filter((d) =>
-              mainLocations.includes(d[thirdKey])
-            );
-
-            // Group data by thirdKey (location)
-            const groupedData = d3.group(filteredData, (d) => d[thirdKey]);
-
-            // Get the unique locations that have data
-            const availableLocations = Array.from(groupedData.keys());
-
-            // Scale functions
-            const x = d3
-              .scaleBand()
-              .domain(jsonData.map((d) => d[xKey]))
-              .range([0, width])
-              .padding(0.1);
-
-            const y = d3
-              .scaleLinear()
-              .domain([0, d3.max(filteredData, (d) => d[yKey])])
-              .nice()
-              .range([height, 0]);
-
-            // Define color scale
-            const color = d3
-              .scaleOrdinal(d3.schemeCategory10)
-              .domain(availableLocations);
-
-            // Add the x-axis
-            svg
-              .append("g")
-              .attr("transform", `translate(0,${height})`)
-              .call(d3.axisBottom(x))
-              .selectAll("text")
-              .style("text-anchor", "end")
-              .attr("transform", "rotate(-45)");
-
-            // Add the y-axis
-            svg.append("g").call(d3.axisLeft(y));
-
-            // Add y-axis label
-            svg
-              .append("text")
-              .attr("transform", "rotate(-90)")
-              .attr("y", 0 - margin.left)
-              .attr("x", 0 - height / 2)
-              .attr("dy", "1em")
-              .style("text-anchor", "middle")
-              .attr("font-family", "Arial") // Adjust font family
-              .attr("font-size", "14px") // Adjust font size
-              .text(yLabel);
-
-            // Add lines and circles for each group
-            groupedData.forEach((groupData, location) => {
-              const group = svg.append("g");
-
-              // Add path (line) to the group
-              const path = group
-                .append("path")
-                .datum(groupData)
-                .attr("fill", "none")
-                .attr("stroke", color(location))
-                .attr("stroke-width", 4) // Increased line width
-                .attr(
-                  "d",
-                  d3
-                    .line()
-                    .x((d) => x(d[xKey]) + x.bandwidth() / 2)
-                    .y((d) => y(d[yKey]))
-                )
-                .style("cursor", "crosshair") // Change cursor to crosshair
-                .on("mouseover", function () {
-                  d3.select(this).raise(); // Bring line to front
-                  group.selectAll("circle").raise(); // Bring all circles in the group to front
-                });
-
-              // Add circles to the group
-              const circles = group
-                .selectAll(`circle-${location}`)
-                .data(groupData)
-                .enter()
-                .append("circle")
-                .attr("cx", (d) => x(d[xKey]) + x.bandwidth() / 2)
-                .attr("cy", (d) => y(d[yKey]))
-                .attr("r", 0) // Initially set circle size to 0
-                .attr("fill", color(location))
-                .attr("stroke", "black") // Add black border
-                .attr("stroke-width", 1) // Set initial border width
-                .style("cursor", "pointer") // Change cursor to pointer
-                .on("mouseover", function () {
-                  d3.select(this).raise(); // Bring circle to front
-                  d3.select(this).attr("stroke-width", 2); // Increase border width on hover
-                })
-                .on("mouseleave", function () {
-                  d3.select(this).attr("stroke-width", 1); // Return border width to normal on leave
-                });
-
-              // Animate the drawing of the line
-              path
-                .transition()
-                .duration(1500) // Animation duration
-                .ease(d3.easeLinear)
-                .attrTween("stroke-dasharray", function () {
-                  const length = this.getTotalLength();
-                  return d3.interpolate(`0,${length}`, `${length},${length}`);
-                });
-
-              // Animate the appearance of circles
-              circles
-                .transition()
-                .duration(2500) // Animation duration
-                .delay((d, i) => i * 100) // Add delay to show circles point by point
-                .attr("r", 6); // Increased circle size
-            });
-
-            // Add legend
-            const legend = svg
-              .selectAll(".legend")
-              .data(availableLocations)
-              .enter()
-              .append("g")
-              .attr("class", "legend")
-              .attr("transform", (d, i) => `translate(0,${i * 20})`);
-
-            legend
-              .append("rect")
-              .attr("x", width - 18)
-              .attr("width", 18)
-              .attr("height", 18)
-              .style("fill", color);
-
-            legend
-              .append("text")
-              .attr("x", width - 24)
-              .attr("y", 9)
-              .attr("dy", ".35em")
-              .style("text-anchor", "end")
-              .text((d) => d);
-          }
-        }, [jsonData, xKey, yKey, thirdKey, yLabel, mapType]);
-
-        return <div id="lineGraph"></div>;
-      }
-
-      function BarChart({ jsonData, xKey, yKey, thirdKey, yLabel, mapType }) {
-        React.useEffect(() => {
-          if (jsonData) {
-            logAndExtractUniqueValues({
-              jsonData,
-              xKey,
-              yKey,
-              thirdKey,
-              yLabel,
-              mapType,
-            });
-            const margin = { top: 20, right: 20, bottom: 100, left: 50 };
-            const width = 600 - margin.left - margin.right;
-            const height = 400 - margin.top - margin.bottom;
-
-            // Remove previous SVG
-            d3.select(`#barGraph svg`).remove();
-
-            // Create SVG container
-            const svg = d3
-              .select(`#barGraph`)
-              .append("svg")
-              .attr("preserveAspectRatio", "xMinYMin meet")
-              .attr(
-                "viewBox",
-                `0 0 ${width + margin.left + margin.right} ${
-                  height + margin.top + margin.bottom
-                }`
-              )
-              .classed("svg-content", true)
-              .append("g")
-              .attr("transform", `translate(${margin.left},${margin.top})`);
-
-            // Parse the data
-            jsonData.forEach((d) => {
-              d[xKey] = d[xKey];
-              d[yKey] = +d[yKey];
-            });
-
-            // Scale functions
-            const x = d3
-              .scaleBand()
-              .domain(jsonData.map((d) => d[xKey]))
-              .range([0, width])
-              .padding(0.1);
-
-            const y = d3
-              .scaleLinear()
-              .domain([0, d3.max(jsonData, (d) => d[yKey])])
-              .nice()
-              .range([height, 0]);
-
-            // Add the x-axis
-            svg
-              .append("g")
-              .attr("transform", `translate(0,${height})`)
-              .call(d3.axisBottom(x))
-              .selectAll("text")
-              .style("text-anchor", "end")
-              .attr("transform", "rotate(-45)");
-
-            // Add the y-axis
-            svg.append("g").call(d3.axisLeft(y));
-
-            // Add y-axis label
-            svg
-              .append("text")
-              .attr("transform", "rotate(-90)")
-              .attr("y", 0 - margin.left)
-              .attr("x", 0 - height / 2)
-              .attr("dy", "1em")
-              .style("text-anchor", "middle")
-              .attr("font-family", "Arial") // Adjust font family
-              .attr("font-size", "14px") // Adjust font size
-              .text(yLabel);
-
-            // Add bars with animation
-            svg
-              .selectAll(".bar")
-              .data(jsonData)
-              .enter()
-              .append("rect")
-              .attr("class", "bar")
-              .attr("x", (d) => x(d[xKey]))
-              .attr("width", x.bandwidth())
-              .attr("y", height) // Start bars from the bottom
-              .attr("height", 0) // Set initial height to 0
-              .attr("fill", "steelblue")
-              .on("mouseover", function () {
-                d3.select(this).attr("fill", "orange"); // Change color on hover
-              })
-              .on("mouseleave", function () {
-                d3.select(this).attr("fill", "steelblue"); // Restore color on leave
-              })
-              .transition() // Add transition
-              .duration(1000) // Animation duration
-              .delay((d, i) => i * 100) // Add delay for each bar
-              .attr("y", (d) => y(d[yKey])) // Move bars to their actual position
-              .attr("height", (d) => height - y(d[yKey])) // Increase height of bars
-              .style("cursor", "pointer"); // Change cursor to pointer
-          }
-        }, [jsonData, xKey, yKey, thirdKey, yLabel, mapType]);
-
-        return <div id="barGraph"></div>;
-      }
-
-      function GroupedBarChart({
-        jsonData,
-        xKey,
-        yKey,
-        thirdKey,
-        yLabel,
-        mapType,
-      }) {
-        React.useEffect(() => {
-          if (jsonData && jsonData.length > 0) {
-            // Extract unique keys ending in "(%)"
-            const uniqueKeys = Object.keys(jsonData[0]).filter((key) =>
-              key.endsWith("(%)")
-            );
-
-            // Remove "(%)" suffix from keys for display
-            const formattedKeys = uniqueKeys.map((key) =>
-              key.replace(" (%)", "")
-            );
-
-            // Filter relevant area names
-            const relevantAreaNames = ["London", "Lambeth", "England"];
-            const filteredAreaData = jsonData.filter((data) =>
-              relevantAreaNames.includes(data[thirdKey])
-            );
-
-            // Log the values dynamically
-            uniqueKeys.forEach((key) => {
-              const categoryData = relevantAreaNames.map(
-                (name) =>
-                  `${name}: ${
-                    filteredAreaData.find((data) => data[thirdKey] === name)[
-                      key
-                    ]
-                  }`
-              );
-              console.log(`${key} [${categoryData.join(", ")}]`);
-            });
-
-            const margin = { top: 20, right: 20, bottom: 100, left: 50 };
-            const width = 600 - margin.left - margin.right;
-            const height = 400 - margin.top - margin.bottom;
-
-            // Remove previous SVG
-            d3.select(`#groupedBarGraph svg`).remove();
-
-            // Create SVG container
-            const svg = d3
-              .select(`#groupedBarGraph`)
-              .append("svg")
-              .attr("preserveAspectRatio", "xMinYMin meet")
-              .attr(
-                "viewBox",
-                `0 0 ${width + margin.left + margin.right} ${
-                  height + margin.top + margin.bottom
-                }`
-              )
-              .classed("svg-content", true)
-              .append("g")
-              .attr("transform", `translate(${margin.left},${margin.top})`);
-
-            // Create scales
-            const xScale = d3
-              .scaleBand()
-              .domain(formattedKeys)
-              .range([0, width])
-              .padding(0.1);
-
-            const yScale = d3
-              .scaleLinear()
-              .domain([
-                0,
-                d3.max(
-                  uniqueKeys.map((key) =>
-                    d3.max(filteredAreaData, (d) => d[key])
-                  )
-                ),
-              ])
-              .range([height, 0]);
-
-            const color = d3
-              .scaleOrdinal()
-              .domain(relevantAreaNames)
-              .range(d3.schemeCategory10);
-
-            // Create bars
-            svg
-              .selectAll(".bar-group")
-              .data(uniqueKeys)
-              .enter()
-              .append("g")
-              .attr("class", "bar-group")
-              .attr(
-                "transform",
-                (d, i) => `translate(${xScale(formattedKeys[i])},0)`
-              )
-              .selectAll(".bar")
-              .data((d) =>
-                filteredAreaData.map((area) => ({
-                  key: d,
-                  name: area[thirdKey],
-                  value: area[d],
-                }))
-              )
-              .enter()
-              .append("rect")
-              .attr("class", "bar")
-              .attr(
-                "x",
-                (d) =>
-                  (xScale.bandwidth() / relevantAreaNames.length) *
-                  relevantAreaNames.indexOf(d.name)
-              )
-              .attr("width", xScale.bandwidth() / relevantAreaNames.length)
-              .attr("y", (d) => yScale(d.value))
-              .attr("height", (d) => height - yScale(d.value))
-              .attr("fill", (d) => color(d.name));
-
-            // Create X Axis
-            svg
-              .append("g")
-              .attr("transform", `translate(0, ${height})`)
-              .call(d3.axisBottom(xScale))
-              .selectAll("text")
-              .style("text-anchor", "end")
-              .attr("dx", "-0.8em")
-              .attr("dy", "0.15em")
-              .attr("transform", "rotate(-45)");
-
-            // Create Y Axis
-            svg.append("g").call(d3.axisLeft(yScale));
-          }
-          console.log("xKey:", xKey);
-          console.log("yKey:", yKey);
-          console.log("thirdKey:", thirdKey);
-          console.log("yLabel:", yLabel);
-          console.log("mapType:", mapType);
-        }, [jsonData, xKey, yKey, thirdKey, yLabel, mapType]);
-
-        return (
-          <div id="groupedBarGraph">{/* Bar graph will be drawn here */}</div>
-        );
-      }
-
-      function SurveyChart({
-        jsonData,
-        xKey,
-        yKey,
-        thirdKey,
-        yLabel,
-        mapType,
-      }) {
-        const [questions, setQuestions] = React.useState([]);
-        const [locations, setLocations] = React.useState([]);
-        const [selectedQuestion, setSelectedQuestion] = React.useState("");
-        const [selectedLocation, setSelectedLocation] = React.useState("");
-        const [selectedResponseValues, setSelectedResponseValues] =
-          React.useState([]);
-        const [selectedResponses, setSelectedResponses] = React.useState([]);
-
-        // Initialize data and log selected question, location, and responses
-        React.useEffect(() => {
-          const initializeData = () => {
-            if (jsonData && jsonData.length > 0) {
-              try {
-                // Collect unique questions and locations
-                const allQuestions = new Set();
-                const allLocations = new Set();
-
-                jsonData.forEach((item) => {
-                  // Collect questions
-                  allQuestions.add(item.Question);
-
-                  // Collect locations
-                  Object.keys(item).forEach((key) => {
-                    if (
-                      key !== "Response" &&
-                      key !== "Percentage of respondents" &&
-                      key !== "Question"
-                    ) {
-                      allLocations.add(key);
-                    }
-                  });
-                });
-
-                // Update state with unique questions and locations
-                setQuestions([...allQuestions]);
-                setLocations([...allLocations]);
-                // Set default selected values
-                setSelectedQuestion([...allQuestions][0]);
-                setSelectedLocation([...allLocations][0]);
-              } catch (error) {
-                console.error("Error processing JSON data:", error);
-              }
-            } else {
-              console.warn("No JSON data provided or empty array.");
-            }
-          };
-
-          initializeData();
-        }, [jsonData]);
-
-        // Log selected question, location, and responses
-        React.useEffect(() => {
-          if (selectedQuestion) {
-            console.log("Selected Question:", selectedQuestion);
-          }
-          if (selectedLocation) {
-            console.log("Selected Location:", selectedLocation);
-          }
-          if (selectedResponseValues.length > 0) {
-            console.log("Selected Response Values:", selectedResponseValues);
-          }
-          if (selectedResponses.length > 0) {
-            console.log("Selected Responses:", selectedResponses);
-          }
-        }, [
-          selectedQuestion,
-          selectedLocation,
-          selectedResponseValues,
-          selectedResponses,
-        ]);
-
-        // Update selected responses and response values when selected question or location changes
-        React.useEffect(() => {
-          if (selectedQuestion && selectedLocation && jsonData) {
-            const responses = jsonData
-              .filter((item) => item.Question === selectedQuestion)
-              .map((item) => item.Response);
-            setSelectedResponses(responses);
-
-            const responseValues = jsonData
-              .filter((item) => item.Question === selectedQuestion)
-              .map((item) => item[selectedLocation]);
-            setSelectedResponseValues(responseValues);
-          }
-        }, [selectedQuestion, selectedLocation, jsonData]);
-
-        // Function to split text into lines based on a character limit
-        const splitTextIntoLines = (text, maxChars) => {
-          const words = text.split(" ");
-          const lines = [];
-          let currentLine = "";
-
-          words.forEach((word) => {
-            if ((currentLine + word).length <= maxChars) {
-              currentLine += `${word} `;
-            } else {
-              lines.push(currentLine.trim());
-              currentLine = `${word} `;
-            }
-          });
-          lines.push(currentLine.trim());
-          return lines;
-        };
-
-        // Draw Bar Chart
-        const drawBarChart = () => {
-          const data = selectedResponseValues.map((value, index) => ({
-            x: selectedResponses[index],
-            y: value,
-          }));
-
-          const containerId = "surveyGraph";
-          const margin = { top: 80, right: 20, bottom: 150, left: 50 }; // Increase top margin for title
-          const width = 600 - margin.left - margin.right;
-          const height = 400 - margin.top - margin.bottom;
-
-          // Remove previous SVG
-          d3.select(`#${containerId} svg`).remove();
-
-          // Create SVG container
-          const svg = d3
-            .select(`#${containerId}`)
-            .append("svg")
-            .attr("preserveAspectRatio", "xMinYMin meet")
-            .attr(
-              "viewBox",
-              `0 0 ${width + margin.left + margin.right} ${
-                height + margin.top + margin.bottom
-              }`
-            )
-            .classed("svg-content", true)
-            .append("g")
-            .attr("transform", `translate(${margin.left},${margin.top})`);
-
-          const x = d3
-            .scaleBand()
-            .domain(data.map((d) => d.x))
-            .range([0, width])
-            .padding(0.1);
-
-          const y = d3
-            .scaleLinear()
-            .domain([0, d3.max(data, (d) => d.y)])
-            .nice()
-            .range([height, 0]);
-
-          // Add chart title with text wrapping
-          const titleLines = splitTextIntoLines(selectedQuestion, 75); // Adjust character limit as needed
-
-          svg
-            .selectAll(".title")
-            .data(titleLines)
-            .enter()
-            .append("text")
-            .attr("class", "title")
-            .attr("x", width / 2)
-            .attr("y", (d, i) => -60 + i * 20) // Adjust vertical position and line spacing
-            .attr("text-anchor", "middle")
-            .attr("font-family", "Arial")
-            .attr("font-size", "16px")
-            .text((d) => d);
-
-          svg
-            .append("g")
-            .attr("transform", `translate(0,${height})`)
-            .call(d3.axisBottom(x))
-            .selectAll("text")
-            .style("text-anchor", "end")
-            .attr("transform", "rotate(-45)");
-
-          svg.append("g").call(d3.axisLeft(y));
-
-          // Add bars with animation
-          svg
-            .selectAll(".bar")
-            .data(data)
-            .enter()
-            .append("rect")
-            .attr("class", "bar")
-            .attr("x", (d) => x(d.x))
-            .attr("width", x.bandwidth())
-            .attr("y", height) // Start bars from the bottom
-            .attr("height", 0) // Set initial height to 0
-            .attr("fill", "steelblue")
-            .style("cursor", "pointer") // Set cursor to pointer
-            .on("mouseover", function () {
-              d3.select(this).attr("fill", "orange"); // Change color on hover
-            })
-            .on("mouseleave", function () {
-              d3.select(this).attr("fill", "steelblue"); // Restore color on leave
-            })
-            .transition() // Add transition
-            .duration(1000) // Animation duration
-            .delay((d, i) => i * 100) // Add delay for each bar
-            .attr("y", (d) => y(d.y)) // Move bars to their actual position
-            .attr("height", (d) => height - y(d.y)); // Increase height of bars
-        };
-
-        // Call draw function when data is available
-        React.useEffect(() => {
-          if (
-            selectedResponseValues.length > 0 &&
-            selectedResponses.length > 0
-          ) {
-            drawBarChart();
-          }
-        }, [selectedResponseValues, selectedResponses]);
-
-        return (
-          <div>
-            <div className="selectContainer flex">
-              <div>
-                <select
-                  id="questionSelect"
-                  value={selectedQuestion}
-                  onChange={(e) => setSelectedQuestion(e.target.value)}
-                >
-                  {questions.map((question, index) => (
-                    <option key={index} value={question}>
-                      {question}
-                    </option>
-                  ))}
-                </select>
-              </div>
-              <div>
-                <select
-                  id="locationSelect"
-                  value={selectedLocation}
-                  onChange={(e) => setSelectedLocation(e.target.value)}
-                >
-                  {locations.map((location, index) => (
-                    <option key={index} value={location}>
-                      {location}
-                    </option>
-                  ))}
-                </select>
-              </div>
-            </div>
-            <div id="surveyGraph">{/* Bar chart will be drawn here */}</div>
-          </div>
-        );
-      }
-
-      function GridExample() {
-        // Defining variables
-        const [jsonData, setJsonData] = React.useState(null);
-        const [pageCommentary, setPageCommentary] = React.useState("");
-        const [tableCommentary, setTableCommentary] = React.useState("");
-        const [chartType, setChartType] = React.useState(null);
-        const [yLabel, setYLabel] = React.useState("");
-        const [xKey, setXKey] = React.useState("");
-        const [yKey, setYKey] = React.useState("");
-        const [thirdKey, setThirdKey] = React.useState("");
-        const [mapType, setMapType] = React.useState("");
-
-        // Function to parse chart name from URL
-        const parseChartNameFromURL = () => {
-          const urlParams = new URLSearchParams(window.location.search);
-          return urlParams.get("chart");
-        };
-
-        // Fetch JSON data
-        React.useEffect(() => {
-          const basePath = "/Python.JS Scripts/Clean Data/";
-          const chartName = parseChartNameFromURL();
-          const csvFilePath = "/Content/Chart-Visual-Database.csv";
-
-          // Fetch and parse CSV data using Papa Parse
-          Papa.parse(csvFilePath, {
-            download: true,
-            header: true,
-            complete: (results) => {
-              const chartRow = results.data.find(
-                (row) => row["Visual-Chart-Name"] === chartName
-              );
-              if (chartRow) {
-                const filePath = chartRow["File-Path"];
-                const jsonDataFilePath = basePath + filePath;
-
-                // Set Page Commentary and Table Commentary
-                setPageCommentary(chartRow["Page Commentary"]);
-                setTableCommentary(chartRow["Table Commentary"]);
-                setChartType(chartRow["Chart-Type"]);
-                setYLabel(chartRow["Y-Label"]);
-                setXKey(chartRow["X-Axis-Key"]);
-                setYKey(chartRow["Y-Axis-Key"]);
-                setThirdKey(chartRow["Third-Var-Key"]);
-                setMapType(chartRow["Map-Type"]);
-
-                console.log("JSON File Path: ", jsonDataFilePath);
-                console.log("Chart Type:", chartRow["Chart-Type"]);
-
-                // Fetch JSON data
-                fetch(jsonDataFilePath)
-                  .then((response) => {
-                    if (!response.ok) {
-                      throw new Error("Network response was not ok");
-                    }
-                    return response.json();
-                  })
-                  .then((data) => {
-                    console.log("JSON data fetched successfully:", data);
-                    setJsonData(data);
-                  })
-                  .catch((error) => {
-                    console.error("Error fetching JSON data:", error);
-                  });
-              } else {
-                console.error("Chart not found in CSV:", chartName);
-              }
-            },
-            error: (error) => {
-              console.error("Error parsing CSV:", error);
-            },
-          });
-        }, []);
-
-        // Determine which chart component to render
-        const getChartComponent = (chartType) => {
-          switch (chartType) {
-            case "line":
-              return (
-                <LineChart
-                  jsonData={jsonData}
-                  yLabel={yLabel}
-                  xKey={xKey}
-                  yKey={yKey}
-                  thirdKey={thirdKey}
-                  mapType={mapType}
-                />
-              );
-            case "grouped-bar":
-              return (
-                <GroupedBarChart
-                  jsonData={jsonData}
-                  yLabel={yLabel}
-                  xKey={xKey}
-                  yKey={yKey}
-                  thirdKey={thirdKey}
-                  mapType={mapType}
-                />
-              );
-            case "survey-bar":
-              return (
-                <SurveyChart
-                  jsonData={jsonData}
-                  yLabel={yLabel}
-                  xKey={xKey}
-                  yKey={yKey}
-                  thirdKey={thirdKey}
-                  mapType={mapType}
-                />
-              );
-            case "bar":
-              return (
-                <BarChart
-                  jsonData={jsonData}
-                  yLabel={yLabel}
-                  xKey={xKey}
-                  yKey={yKey}
-                  thirdKey={thirdKey}
-                  mapType={mapType}
-                />
-              );
-            default:
-              return null;
-          }
-        };
-
-        // Render content
-        return (
-          <div className="grid-container">
-            <div
-              className="grid-item grid-item-chart"
-              style={{ gridColumn: "span 2", gridRow: "span 5" }}
-            >
-              {/* Render the appropriate chart component */}
-              {getChartComponent(
-                chartType,
-                jsonData,
-                xKey,
-                yKey,
-                thirdKey,
-                yLabel,
-                mapType
-              )}
-            </div>
-            <div
-              className="grid-item"
-              style={{ gridColumn: "span 1", gridRow: "span 3" }}
-            >
-              <h2>Chart Info</h2>
-              <p>{tableCommentary}</p>
-            </div>
-            <div
-              className="grid-item"
-              style={{ gridColumn: "span 1", gridRow: "span 2" }}
-            >
-              <h2>Chart Commentary</h2>
-              <p>{pageCommentary}</p>
-            </div>
-          </div>
-        );
-      }
-
-      // Render the GridExample component in the root div
-      ReactDOM.render(<GridExample />, document.getElementById("root"));
-    </script>
-
-    <script src="/Scripts/chart-menu.js"></script>
-    <script src="/Scripts/chart-data.js"></script>
+    <footer class="flex space-between"></footer>
+
+    <!-- Include Papa Parse -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <!-- Include your JavaScript files -->
+    <script src="Scripts/header.js"></script>
+    <script type="module" src="Scripts/search.js"></script>
+    <script type="module" src="Scripts/menu.js"></script>
+    <script src="Scripts/footer.js"></script>
+    <script src="Scripts/toggleButton.js"></script>
+    <script type="module" src="Scripts/Charts/index.js"></script>
   </body>
 </html>

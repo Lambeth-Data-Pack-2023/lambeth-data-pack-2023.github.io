@@ -1,0 +1,30 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome, Safari, and other WebKit-based browsers */
+}
+main {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 85vh;
+  overflow-y: hidden;
+}
+.mainSection {
+  overflow-y: hidden;
+}
+
+.mainSection {
+  width: 100%;
+}
+.chart-container {
+  width: 100%;
+}
