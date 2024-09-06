@@ -1,8 +1,0 @@
-.logo {
-  margin-left: 20px;
-  max-height: 5vh;
-  transition: ease-in 0.3s all;
-}
-.logo:hover {
-  transform: scale(1.1);
-}
