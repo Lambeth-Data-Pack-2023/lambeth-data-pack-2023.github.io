@@ -1,0 +1,226 @@
+[
+  {
+    "AreaName": "Lambeth",
+    "Household is not deprived in any dimension (%)": 50,
+    "Household is deprived in one dimension (%)": 31.7,
+    "Household is deprived in two dimensions (%)": 13.8,
+    "Household is deprived in three dimensions (%)": 4.1,
+    "Household is deprived in four dimensions (%)": 0.4
+  },
+  {
+    "AreaName": "Brixton Acre Lane",
+    "Household is not deprived in any dimension (%)": 53.3,
+    "Household is deprived in one dimension (%)": 30.9,
+    "Household is deprived in two dimensions (%)": 11.5,
+    "Household is deprived in three dimensions (%)": 3.8,
+    "Household is deprived in four dimensions (%)": 0.4
+  },
+  {
+    "AreaName": "Brixton North",
+    "Household is not deprived in any dimension (%)": 40.6,
+    "Household is deprived in one dimension (%)": 34.7,
+    "Household is deprived in two dimensions (%)": 18.5,
+    "Household is deprived in three dimensions (%)": 5.6,
+    "Household is deprived in four dimensions (%)": 0.5
+  },
+  {
+    "AreaName": "Brixton Rush Common",
+    "Household is not deprived in any dimension (%)": 48.6,
+    "Household is deprived in one dimension (%)": 32.2,
+    "Household is deprived in two dimensions (%)": 15.3,
+    "Household is deprived in three dimensions (%)": 3.7,
+    "Household is deprived in four dimensions (%)": 0.2
+  },
+  {
+    "AreaName": "Brixton Windrush",
+    "Household is not deprived in any dimension (%)": 47.3,
+    "Household is deprived in one dimension (%)": 30.7,
+    "Household is deprived in two dimensions (%)": 17.1,
+    "Household is deprived in three dimensions (%)": 4.4,
+    "Household is deprived in four dimensions (%)": 0.5
+  },
+  {
+    "AreaName": "Clapham Common & Abbeville",
+    "Household is not deprived in any dimension (%)": 64.5,
+    "Household is deprived in one dimension (%)": 25,
+    "Household is deprived in two dimensions (%)": 8.6,
+    "Household is deprived in three dimensions (%)": 1.8,
+    "Household is deprived in four dimensions (%)": 0.1
+  },
+  {
+    "AreaName": "Clapham East",
+    "Household is not deprived in any dimension (%)": 51.8,
+    "Household is deprived in one dimension (%)": 30.4,
+    "Household is deprived in two dimensions (%)": 13.3,
+    "Household is deprived in three dimensions (%)": 4.4,
+    "Household is deprived in four dimensions (%)": 0.1
+  },
+  {
+    "AreaName": "Clapham Park",
+    "Household is not deprived in any dimension (%)": 49.6,
+    "Household is deprived in one dimension (%)": 32.9,
+    "Household is deprived in two dimensions (%)": 13.5,
+    "Household is deprived in three dimensions (%)": 3.8,
+    "Household is deprived in four dimensions (%)": 0.3
+  },
+  {
+    "AreaName": "Clapham Town",
+    "Household is not deprived in any dimension (%)": 59.2,
+    "Household is deprived in one dimension (%)": 27.5,
+    "Household is deprived in two dimensions (%)": 9.6,
+    "Household is deprived in three dimensions (%)": 3.4,
+    "Household is deprived in four dimensions (%)": 0.3
+  },
+  {
+    "AreaName": "Gipsy Hill",
+    "Household is not deprived in any dimension (%)": 47.7,
+    "Household is deprived in one dimension (%)": 30,
+    "Household is deprived in two dimensions (%)": 16.1,
+    "Household is deprived in three dimensions (%)": 5.9,
+    "Household is deprived in four dimensions (%)": 0.4
+  },
+  {
+    "AreaName": "Herne Hill & Loughborough Junction",
+    "Household is not deprived in any dimension (%)": 51.1,
+    "Household is deprived in one dimension (%)": 31.2,
+    "Household is deprived in two dimensions (%)": 13.2,
+    "Household is deprived in three dimensions (%)": 4,
+    "Household is deprived in four dimensions (%)": 0.4
+  },
+  {
+    "AreaName": "Kennington",
+    "Household is not deprived in any dimension (%)": 46.4,
+    "Household is deprived in one dimension (%)": 33.1,
+    "Household is deprived in two dimensions (%)": 15.6,
+    "Household is deprived in three dimensions (%)": 4.7,
+    "Household is deprived in four dimensions (%)": 0.3
+  },
+  {
+    "AreaName": "Knight's Hill",
+    "Household is not deprived in any dimension (%)": 47,
+    "Household is deprived in one dimension (%)": 31.7,
+    "Household is deprived in two dimensions (%)": 16.1,
+    "Household is deprived in three dimensions (%)": 4.8,
+    "Household is deprived in four dimensions (%)": 0.4
+  },
+  {
+    "AreaName": "Myatt's Fields",
+    "Household is not deprived in any dimension (%)": 42.5,
+    "Household is deprived in one dimension (%)": 33.8,
+    "Household is deprived in two dimensions (%)": 17.6,
+    "Household is deprived in three dimensions (%)": 5.5,
+    "Household is deprived in four dimensions (%)": 0.6
+  },
+  {
+    "AreaName": "Oval",
+    "Household is not deprived in any dimension (%)": 46.7,
+    "Household is deprived in one dimension (%)": 33.3,
+    "Household is deprived in two dimensions (%)": 14.8,
+    "Household is deprived in three dimensions (%)": 4.7,
+    "Household is deprived in four dimensions (%)": 0.4
+  },
+  {
+    "AreaName": "St Martin's",
+    "Household is not deprived in any dimension (%)": 46.5,
+    "Household is deprived in one dimension (%)": 33.3,
+    "Household is deprived in two dimensions (%)": 14.7,
+    "Household is deprived in three dimensions (%)": 5.1,
+    "Household is deprived in four dimensions (%)": 0.4
+  },
+  {
+    "AreaName": "Stockwell East",
+    "Household is not deprived in any dimension (%)": 49.2,
+    "Household is deprived in one dimension (%)": 32.1,
+    "Household is deprived in two dimensions (%)": 13.8,
+    "Household is deprived in three dimensions (%)": 4.5,
+    "Household is deprived in four dimensions (%)": 0.4
+  },
+  {
+    "AreaName": "Stockwell West & Larkhall",
+    "Household is not deprived in any dimension (%)": 41.5,
+    "Household is deprived in one dimension (%)": 37.9,
+    "Household is deprived in two dimensions (%)": 15.8,
+    "Household is deprived in three dimensions (%)": 4.3,
+    "Household is deprived in four dimensions (%)": 0.5
+  },
+  {
+    "AreaName": "Streatham Common & Vale",
+    "Household is not deprived in any dimension (%)": 47.7,
+    "Household is deprived in one dimension (%)": 34.6,
+    "Household is deprived in two dimensions (%)": 13.9,
+    "Household is deprived in three dimensions (%)": 3.4,
+    "Household is deprived in four dimensions (%)": 0.4
+  },
+  {
+    "AreaName": "Streatham Hill East",
+    "Household is not deprived in any dimension (%)": 48,
+    "Household is deprived in one dimension (%)": 32.5,
+    "Household is deprived in two dimensions (%)": 15,
+    "Household is deprived in three dimensions (%)": 4.3,
+    "Household is deprived in four dimensions (%)": 0.2
+  },
+  {
+    "AreaName": "Streatham Hill West & Thornton",
+    "Household is not deprived in any dimension (%)": 59.7,
+    "Household is deprived in one dimension (%)": 28.1,
+    "Household is deprived in two dimensions (%)": 9.6,
+    "Household is deprived in three dimensions (%)": 2.3,
+    "Household is deprived in four dimensions (%)": 0.3
+  },
+  {
+    "AreaName": "Streatham St Leonard's",
+    "Household is not deprived in any dimension (%)": 49.9,
+    "Household is deprived in one dimension (%)": 32.3,
+    "Household is deprived in two dimensions (%)": 13.3,
+    "Household is deprived in three dimensions (%)": 4,
+    "Household is deprived in four dimensions (%)": 0.5
+  },
+  {
+    "AreaName": "Streatham Wells",
+    "Household is not deprived in any dimension (%)": 53.6,
+    "Household is deprived in one dimension (%)": 31.1,
+    "Household is deprived in two dimensions (%)": 12,
+    "Household is deprived in three dimensions (%)": 3.1,
+    "Household is deprived in four dimensions (%)": 0.2
+  },
+  {
+    "AreaName": "Vauxhall",
+    "Household is not deprived in any dimension (%)": 55.9,
+    "Household is deprived in one dimension (%)": 29.5,
+    "Household is deprived in two dimensions (%)": 11.2,
+    "Household is deprived in three dimensions (%)": 3.2,
+    "Household is deprived in four dimensions (%)": 0.1
+  },
+  {
+    "AreaName": "Waterloo & South Bank",
+    "Household is not deprived in any dimension (%)": 53.7,
+    "Household is deprived in one dimension (%)": 30.6,
+    "Household is deprived in two dimensions (%)": 12.2,
+    "Household is deprived in three dimensions (%)": 3.3,
+    "Household is deprived in four dimensions (%)": 0.3
+  },
+  {
+    "AreaName": "West Dulwich",
+    "Household is not deprived in any dimension (%)": 56.6,
+    "Household is deprived in one dimension (%)": 28.6,
+    "Household is deprived in two dimensions (%)": 11.5,
+    "Household is deprived in three dimensions (%)": 3.1,
+    "Household is deprived in four dimensions (%)": 0.2
+  },
+  {
+    "AreaName": "England",
+    "Household is not deprived in any dimension (%)": 48.4,
+    "Household is deprived in one dimension (%)": 33.5,
+    "Household is deprived in two dimensions (%)": 14.2,
+    "Household is deprived in three dimensions (%)": 3.7,
+    "Household is deprived in four dimensions (%)": 0.2
+  },
+  {
+    "AreaName": "London",
+    "Household is not deprived in any dimension (%)": 48.1,
+    "Household is deprived in one dimension (%)": 32.9,
+    "Household is deprived in two dimensions (%)": 14.4,
+    "Household is deprived in three dimensions (%)": 4.3,
+    "Household is deprived in four dimensions (%)": 0.4
+  }
+]

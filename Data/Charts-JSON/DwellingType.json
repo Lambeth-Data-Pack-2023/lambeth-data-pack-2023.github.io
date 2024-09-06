@@ -1,0 +1,170 @@
+[
+  {
+    "AreaName": "England",
+    "Total number of households": 24927588,
+    "Dwelling type": "Local Authority (incl. owned by other LAs)",
+    "Percentage of households": 6.3,
+    "Time period": 2021
+  },
+  {
+    "AreaName": "London",
+    "Total number of households": 3715732,
+    "Dwelling type": "Local Authority (incl. owned by other LAs)",
+    "Percentage of households": 10.5,
+    "Time period": 2021
+  },
+  {
+    "AreaName": "Lambeth",
+    "Total number of households": 146411,
+    "Dwelling type": "Local Authority (incl. owned by other LAs)",
+    "Percentage of households": 16.4,
+    "Time period": 2021
+  },
+  {
+    "AreaName": "England",
+    "Total number of households": 24927588,
+    "Dwelling type": "Private Registered Provider",
+    "Percentage of households": 10.4,
+    "Time period": 2021
+  },
+  {
+    "AreaName": "London",
+    "Total number of households": 3715732,
+    "Dwelling type": "Private Registered Provider",
+    "Percentage of households": 11.3,
+    "Time period": 2021
+  },
+  {
+    "AreaName": "Lambeth",
+    "Total number of households": 146411,
+    "Dwelling type": "Private Registered Provider",
+    "Percentage of households": 17.0,
+    "Time period": 2021
+  },
+  {
+    "AreaName": "England",
+    "Total number of households": 24927588,
+    "Dwelling type": "Other public sector",
+    "Percentage of households": 0.1,
+    "Time period": 2021
+  },
+  {
+    "AreaName": "London",
+    "Total number of households": 3715732,
+    "Dwelling type": "Other public sector",
+    "Percentage of households": 0.1,
+    "Time period": 2021
+  },
+  {
+    "AreaName": "Lambeth",
+    "Total number of households": 146411,
+    "Dwelling type": "Other public sector",
+    "Percentage of households": 0.2,
+    "Time period": 2021
+  },
+  {
+    "AreaName": "England",
+    "Total number of households": 24927588,
+    "Dwelling type": "Private sector",
+    "Percentage of households": 83.1,
+    "Time period": 2021
+  },
+  {
+    "AreaName": "London",
+    "Total number of households": 3715732,
+    "Dwelling type": "Private sector",
+    "Percentage of households": 78.2,
+    "Time period": 2021
+  },
+  {
+    "AreaName": "Lambeth",
+    "Total number of households": 146411,
+    "Dwelling type": "Private sector",
+    "Percentage of households": 66.4,
+    "Time period": 2021
+  },
+  {
+    "AreaName": "England",
+    "Total number of households": 25160404,
+    "Dwelling type": "Local Authority (incl. owned by other LAs)",
+    "Percentage of households": 6.3,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "London",
+    "Total number of households": 3752936,
+    "Dwelling type": "Local Authority (incl. owned by other LAs)",
+    "Percentage of households": 10.4,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "Lambeth",
+    "Total number of households": 146789,
+    "Dwelling type": "Local Authority (incl. owned by other LAs)",
+    "Percentage of households": 16.3,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "England",
+    "Total number of households": 25160404,
+    "Dwelling type": "Private Registered Provider",
+    "Percentage of households": 10.4,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "London",
+    "Total number of households": 3752936,
+    "Dwelling type": "Private Registered Provider",
+    "Percentage of households": 11.2,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "Lambeth",
+    "Total number of households": 146789,
+    "Dwelling type": "Private Registered Provider",
+    "Percentage of households": 16.9,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "England",
+    "Total number of households": 25160404,
+    "Dwelling type": "Other public sector",
+    "Percentage of households": 0.1,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "London",
+    "Total number of households": 3752936,
+    "Dwelling type": "Other public sector",
+    "Percentage of households": 0.1,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "Lambeth",
+    "Total number of households": 146789,
+    "Dwelling type": "Other public sector",
+    "Percentage of households": 0.2,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "England",
+    "Total number of households": 25160404,
+    "Dwelling type": "Private sector",
+    "Percentage of households": 83.2,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "London",
+    "Total number of households": 3752936,
+    "Dwelling type": "Private sector",
+    "Percentage of households": 78.3,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "Lambeth",
+    "Total number of households": 146789,
+    "Dwelling type": "Private sector",
+    "Percentage of households": 66.5,
+    "Time period": 2022
+  }
+]

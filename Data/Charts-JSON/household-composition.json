@@ -1,0 +1,254 @@
+[
+  {
+    "AreaName": "Brixton Acre Lane",
+    "One-person household (number)": 2154,
+    "One-person household (%)": 32.6,
+    "Single family household (number)": 2826,
+    "Single family household (%)": 42.7,
+    "Other household types (number)": 1636,
+    "Other household types (%)": 24.7
+  },
+  {
+    "AreaName": "Brixton North",
+    "One-person household (number)": 2293,
+    "One-person household (%)": 34.2,
+    "Single family household (number)": 3261,
+    "Single family household (%)": 48.6,
+    "Other household types (number)": 1154,
+    "Other household types (%)": 17.2
+  },
+  {
+    "AreaName": "Brixton Rush Common",
+    "One-person household (number)": 1926,
+    "One-person household (%)": 30.5,
+    "Single family household (number)": 3172,
+    "Single family household (%)": 50.3,
+    "Other household types (number)": 1210,
+    "Other household types (%)": 19.2
+  },
+  {
+    "AreaName": "Brixton Windrush",
+    "One-person household (number)": 1408,
+    "One-person household (%)": 34.5,
+    "Single family household (number)": 1776,
+    "Single family household (%)": 43.5,
+    "Other household types (number)": 903,
+    "Other household types (%)": 22.1
+  },
+  {
+    "AreaName": "Clapham Common & Abbeville",
+    "One-person household (number)": 1158,
+    "One-person household (%)": 27.4,
+    "Single family household (number)": 2077,
+    "Single family household (%)": 49.2,
+    "Other household types (number)": 990,
+    "Other household types (%)": 23.4
+  },
+  {
+    "AreaName": "Clapham East",
+    "One-person household (number)": 1285,
+    "One-person household (%)": 30.3,
+    "Single family household (number)": 1785,
+    "Single family household (%)": 42,
+    "Other household types (number)": 1177,
+    "Other household types (%)": 27.7
+  },
+  {
+    "AreaName": "Clapham Park",
+    "One-person household (number)": 1678,
+    "One-person household (%)": 30.9,
+    "Single family household (number)": 2603,
+    "Single family household (%)": 47.9,
+    "Other household types (number)": 1152,
+    "Other household types (%)": 21.2
+  },
+  {
+    "AreaName": "Clapham Town",
+    "One-person household (number)": 2237,
+    "One-person household (%)": 31.5,
+    "Single family household (number)": 3364,
+    "Single family household (%)": 47.3,
+    "Other household types (number)": 1507,
+    "Other household types (%)": 21.2
+  },
+  {
+    "AreaName": "Gipsy Hill",
+    "One-person household (number)": 1422,
+    "One-person household (%)": 32.5,
+    "Single family household (number)": 2528,
+    "Single family household (%)": 57.8,
+    "Other household types (number)": 424,
+    "Other household types (%)": 9.7
+  },
+  {
+    "AreaName": "Herne Hill & Loughborough Junction",
+    "One-person household (number)": 1889,
+    "One-person household (%)": 28.8,
+    "Single family household (number)": 3481,
+    "Single family household (%)": 53,
+    "Other household types (number)": 1197,
+    "Other household types (%)": 18.2
+  },
+  {
+    "AreaName": "Kennington",
+    "One-person household (number)": 2315,
+    "One-person household (%)": 35.6,
+    "Single family household (number)": 3179,
+    "Single family household (%)": 48.9,
+    "Other household types (number)": 1004,
+    "Other household types (%)": 15.5
+  },
+  {
+    "AreaName": "Knight's Hill",
+    "One-person household (number)": 2105,
+    "One-person household (%)": 30.4,
+    "Single family household (number)": 4041,
+    "Single family household (%)": 58.5,
+    "Other household types (number)": 767,
+    "Other household types (%)": 11.1
+  },
+  {
+    "AreaName": "Myatt's Fields",
+    "One-person household (number)": 1536,
+    "One-person household (%)": 33.2,
+    "Single family household (number)": 2388,
+    "Single family household (%)": 51.6,
+    "Other household types (number)": 702,
+    "Other household types (%)": 15.2
+  },
+  {
+    "AreaName": "Oval",
+    "One-person household (number)": 1980,
+    "One-person household (%)": 35.8,
+    "Single family household (number)": 2430,
+    "Single family household (%)": 43.9,
+    "Other household types (number)": 1121,
+    "Other household types (%)": 20.3
+  },
+  {
+    "AreaName": "St Martin's",
+    "One-person household (number)": 1385,
+    "One-person household (%)": 30.4,
+    "Single family household (number)": 2528,
+    "Single family household (%)": 55.5,
+    "Other household types (number)": 640,
+    "Other household types (%)": 14.1
+  },
+  {
+    "AreaName": "Stockwell East",
+    "One-person household (number)": 1556,
+    "One-person household (%)": 33,
+    "Single family household (number)": 2132,
+    "Single family household (%)": 45.2,
+    "Other household types (number)": 1026,
+    "Other household types (%)": 21.8
+  },
+  {
+    "AreaName": "Stockwell West & Larkhall",
+    "One-person household (number)": 2168,
+    "One-person household (%)": 31.6,
+    "Single family household (number)": 3421,
+    "Single family household (%)": 49.9,
+    "Other household types (number)": 1273,
+    "Other household types (%)": 18.6
+  },
+  {
+    "AreaName": "Streatham Common & Vale",
+    "One-person household (number)": 1811,
+    "One-person household (%)": 27.3,
+    "Single family household (number)": 3698,
+    "Single family household (%)": 55.7,
+    "Other household types (number)": 1125,
+    "Other household types (%)": 17
+  },
+  {
+    "AreaName": "Streatham Hill East",
+    "One-person household (number)": 1252,
+    "One-person household (%)": 31.1,
+    "Single family household (number)": 2027,
+    "Single family household (%)": 50.4,
+    "Other household types (number)": 742,
+    "Other household types (%)": 18.5
+  },
+  {
+    "AreaName": "Streatham Hill West & Thornton",
+    "One-person household (number)": 1319,
+    "One-person household (%)": 28.5,
+    "Single family household (number)": 2547,
+    "Single family household (%)": 55,
+    "Other household types (number)": 766,
+    "Other household types (%)": 16.5
+  },
+  {
+    "AreaName": "Streatham St Leonard's",
+    "One-person household (number)": 2001,
+    "One-person household (%)": 30.6,
+    "Single family household (number)": 3469,
+    "Single family household (%)": 53.1,
+    "Other household types (number)": 1063,
+    "Other household types (%)": 16.3
+  },
+  {
+    "AreaName": "Streatham Wells",
+    "One-person household (number)": 1216,
+    "One-person household (%)": 29.7,
+    "Single family household (number)": 2237,
+    "Single family household (%)": 54.7,
+    "Other household types (number)": 636,
+    "Other household types (%)": 15.6
+  },
+  {
+    "AreaName": "Vauxhall",
+    "One-person household (number)": 2104,
+    "One-person household (%)": 43.4,
+    "Single family household (number)": 2012,
+    "Single family household (%)": 41.5,
+    "Other household types (number)": 733,
+    "Other household types (%)": 15.1
+  },
+  {
+    "AreaName": "Waterloo & South Bank",
+    "One-person household (number)": 1593,
+    "One-person household (%)": 41.2,
+    "Single family household (number)": 1634,
+    "Single family household (%)": 42.3,
+    "Other household types (number)": 636,
+    "Other household types (%)": 16.5
+  },
+  {
+    "AreaName": "West Dulwich",
+    "One-person household (number)": 1366,
+    "One-person household (%)": 29.1,
+    "Single family household (number)": 2845,
+    "Single family household (%)": 60.5,
+    "Other household types (number)": 490,
+    "Other household types (%)": 10.4
+  },
+  {
+    "AreaName": "Lambeth",
+    "One-person household (number)": 43154,
+    "One-person household (%)": 32,
+    "Single family household (number)": 67458,
+    "Single family household (%)": 50.1,
+    "Other household types (number)": 24074,
+    "Other household types (%)": 17.9
+  },
+  {
+    "AreaName": "England",
+    "One-person household (number)": 7052229,
+    "One-person household (%)": 30.1,
+    "Single family household (number)": 14762923,
+    "Single family household (%)": 63,
+    "Other household types (number)": 1620934,
+    "Other household types (%)": 6.9
+  },
+  {
+    "AreaName": "London",
+    "One-person household (number)": 1001983,
+    "One-person household (%)": 29.3,
+    "Single family household (number)": 1986263,
+    "Single family household (%)": 58,
+    "Other household types (number)": 435644,
+    "Other household types (%)": 12.7
+  }
+]

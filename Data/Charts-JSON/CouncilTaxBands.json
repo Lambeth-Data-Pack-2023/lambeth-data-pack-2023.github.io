@@ -1,0 +1,290 @@
+[
+  {
+    "AreaName": "England",
+    "Council tax band": "A",
+    "Percentage of properties": 24.0,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "London",
+    "Council tax band": "A",
+    "Percentage of properties": 3.9,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "Lambeth",
+    "Council tax band": "A",
+    "Percentage of properties": 3.5,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "England",
+    "Council tax band": "B",
+    "Percentage of properties": 19.5,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "London",
+    "Council tax band": "B",
+    "Percentage of properties": 13.1,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "Lambeth",
+    "Council tax band": "B",
+    "Percentage of properties": 22.7,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "England",
+    "Council tax band": "C",
+    "Percentage of properties": 21.9,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "London",
+    "Council tax band": "C",
+    "Percentage of properties": 27.0,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "Lambeth",
+    "Council tax band": "C",
+    "Percentage of properties": 28.7,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "England",
+    "Council tax band": "D",
+    "Percentage of properties": 15.6,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "London",
+    "Council tax band": "D",
+    "Percentage of properties": 25.5,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "Lambeth",
+    "Council tax band": "D",
+    "Percentage of properties": 22.3,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "England",
+    "Council tax band": "E",
+    "Percentage of properties": 9.7,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "London",
+    "Council tax band": "E",
+    "Percentage of properties": 15.2,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "Lambeth",
+    "Council tax band": "E",
+    "Percentage of properties": 11.0,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "England",
+    "Council tax band": "F",
+    "Percentage of properties": 5.2,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "London",
+    "Council tax band": "F",
+    "Percentage of properties": 7.7,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "Lambeth",
+    "Council tax band": "F",
+    "Percentage of properties": 7.1,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "England",
+    "Council tax band": "G",
+    "Percentage of properties": 3.5,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "London",
+    "Council tax band": "G",
+    "Percentage of properties": 5.9,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "Lambeth",
+    "Council tax band": "G",
+    "Percentage of properties": 4.0,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "England",
+    "Council tax band": "H",
+    "Percentage of properties": 0.6,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "London",
+    "Council tax band": "H",
+    "Percentage of properties": 1.8,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "Lambeth",
+    "Council tax band": "H",
+    "Percentage of properties": 0.8,
+    "Time period": 2022
+  },
+  {
+    "AreaName": "England",
+    "Council tax band": "A",
+    "Percentage of properties": 23.9,
+    "Time period": 2023
+  },
+  {
+    "AreaName": "London",
+    "Council tax band": "A",
+    "Percentage of properties": 3.9,
+    "Time period": 2023
+  },
+  {
+    "AreaName": "Lambeth",
+    "Council tax band": "A",
+    "Percentage of properties": 3.5,
+    "Time period": 2023
+  },
+  {
+    "AreaName": "England",
+    "Council tax band": "B",
+    "Percentage of properties": 19.5,
+    "Time period": 2023
+  },
+  {
+    "AreaName": "London",
+    "Council tax band": "B",
+    "Percentage of properties": 13.1,
+    "Time period": 2023
+  },
+  {
+    "AreaName": "Lambeth",
+    "Council tax band": "B",
+    "Percentage of properties": 22.6,
+    "Time period": 2023
+  },
+  {
+    "AreaName": "England",
+    "Council tax band": "C",
+    "Percentage of properties": 21.9,
+    "Time period": 2023
+  },
+  {
+    "AreaName": "London",
+    "Council tax band": "C",
+    "Percentage of properties": 27.0,
+    "Time period": 2023
+  },
+  {
+    "AreaName": "Lambeth",
+    "Council tax band": "C",
+    "Percentage of properties": 28.6,
+    "Time period": 2023
+  },
+  {
+    "AreaName": "England",
+    "Council tax band": "D",
+    "Percentage of properties": 15.6,
+    "Time period": 2023
+  },
+  {
+    "AreaName": "London",
+    "Council tax band": "D",
+    "Percentage of properties": 25.4,
+    "Time period": 2023
+  },
+  {
+    "AreaName": "Lambeth",
+    "Council tax band": "D",
+    "Percentage of properties": 22.3,
+    "Time period": 2023
+  },
+  {
+    "AreaName": "England",
+    "Council tax band": "E",
+    "Percentage of properties": 9.8,
+    "Time period": 2023
+  },
+  {
+    "AreaName": "London",
+    "Council tax band": "E",
+    "Percentage of properties": 15.2,
+    "Time period": 2023
+  },
+  {
+    "AreaName": "Lambeth",
+    "Council tax band": "E",
+    "Percentage of properties": 11.0,
+    "Time period": 2023
+  },
+  {
+    "AreaName": "England",
+    "Council tax band": "F",
+    "Percentage of properties": 5.2,
+    "Time period": 2023
+  },
+  {
+    "AreaName": "London",
+    "Council tax band": "F",
+    "Percentage of properties": 7.7,
+    "Time period": 2023
+  },
+  {
+    "AreaName": "Lambeth",
+    "Council tax band": "F",
+    "Percentage of properties": 7.2,
+    "Time period": 2023
+  },
+  {
+    "AreaName": "England",
+    "Council tax band": "G",
+    "Percentage of properties": 3.5,
+    "Time period": 2023
+  },
+  {
+    "AreaName": "London",
+    "Council tax band": "G",
+    "Percentage of properties": 5.9,
+    "Time period": 2023
+  },
+  {
+    "AreaName": "Lambeth",
+    "Council tax band": "G",
+    "Percentage of properties": 4.0,
+    "Time period": 2023
+  },
+  {
+    "AreaName": "England",
+    "Council tax band": "H",
+    "Percentage of properties": 0.6,
+    "Time period": 2023
+  },
+  {
+    "AreaName": "London",
+    "Council tax band": "H",
+    "Percentage of properties": 1.8,
+    "Time period": 2023
+  },
+  {
+    "AreaName": "Lambeth",
+    "Council tax band": "H",
+    "Percentage of properties": 0.8,
+    "Time period": 2023
+  }
+]

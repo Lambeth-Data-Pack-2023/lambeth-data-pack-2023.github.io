@@ -1,0 +1,42 @@
+[
+  {
+    "Time period": "2021/22",
+    "AreaName": "England",
+    "Expenditure per pupil (GBP)": 6460
+  },
+  {
+    "Time period": "2022/23",
+    "AreaName": "England",
+    "Expenditure per pupil (GBP)": 6958
+  },
+  {
+    "Time period": "2021/22",
+    "AreaName": "Outer London",
+    "Expenditure per pupil (GBP)": 6901
+  },
+  {
+    "Time period": "2021/22",
+    "AreaName": "Inner London",
+    "Expenditure per pupil (GBP)": 8723
+  },
+  {
+    "Time period": "2022/23",
+    "AreaName": "Inner London",
+    "Expenditure per pupil (GBP)": 9443
+  },
+  {
+    "Time period": "2022/23",
+    "AreaName": "Outer London",
+    "Expenditure per pupil (GBP)": 7341
+  },
+  {
+    "Time period": "2021/22",
+    "AreaName": "Lambeth",
+    "Expenditure per pupil (GBP)": 8881
+  },
+  {
+    "Time period": "2022/23",
+    "AreaName": "Lambeth",
+    "Expenditure per pupil (GBP)": 9490
+  }
+]

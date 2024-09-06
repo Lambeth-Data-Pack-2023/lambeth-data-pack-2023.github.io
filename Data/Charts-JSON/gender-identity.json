@@ -1,0 +1,41 @@
+[
+  {
+    "AreaName": "Lambeth",
+    "Gender identity different from sex registered at birth but no specific identity given (number)": 1050,
+    "Gender identity different from sex registered at birth but no specific identity given (%)": 0.4,
+    "Trans woman (number)": 511,
+    "Trans woman (%)": 0.2,
+    "Trans man (number)": 410,
+    "Trans man (%)": 0.2,
+    "All other gender identities (number)": 541,
+    "All other gender identities (%)": 0.2,
+    "Not answered (number)": 19596,
+    "Not answered (%)": 7.3
+  },
+  {
+    "AreaName": "England",
+    "Gender identity different from sex registered at birth but no specific identity given (number)": 113760,
+    "Gender identity different from sex registered at birth but no specific identity given (%)": 0.2,
+    "Trans woman (number)": 45684,
+    "Trans woman (%)": 0.1,
+    "Trans man (number)": 46513,
+    "Trans man (%)": 0.1,
+    "All other gender identities (number)": 45886,
+    "All other gender identities (%)": 0.1,
+    "Not answered (number)": 2752783,
+    "Not answered (%)": 6
+  },
+  {
+    "AreaName": "London",
+    "Gender identity different from sex registered at birth but no specific identity given (number)": 32753,
+    "Gender identity different from sex registered at birth but no specific identity given (%)": 0.5,
+    "Trans woman (number)": 11266,
+    "Trans woman (%)": 0.2,
+    "Trans man (number)": 11480,
+    "Trans man (%)": 0.2,
+    "All other gender identities (number)": 8862,
+    "All other gender identities (%)": 0.1,
+    "Not answered (number)": 559960,
+    "Not answered (%)": 7.9
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "AreaName": "England",
+    "Time period": "Year ending Mar 2023",
+    "Median house price": 290
+  },
+  {
+    "AreaName": "London",
+    "Time period": "Year ending Mar 2023",
+    "Median house price": 535
+  },
+  {
+    "AreaName": "Lambeth",
+    "Time period": "Year ending Mar 2023",
+    "Median house price": 550
+  },
+  {
+    "AreaName": "England",
+    "Time period": "Year ending Mar 2022",
+    "Median house price": 275
+  },
+  {
+    "AreaName": "London",
+    "Time period": "Year ending Mar 2022",
+    "Median house price": 510
+  },
+  {
+    "AreaName": "Lambeth",
+    "Time period": "Year ending Mar 2022",
+    "Median house price": 550
+  }
+]

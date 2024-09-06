@@ -1,0 +1,62 @@
+[
+  {
+    "AreaName": "England",
+    "Metric": "Average distance to nearest Park, Public Garden, or Playing Field (m)",
+    "Value": 385.46
+  },
+  {
+    "AreaName": "England",
+    "Metric": "Average size of nearest Park, Public Garden, or Playing Field (m2)",
+    "Value": 94586.38
+  },
+  {
+    "AreaName": "England",
+    "Metric": "Average number of  Parks, Public Gardens, or Playing Fields within 1,000 m radius",
+    "Value": 4.43
+  },
+  {
+    "AreaName": "England",
+    "Metric": "Average combined size of  Parks, Public Gardens, or Playing Fields within 1,000 m radius (m2)",
+    "Value": 379882.3
+  },
+  {
+    "AreaName": "London",
+    "Metric": "Average distance to nearest Park, Public Garden, or Playing Field (m)",
+    "Value": 291.94
+  },
+  {
+    "AreaName": "London",
+    "Metric": "Average size of nearest Park, Public Garden, or Playing Field (m2)",
+    "Value": 158663.29
+  },
+  {
+    "AreaName": "London",
+    "Metric": "Average number of  Parks, Public Gardens, or Playing Fields within 1,000 m radius",
+    "Value": 6.74
+  },
+  {
+    "AreaName": "London",
+    "Metric": "Average combined size of  Parks, Public Gardens, or Playing Fields within 1,000 m radius (m2)",
+    "Value": 740644.3
+  },
+  {
+    "AreaName": "Lambeth",
+    "Metric": "Average distance to nearest Park, Public Garden, or Playing Field (m)",
+    "Value": 292.05
+  },
+  {
+    "AreaName": "Lambeth",
+    "Metric": "Average size of nearest Park, Public Garden, or Playing Field (m2)",
+    "Value": 155337.72
+  },
+  {
+    "AreaName": "Lambeth",
+    "Metric": "Average number of  Parks, Public Gardens, or Playing Fields within 1,000 m radius",
+    "Value": 6.75
+  },
+  {
+    "AreaName": "Lambeth",
+    "Metric": "Average combined size of  Parks, Public Gardens, or Playing Fields within 1,000 m radius (m2)",
+    "Value": 491342.49
+  }
+]

@@ -1,0 +1,245 @@
+[
+  {
+    "AreaName": "Lambeth",
+    "Female": 163713,
+    "Male": 153941,
+    "Population": 317654,
+    "Count": 9092,
+    "Time period": "May 2023-Apr 2024",
+    "Offences per 1,000 people": 28.6
+  },
+  {
+    "AreaName": "Brixton Acre Lane",
+    "Female": 7517,
+    "Male": 7735,
+    "Population": 15252,
+    "Count": 371,
+    "Time period": "May 2023-Apr 2024",
+    "Offences per 1,000 people": 24.3
+  },
+  {
+    "AreaName": "Brixton North",
+    "Female": 8443,
+    "Male": 7881,
+    "Population": 16324,
+    "Count": 432,
+    "Time period": "May 2023-Apr 2024",
+    "Offences per 1,000 people": 26.5
+  },
+  {
+    "AreaName": "Brixton Rush Common",
+    "Female": 7895,
+    "Male": 7035,
+    "Population": 14930,
+    "Count": 355,
+    "Time period": "May 2023-Apr 2024",
+    "Offences per 1,000 people": 23.8
+  },
+  {
+    "AreaName": "Brixton Windrush",
+    "Female": 4920,
+    "Male": 4562,
+    "Population": 9482,
+    "Count": 198,
+    "Time period": "May 2023-Apr 2024",
+    "Offences per 1,000 people": 20.9
+  },
+  {
+    "AreaName": "Clapham Common & Abbeville",
+    "Female": 5192,
+    "Male": 4823,
+    "Population": 10015,
+    "Count": 182,
+    "Time period": "May 2023-Apr 2024",
+    "Offences per 1,000 people": 18.2
+  },
+  {
+    "AreaName": "Clapham East",
+    "Female": 5198,
+    "Male": 4647,
+    "Population": 9845,
+    "Count": 299,
+    "Time period": "May 2023-Apr 2024",
+    "Offences per 1,000 people": 30.4
+  },
+  {
+    "AreaName": "Clapham Park",
+    "Female": 6603,
+    "Male": 6108,
+    "Population": 12711,
+    "Count": 230,
+    "Time period": "May 2023-Apr 2024",
+    "Offences per 1,000 people": 18.1
+  },
+  {
+    "AreaName": "Clapham Town",
+    "Female": 8127,
+    "Male": 7777,
+    "Population": 15904,
+    "Count": 331,
+    "Time period": "May 2023-Apr 2024",
+    "Offences per 1,000 people": 20.8
+  },
+  {
+    "AreaName": "Gipsy Hill",
+    "Female": 5473,
+    "Male": 4784,
+    "Population": 10257,
+    "Count": 295,
+    "Time period": "May 2023-Apr 2024",
+    "Offences per 1,000 people": 28.8
+  },
+  {
+    "AreaName": "Herne Hill & Loughborough Junction",
+    "Female": 8431,
+    "Male": 7725,
+    "Population": 16156,
+    "Count": 400,
+    "Time period": "May 2023-Apr 2024",
+    "Offences per 1,000 people": 24.8
+  },
+  {
+    "AreaName": "Kennington",
+    "Female": 7378,
+    "Male": 7225,
+    "Population": 14603,
+    "Count": 290,
+    "Time period": "May 2023-Apr 2024",
+    "Offences per 1,000 people": 19.9
+  },
+  {
+    "AreaName": "Knight's Hill",
+    "Female": 8968,
+    "Male": 7939,
+    "Population": 16907,
+    "Count": 345,
+    "Time period": "May 2023-Apr 2024",
+    "Offences per 1,000 people": 20.4
+  },
+  {
+    "AreaName": "Myatt's Fields",
+    "Female": 5625,
+    "Male": 5307,
+    "Population": 10932,
+    "Count": 286,
+    "Time period": "May 2023-Apr 2024",
+    "Offences per 1,000 people": 26.2
+  },
+  {
+    "AreaName": "Oval",
+    "Female": 6079,
+    "Male": 6362,
+    "Population": 12441,
+    "Count": 314,
+    "Time period": "May 2023-Apr 2024",
+    "Offences per 1,000 people": 25.2
+  },
+  {
+    "AreaName": "St Martin's",
+    "Female": 5775,
+    "Male": 5069,
+    "Population": 10844,
+    "Count": 182,
+    "Time period": "May 2023-Apr 2024",
+    "Offences per 1,000 people": 16.8
+  },
+  {
+    "AreaName": "Stockwell East",
+    "Female": 5440,
+    "Male": 5306,
+    "Population": 10746,
+    "Count": 330,
+    "Time period": "May 2023-Apr 2024",
+    "Offences per 1,000 people": 30.7
+  },
+  {
+    "AreaName": "Stockwell West & Larkhall",
+    "Female": 8310,
+    "Male": 8022,
+    "Population": 16332,
+    "Count": 499,
+    "Time period": "May 2023-Apr 2024",
+    "Offences per 1,000 people": 30.6
+  },
+  {
+    "AreaName": "Streatham Common & Vale",
+    "Female": 9076,
+    "Male": 8583,
+    "Population": 17659,
+    "Count": 360,
+    "Time period": "May 2023-Apr 2024",
+    "Offences per 1,000 people": 20.4
+  },
+  {
+    "AreaName": "Streatham Hill East",
+    "Female": 5120,
+    "Male": 4757,
+    "Population": 9877,
+    "Count": 287,
+    "Time period": "May 2023-Apr 2024",
+    "Offences per 1,000 people": 29.1
+  },
+  {
+    "AreaName": "Streatham Hill West & Thornton",
+    "Female": 5685,
+    "Male": 5206,
+    "Population": 10891,
+    "Count": 169,
+    "Time period": "May 2023-Apr 2024",
+    "Offences per 1,000 people": 15.5
+  },
+  {
+    "AreaName": "Streatham St Leonard's",
+    "Female": 8122,
+    "Male": 7692,
+    "Population": 15814,
+    "Count": 433,
+    "Time period": "May 2023-Apr 2024",
+    "Offences per 1,000 people": 27.4
+  },
+  {
+    "AreaName": "Streatham Wells",
+    "Female": 5066,
+    "Male": 4691,
+    "Population": 9757,
+    "Count": 103,
+    "Time period": "May 2023-Apr 2024",
+    "Offences per 1,000 people": 10.6
+  },
+  {
+    "AreaName": "Vauxhall",
+    "Female": 4733,
+    "Male": 5000,
+    "Population": 9733,
+    "Count": 454,
+    "Time period": "May 2023-Apr 2024",
+    "Offences per 1,000 people": 46.6
+  },
+  {
+    "AreaName": "Waterloo & South Bank",
+    "Female": 4512,
+    "Male": 4346,
+    "Population": 8858,
+    "Count": 726,
+    "Time period": "May 2023-Apr 2024",
+    "Offences per 1,000 people": 82.0
+  },
+  {
+    "AreaName": "West Dulwich",
+    "Female": 6028,
+    "Male": 5356,
+    "Population": 11384,
+    "Count": 202,
+    "Time period": "May 2023-Apr 2024",
+    "Offences per 1,000 people": 17.7
+  },
+  {
+    "AreaName": "London",
+    "Female": 4531622,
+    "Male": 4268106,
+    "Population": 8799728,
+    "Count": 225277,
+    "Time period": "May 2023-Apr 2024",
+    "Offences per 1,000 people": 25.6
+  }
+]
