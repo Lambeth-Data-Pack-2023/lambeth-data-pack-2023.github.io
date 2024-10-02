@@ -1,0 +1,14 @@
+.flex {
+  display: flex;
+}
+.flex-w {
+  display: flex;
+  flex-wrap: wrap;
+}
+.centred {
+  width: 100%;
+  justify-content: center;
+}
+.space-between {
+  justify-content: space-between;
+}

@@ -1,0 +1,21 @@
+button {
+  background-color: white;
+  border: #212c61 solid 2px;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #faa71c;
+  color: #212c61;
+}
+
+.nav-buttons {
+  position: absolute;
+  bottom: 0;
+}
+.nav-buttons button {
+  text-wrap: nowrap;
+}
