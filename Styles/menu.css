@@ -32,7 +32,7 @@ menu li {
   flex-shrink: 0;
 }
 .menu.expanded {
-  width: 200px;
+  width: 20vw;
 }
 
 .menu a {

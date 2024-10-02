@@ -84,6 +84,7 @@ header button.toggleButton:hover {
   max-height: 50vh;
   overflow-y: scroll;
   z-index: 10;
+  width: 20vw;
 }
 
 .searchResults a {

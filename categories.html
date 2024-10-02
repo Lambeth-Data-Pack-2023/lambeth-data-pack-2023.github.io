@@ -13,6 +13,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="Styles/menu.css" />
     <link rel="stylesheet" href="Styles/header.css" />
     <link rel="stylesheet" href="Styles/structure.css" />
@@ -20,24 +24,35 @@
     <link rel="stylesheet" href="Styles/footer.css" />
     <link rel="stylesheet" href="Styles/buttons.css" />
     <link rel="stylesheet" href="/Styles/typography.css" />
+    <link rel="stylesheet" href="/Styles/image.css">
 
-
+    <style>
+      .mainSection{
+        overflow-y: scroll;
+      }
+      h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 img{
+        margin: 1vw;
+      }
+    </style>
 
   </head>
   <body>
     <header></header>
       <main class="flex">
         <menu id="menu" class="menu"></menu>
-      <section class="mainSection">
+      <section class="mainSection py-12 px-6 bg-gray-50">
         <section id="category-details"></section>
       </section>
       </main>
     </main>
     <footer class="flex space-between"></footer>
-
     <!-- Include Papa Parse -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
-
     <!-- Include your JavaScript files -->
     <script src="Scripts/header.js"></script>
     <script type="module" src="Scripts/search.js"></script>

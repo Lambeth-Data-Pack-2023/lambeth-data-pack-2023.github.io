@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+
     <link rel="stylesheet" href="Styles/menu.css" />
     <link rel="stylesheet" href="Styles/header.css" />
     <link rel="stylesheet" href="Styles/structure.css" />
@@ -44,6 +45,7 @@
       }
       .mainSection {
         overflow-y: hidden;
+        position: relative;
       }
 
       h1 {
@@ -64,6 +66,56 @@
       select {
         max-width: 25vw;
       }
+      .map-container {
+        display: none; /* Initially hidden */
+        width: 100%;
+        height: 100%;
+        position: relative;
+        box-sizing: border-box;
+      }
+      #map-container-svg{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+  
+      }
+      .ward-map-chart{
+        width: 100%;
+        height: 90%;
+      }
+      .ward-chart{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+      }
+      #category-container{
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+        z-index: 10;
+      }
+      #data-dropdown{
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      #chart-button{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+      .area-dropdown{
+        position: absolute;
+        top: 0;
+        right: 2vw;
+      }
     </style>
   </head>
   <body>
@@ -71,6 +123,8 @@
     <main class="flex">
       <menu id="menu" class="menu"></menu>
       <section class="mainSection flex">
+        <div id="category-container"></div>
+
         <div class="chart-container">
           <h1>Chart Name</h1>
           <button id="ward-map-button">Ward Map</button>
@@ -97,6 +151,19 @@
               <a id="next-chart" href=""><button>Next Chart</button></a>
             </div>
           </div>
+        </div>
+        <div id="map-container" class="map-container" style="display: none">
+          <!-- Initially hidden -->
+          <h1>Ward Data</h1>
+          <button id="chart-button">Back to Chart</button>
+        <div class="flex ward-map-chart">
+          <div id="map-container-svg" class="">
+        <!-- Map displays here -->
+        </div>
+        <div class="ward-chart" id="ward-chart">
+          <h3>Ward Chart</h3>
+        </div>
+        
         </div>
       </section>
     </main>
