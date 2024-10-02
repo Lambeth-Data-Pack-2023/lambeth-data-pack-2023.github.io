@@ -92,15 +92,28 @@ export function renderSurveyBarChart(chartData, chartContainer, chartMetadata) {
       .domain([
         0,
         d3.max(
-          chartData
-            .filter((d) => d[questionKey] === selectedQuestion)
-            .map((d) => d[selectedLocation])
+          chartData.filter((d) => d[questionKey] === selectedQuestion),
+          (d) => d[selectedLocation]
         ),
       ])
       .nice();
 
     // Clear previous content
     svg.selectAll("*").remove();
+
+    // Add horizontal grid lines
+    svg
+      .append("g")
+      .attr("class", "grid")
+      .call(
+        d3
+          .axisLeft(yScale)
+          .tickSize(-width) // Extend grid lines across the chart
+          .tickFormat("") // Hide tick labels
+      )
+      .selectAll(".tick line")
+      .attr("stroke", "#ddd") // Set grid line color
+      .attr("stroke-width", 1); // Set grid line width
 
     // Draw bars with transition
     const bars = svg.selectAll(".bar").data(

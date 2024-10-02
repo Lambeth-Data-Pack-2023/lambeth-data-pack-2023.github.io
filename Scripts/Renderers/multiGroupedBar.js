@@ -104,7 +104,7 @@ export function renderMultiGroupedBarChart(
         .attr("fill", (d) => colorScale(d[thirdVarKey]))
         .style("cursor", "pointer")
         .append("title")
-        .text((d) => `${d[thirdVarKey]}: ${d[yAxisKey]}%`);
+        .text((d) => `${d[thirdVarKey]}: ${d[yAxisKey]}`);
 
       svg
         .selectAll("rect")

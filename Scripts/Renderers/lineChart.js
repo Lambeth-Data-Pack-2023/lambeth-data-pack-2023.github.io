@@ -83,7 +83,7 @@ export function renderLineChart(data, container, chartData) {
       const group = svg.append("g"); // Create a new group element for each location
 
       // Draw the line path for the current group (location)
-      group
+      const path = group
         .append("path")
         .datum(groupData) // Bind the data for the current group
         .attr("fill", "none") // No fill for line paths
@@ -97,19 +97,39 @@ export function renderLineChart(data, container, chartData) {
             .y((d) => yScale(+d[yAxisKey])) // Set y position based on y-axis key
         );
 
+      // Line animation (drawing effect)
+      const totalLength = path.node().getTotalLength(); // Get the length of the path
+      path
+        .attr("stroke-dasharray", totalLength + " " + totalLength) // Create dashed array based on total length
+        .attr("stroke-dashoffset", totalLength) // Offset to make the line invisible initially
+        .transition() // Apply transition
+        .duration(2000) // Duration of the line drawing
+        .ease(d3.easeLinear) // Linear easing function
+        .attr("stroke-dashoffset", 0); // Set the dash offset to 0 to reveal the line
+
       // Add data points (circles) on the line
-      group
+      const circles = group
         .selectAll("circle")
         .data(groupData) // Bind the data for the current group
         .enter()
         .append("circle") // Append circle elements
         .attr("cx", (d) => xScale(d[xAxisKey]) + xScale.bandwidth() / 2) // Set x position
         .attr("cy", (d) => yScale(+d[yAxisKey])) // Set y position
-        .attr("r", 6) // Set radius of the circles
+        .attr("r", 0) // Start with radius 0 for animation
         .attr("fill", colorScale(location)) // Set fill color based on location
         .style("cursor", "pointer") // Set cursor to pointer
         .style("stroke", "black") // Set the border color to black
-        .style("stroke-width", 2) // Set the initial border width
+        .style("stroke-width", 2); // Set the initial border width
+
+      // Animate circles (grow from radius 0 to their actual size)
+      circles
+        .transition()
+        .delay((d, i) => i * 200) // Delay each circle slightly for a staggered effect
+        .duration(1000) // Duration for the circle animation
+        .attr("r", 6); // Set the final radius
+
+      // Add interaction for hover effect
+      circles
         .on("mouseover", function () {
           d3.select(this)
             .transition() // Smooth transition

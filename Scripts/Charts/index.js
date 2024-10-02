@@ -1,3 +1,5 @@
+// Scripts/Charts/data.js
+
 import { fetchChartMetadata, fetchChartData } from "./data.js";
 import { updateChartUI, showError } from "./ui.js";
 import { renderBarChart } from "../Renderers/barChart.js";

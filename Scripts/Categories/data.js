@@ -15,9 +15,9 @@ export async function getCategoryById(categoryId) {
       name: item["Category-Name"],
       ambitionId: item["Ambition-ID"],
       introText: item["Category-Intro-Text"],
-      takeaways: item["Category-Takeaways"],
       summary1: item["Category-Summary-1"],
       summary2: item["Category-Summary-2"],
+      summary3: item["Category-Summary-3"],
     }))
     .find((category) => category.id === categoryId);
 }

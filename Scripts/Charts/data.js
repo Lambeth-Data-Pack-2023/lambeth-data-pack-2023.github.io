@@ -20,3 +20,16 @@ export async function fetchChartMetadata(chartId) {
 export async function fetchChartData(filePath) {
   return await fetchJSON(`Data/Charts-JSON/${filePath}`);
 }
+
+/**
+ * Fetch GeoJSON data from the specified path.
+ * @param {string} geojsonPath - The path to the GeoJSON file.
+ * @returns {Promise<Object>} - The GeoJSON data.
+ */
+export async function fetchGeoJSONData(geojsonPath) {
+  const response = await fetch(geojsonPath);
+  if (!response.ok) {
+    throw new Error(`Failed to fetch GeoJSON data from ${geojsonPath}`);
+  }
+  return await response.json();
+}

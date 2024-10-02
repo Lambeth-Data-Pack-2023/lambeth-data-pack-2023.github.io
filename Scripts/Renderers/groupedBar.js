@@ -58,6 +58,20 @@ export function renderGroupedBarChart(data, container, chartMetadata) {
   // Add Y axis label
   addYAxisLabel(svg, yLabel, margin, height);
 
+  // Add horizontal grid lines
+  svg
+    .append("g")
+    .attr("class", "grid")
+    .call(
+      d3
+        .axisLeft(yScale)
+        .tickSize(-width) // Extend grid lines across the chart
+        .tickFormat("") // Hide tick labels
+    )
+    .selectAll(".tick line")
+    .attr("stroke", "#ddd") // Set grid line color
+    .attr("stroke-width", 1); // Set grid line width
+
   // Color scale
   const colorScale = d3.scaleOrdinal(d3.schemeCategory10);
 
@@ -70,7 +84,7 @@ export function renderGroupedBarChart(data, container, chartMetadata) {
     .attr("class", "bar-group")
     .attr("transform", (d) => `translate(${xScale(d.key)}, 0)`);
 
-  // Add the bars with interactive effects
+  // Add the bars with interactive effects and animation
   barGroups
     .selectAll(".bar")
     .data((d) => d.values)
@@ -78,11 +92,11 @@ export function renderGroupedBarChart(data, container, chartMetadata) {
     .append("rect")
     .attr("class", "bar")
     .attr("x", (d, i) => i * (xScale.bandwidth() / mainLocations.length))
-    .attr("y", (d) => yScale(+d.value))
+    .attr("y", height) // Start from the bottom
     .attr("width", xScale.bandwidth() / mainLocations.length)
-    .attr("height", (d) => height - yScale(+d.value))
+    .attr("height", 0) // Initial height of 0
     .attr("fill", (d) => colorScale(d.location))
-    .style("cursor", "pointer") // Set cursor to pointer
+    .style("cursor", "pointer")
     .on("mouseover", function (event, d) {
       d3.select(this).attr("fill", d3.rgb(colorScale(d.location)).brighter(1)); // Darken color on hover
     })
@@ -91,6 +105,14 @@ export function renderGroupedBarChart(data, container, chartMetadata) {
     })
     .append("title")
     .text((d) => `${d.location}: ${d.value}%`);
+
+  // Animate the bars to grow from 0 height to their actual value
+  svg
+    .selectAll(".bar")
+    .transition() // Start the transition
+    .duration(1000) // 1 second duration
+    .attr("y", (d) => yScale(+d.value)) // Final y position
+    .attr("height", (d) => height - yScale(+d.value)); // Final height based on data
 
   // Add a legend
   const legend = svg
