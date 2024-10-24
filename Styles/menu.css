@@ -13,6 +13,7 @@ menu {
   border-radius: 15px;
   margin: 0;
   padding: 5px;
+  overflow-y: scroll;
 }
 menu ul,
 menu li {
@@ -71,7 +72,6 @@ menu li {
 }
 
 .menu-ambition-item:hover {
-  background-color: orange;
 }
 
 /* Category items */
@@ -82,7 +82,6 @@ menu li {
 }
 
 .menu-category-item:hover {
-  background-color: orange;
 }
 
 .menu-category-link {
@@ -102,7 +101,6 @@ menu li {
 }
 
 .menu-chart-item:hover {
-  background-color: orange;
 }
 
 .menu-chart-link {
