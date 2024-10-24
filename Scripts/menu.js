@@ -35,21 +35,30 @@ document.addEventListener("DOMContentLoaded", async () => {
             .filter((chart) => chart["Category-ID"] === category["Category-ID"])
             .map(
               (chart) =>
-                `<li class="menu-chart-item"><a href="charts.html?id=${encodeURIComponent(
-                  chart["Chart-ID"]
-                )}" class="menu-chart-link">${
-                  chart["Chart-Name"] || "Unnamed Chart"
-                }</a></li>`
+                `<li class="menu-chart-item pl-6">
+                  <a href="charts.html?id=${encodeURIComponent(
+                    chart["Chart-ID"]
+                  )}" class="menu-chart-link block px-4 py-2 text-sm text-gray-200">
+                    ${chart["Chart-Name"] || "Unnamed Chart"}
+                  </a>
+                </li>`
             );
 
           return `
             <li class="menu-category-item">
-                <a href="categories.html?id=${encodeURIComponent(
-                  category["Category-ID"]
-                )}" class="menu-category-link">${
-            category["Category-Name"] || "Unnamed Category"
-          }</a>
-                <ul class="menu-chart-list hidden">
+                <div class="flex justify-between items-center">
+                    <a href="categories.html?id=${encodeURIComponent(
+                      category["Category-ID"]
+                    )}" class="menu-category-link px-4 py-2 text-gray-200">
+                      ${category["Category-Name"] || "Unnamed Category"}
+                    </a>
+                    <button class="toggle-category focus:outline-none px-2">
+                        <svg class="w-4 h-4 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                </div>
+                <ul class="menu-chart-list hidden pl-6">
                     ${relatedCharts.join("")}
                 </ul>
             </li>
@@ -57,13 +66,21 @@ document.addEventListener("DOMContentLoaded", async () => {
         });
 
       return `
-        <li class="menu-ambition-item">
-            <a href="ambitions.html?id=${encodeURIComponent(
-              ambition["Ambition-ID"]
-            )}" class="menu-ambition-link">${
-        ambition["Ambition-Name"] || "Unnamed Ambition"
-      }</a>
-            <ul class="menu-category-list hidden">
+        <li class="menu-ambition-item flex-c">
+            <div class="flex justify-between items-center">
+                <a href="ambitions.html?id=${encodeURIComponent(
+                  ambition["Ambition-ID"]
+                )}" class="menu-ambition-link px-4 py-2 text-gray-200">
+                  ${ambition["Ambition-Name"] || "Unnamed Ambition"}
+                </a>
+                <button class="toggle-ambition focus:outline-none px-2">
+                    <svg class="w-4 h-4 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+            </div>
+            <!-- Move the dropdown list (ul) outside the flex div -->
+            <ul class="menu-category-list hidden pl-4">
                 ${relatedCategories.join("")}
             </ul>
         </li>
@@ -72,8 +89,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Build the menu HTML
     const menuHtml = `
-      <ul class="menu-list">
-          <li class="menu-home-item"><a href="index.html" class="menu-home-link">Home</a></li>
+      <ul class="menu-list space-y-2">
+          <li class="menu-home-item">
+            <a href="index.html" class="menu-home-link block px-4 py-2 text-gray-200">Home</a>
+          </li>
           ${ambitionStructure.join("")}
       </ul>
     `;
@@ -81,30 +100,25 @@ document.addEventListener("DOMContentLoaded", async () => {
     // Insert the generated HTML into the menu element
     menuElement.innerHTML = menuHtml;
 
-    // Add event listeners to toggle visibility on ambition list item click
-    document.querySelectorAll(".menu-ambition-item").forEach((item) => {
-      item.addEventListener("click", (event) => {
-        if (
-          !event.target.matches(".menu-ambition-link") &&
-          !event.target.matches(".menu-category-link")
-        ) {
-          const categoryList = item.querySelector(".menu-category-list");
-          categoryList.classList.toggle("hidden");
-        }
+    // Add event listeners to toggle visibility on ambition toggle button click
+    document.querySelectorAll(".toggle-ambition").forEach((button) => {
+      button.addEventListener("click", (event) => {
+        event.stopPropagation(); // Prevent the click from propagating
+        const categoryList = button
+          .closest(".menu-ambition-item")
+          .querySelector(".menu-category-list");
+        categoryList.classList.toggle("hidden");
       });
     });
 
-    // Add event listeners to toggle visibility on category list item click
-    document.querySelectorAll(".menu-category-item").forEach((item) => {
-      item.addEventListener("click", (event) => {
-        event.stopPropagation(); // Stop the event from bubbling up to the ambition item
-        if (
-          !event.target.matches(".menu-category-link") &&
-          !event.target.matches(".menu-chart-link")
-        ) {
-          const chartList = item.querySelector(".menu-chart-list");
-          chartList.classList.toggle("hidden");
-        }
+    // Add event listeners to toggle visibility on category toggle button click
+    document.querySelectorAll(".toggle-category").forEach((button) => {
+      button.addEventListener("click", (event) => {
+        event.stopPropagation(); // Prevent the click from propagating
+        const chartList = button
+          .closest(".menu-category-item")
+          .querySelector(".menu-chart-list");
+        chartList.classList.toggle("hidden");
       });
     });
   } catch (error) {
