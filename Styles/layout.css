@@ -5,6 +5,10 @@
   display: flex;
   flex-wrap: wrap;
 }
+.flex-c {
+  display: flex;
+  flex-direction: column;
+}
 .centred {
   width: 100%;
   justify-content: center;
