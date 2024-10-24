@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             );
 
           return `
-            <li class="menu-category-item">
+            <li class="menu-category-item flex-c">
                 <div class="flex justify-between items-center">
                     <a href="categories.html?id=${encodeURIComponent(
                       category["Category-ID"]
