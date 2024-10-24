@@ -13,7 +13,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-
+     <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="Styles/menu.css" />
     <link rel="stylesheet" href="Styles/header.css" />
     <link rel="stylesheet" href="Styles/structure.css" />
@@ -29,6 +32,13 @@
         border: #212c61 solid 1px;
         border-radius: 5px;
         box-shadow: 2px 5px #212c6165;
+      }
+      #table-commentary-container, #page-commentary-container{
+        padding: 10px;
+        margin: 0;
+      }
+      .commentary-container h4{
+        margin: 1em;
       }
       .chart-container {
         position: relative;
@@ -139,11 +149,11 @@
         <div>
           <div id="commentary" class="commentary-container expanded">
             <h4>Table Commentary</h4>
-            <div class="container">
+            <div id="table-commentary-container" class="container">
               <div id="table-commentary"></div>
             </div>
             <h4>Page Commentary</h4>
-            <div class="container">
+            <div id="page-commentary-container" class="container">
               <div id="page-commentary"></div>
             </div>
             <div class="nav-buttons flex">
