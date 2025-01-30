@@ -4,19 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chart</title>
-    <link
-      rel="shortcut icon"
-      href="Images/Lambeth-logo-favicon.png"
-      type="image/x-icon"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-     <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
+    <link rel="preload" href="Styles/critical.css" as="style">
+    <link rel="stylesheet" href="Styles/critical.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="Images/Lambeth-logo-favicon.png" type="image/x-icon" />
+
+    <!-- FontAwesome & Tailwind (Optimized) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" media="print" onload="this.onload=null;this.removeAttribute('media');">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" media="print" onload="this.onload=null;this.removeAttribute('media');">
+
     <link rel="stylesheet" href="Styles/menu.css" />
     <link rel="stylesheet" href="Styles/header.css" />
     <link rel="stylesheet" href="Styles/structure.css" />
@@ -180,15 +177,15 @@
     <footer class="flex space-between"></footer>
 
     <!-- Include Papa Parse -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-
-    <!-- Include your JavaScript files -->
-    <script src="Scripts/header.js"></script>
-    <script type="module" src="Scripts/search.js"></script>
-    <script type="module" src="Scripts/menu.js"></script>
-    <script src="Scripts/footer.js"></script>
-    <script src="Scripts/toggleButton.js"></script>
-    <script type="module" src="Scripts/Charts/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js" defer></script>
+    <script src="https://d3js.org/d3.v7.min.js" defer></script>
+    
+    <!-- Additional JavaScript -->
+    <script src="Scripts/header.js" defer></script>
+    <script type="module" src="Scripts/search.js" defer></script>
+    <script type="module" src="Scripts/menu.js" defer></script>
+    <script src="Scripts/footer.js" defer></script>
+    <script src="Scripts/toggleButton.js" defer></script>
+    <script type="module" src="Scripts/Charts/index.js" defer></script>
   </body>
 </html>
